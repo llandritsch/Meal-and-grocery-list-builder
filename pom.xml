@@ -25,6 +25,7 @@
     <junit-platform-runner-version>1.0.0</junit-platform-runner-version>
     <maven-compiler-plugin-version>3.8.1</maven-compiler-plugin-version>
     <maven-surefire-plugin-version>2.19</maven-surefire-plugin-version>
+    <log4j-version>2.10.0</log4j-version>
   </properties>
   <dependencies>
     <dependency>
@@ -96,6 +97,16 @@
               <groupId>org.junit.platform</groupId>
               <artifactId>junit-platform-surefire-provider</artifactId>
               <version>${junit-platform-runner-version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.logging.log4j</groupId>
+              <artifactId>log4j-api</artifactId>
+              <version>${log4j-version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.apache.logging.log4j</groupId>
+              <artifactId>log4j-core</artifactId>
+              <version>${log4j-version}</version>
             </dependency>
           </dependencies>
         </plugin>
