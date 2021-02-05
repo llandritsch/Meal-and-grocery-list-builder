@@ -17,3 +17,12 @@
 * Completed Activities and Demo
 * Completed Exercise 2
 * Started week 3 reading and videos
+### Week 3
+#### Time: 4 hours
+#### Weekly Course Work: 
+* Watched all videos
+* Completed Activities and Demos
+* Completed Exercise 3
+* Completed weekly reading
+#### Indie Project Work Added: 
+* none yet
