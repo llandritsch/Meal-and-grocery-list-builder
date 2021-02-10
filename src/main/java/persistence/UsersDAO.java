@@ -28,5 +28,12 @@ public class UsersDAO {
         session.close();
         return users;
     }
+
+    public void createUser() {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Users> query = builder.createQuery(Users.class);
+
+    }
 }
 
