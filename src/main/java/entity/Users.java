@@ -1,6 +1,8 @@
 package entity;
 
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 
@@ -20,7 +22,7 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator()
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
     /**
