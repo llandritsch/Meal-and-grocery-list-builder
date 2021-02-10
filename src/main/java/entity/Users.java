@@ -1,13 +1,26 @@
 package entity;
 
+
+import javax.persistence.*;
+
+
 /**
  * Represents Users
  *
  * @author lisaandritsch
  */
+@Entity(name = "Users")
+@Table(name = "Users")
 public class Users {
+    @Column(name = "username")
     private String userName;
+
+    @Column(name = "password")
     private String password;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator()
     private int id;
 
     /**
