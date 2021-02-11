@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Table(name = "Users")
 public class Users {
     @Column(name = "username")
-    private String userName;
+    private String username;
 
     @Column(name = "password")
     private String password;
@@ -34,12 +34,12 @@ public class Users {
     /**
      * Instantiates a new User.
      *
-     * @param userName  the user name
+     * @param username  the user name
      * @param password the password
      * @param id        the id
      */
-    public Users(String userName, String password, int id) {
-        this.userName = userName;
+    public Users(String username, String password, int id) {
+        this.username = username;
         this.password = password;
         this.id = id;
     }
@@ -50,16 +50,16 @@ public class Users {
      * @return the user name
      */
     public String getUserName() {
-        return userName;
+        return username;
     }
 
     /**
      * Sets user name.
      *
-     * @param userName the user name
+     * @param username the user name
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserName(String username) {
+        this.username = username;
     }
 
     /**
@@ -83,7 +83,7 @@ public class Users {
     @Override
     public String toString() {
         return "Users{" +
-                "userName='" + userName + '\'' +
+                "userName='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", id='" + id + '\'' +
                 '}';
