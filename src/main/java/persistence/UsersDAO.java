@@ -42,6 +42,13 @@ public class UsersDAO {
         return users;
     }
 
+    public Users getUserById(int userId) {
+        Session session = sessionFactory.openSession();
+        Users users = session.get(Users.class, userId);
+        session.close();
+        return users;
+    }
+
     public void createUser() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

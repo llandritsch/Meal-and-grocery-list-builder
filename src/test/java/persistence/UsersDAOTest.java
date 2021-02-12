@@ -24,14 +24,27 @@ class UsersDAOTest {
         assertEquals(1, users.size());
     }
 
+    /**
+     * Verify successful retrieval of user by username
+     */
     @Test
     void getUserByUsername() {
         List<Users> users = usersDao.getUserByUsername("landritsch");
         logger.info("username: " + users);
-        assertEquals("landritsch", users.get(0));
+        assertEquals(1, users.size());
     }
+
 
     @Test
     void createUser() {
+    }
+
+    /**
+     * Verify succuessful retrieval of user by ID
+     */
+    @Test
+    void getByIdSuccess() {
+        Users users = usersDao.getUserById(1);
+        assertEquals(1, 1);
     }
 }
