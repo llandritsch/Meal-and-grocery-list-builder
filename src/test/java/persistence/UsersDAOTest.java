@@ -34,9 +34,17 @@ class UsersDAOTest {
         assertEquals(1, users.size());
     }
 
-
+    /**
+     * Verify user is created and added to the DB
+     */
     @Test
-    void createUser() {
+    void createUserSuccess() {
+        Users newUser = new Users();
+        newUser.setUserName("lucy");
+        newUser.setPassword("bananas");
+        logger.info(newUser);
+        assertEquals(2, usersDao.createUser(newUser));
+
     }
 
     /**
@@ -46,5 +54,10 @@ class UsersDAOTest {
     void getByIdSuccess() {
         Users users = usersDao.getUserById(1);
         assertEquals(1, 1);
+    }
+
+    @Test
+    void deleteUserSuccess() {
+        Users
     }
 }

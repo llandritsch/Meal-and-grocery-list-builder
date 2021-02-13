@@ -63,6 +63,18 @@ public class Users {
     }
 
     /**
+     * gets password
+     * @return password
+     */
+    public String getPassword() { return password; }
+
+    /**
+     * sets password
+     * @param password
+     */
+    public void setPassword(String password) { this.password = password; }
+
+    /**
      * Gets id.
      *
      * @return the id

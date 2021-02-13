@@ -5,6 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -49,11 +50,27 @@ public class UsersDAO {
         return users;
     }
 
-    public void createUser() {
+    public int createUser(Users user) {
+        int id = 0;
         Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Users> query = builder.createQuery(Users.class);
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(user);
+        session.close();
+        return id;
+    }
 
+    public void saveOrUpdate(Users user) {
+        Session session = sessionFactory.openSession();
+        session.saveOrUpdate(user);
+        session.close();
+    }
+
+    public void deleteUser(Users user) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(user);
+        transaction.commit();
+        session.close();
     }
 }
 
