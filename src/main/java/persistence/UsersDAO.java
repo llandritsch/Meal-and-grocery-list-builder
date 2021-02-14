@@ -31,6 +31,11 @@ public class UsersDAO {
         return users;
     }
 
+    /**
+     * gets user by username
+     * @param username
+     * @return users
+     */
     public List<Users> getUserByUsername(String username) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
@@ -43,6 +48,11 @@ public class UsersDAO {
         return users;
     }
 
+    /**
+     * gets user by Id
+     * @param userId
+     * @return users
+     */
     public Users getUserById(int userId) {
         Session session = sessionFactory.openSession();
         Users users = session.get(Users.class, userId);
@@ -50,21 +60,37 @@ public class UsersDAO {
         return users;
     }
 
+    /**
+     * creates a new user
+     * @param user
+     * @return id of new user
+     */
     public int createUser(Users user) {
         int id = 0;
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(user);
+        transaction.commit();
         session.close();
         return id;
     }
 
+    /**
+     * updates an existing user
+     * @param user
+     */
     public void saveOrUpdate(Users user) {
         Session session = sessionFactory.openSession();
+        logger.info("Save/Update: " + user);
         session.saveOrUpdate(user);
+        session.beginTransaction().commit();
         session.close();
     }
 
+    /**
+     * deletes a user
+     * @param user
+     */
     public void deleteUser(Users user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();

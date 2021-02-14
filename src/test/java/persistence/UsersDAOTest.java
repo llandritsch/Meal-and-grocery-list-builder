@@ -3,6 +3,8 @@ package persistence;
 import entity.Users;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -12,8 +14,32 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class UsersDAOTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
-
     private UsersDAO usersDao = new UsersDAO();
+    int testUserId = 0;
+
+    /**
+     * Create a test user for tests to access if/when needed
+     */
+    @BeforeEach
+    void setUp() {
+        Users newUser = new Users();
+        newUser.setUserName("Manji");
+        newUser.setPassword("bananas");
+        testUserId = usersDao.createUser((newUser));
+        logger.info("USERID" + testUserId);
+    }
+
+    /**
+     * Delete test user if the test method does not delete it
+     */
+    @AfterEach
+    void cleanUp() {
+
+        Users testUser = usersDao.getUserById(testUserId);
+        if (testUser != null) {
+            usersDao.deleteUser(testUser);
+        }
+    }
 
     /**
      * Verify successful retrieval of all users
@@ -21,7 +47,7 @@ class UsersDAOTest {
     @Test
     void getAllSuccess() {
         List<Users> users = usersDao.getAllUsers();
-        assertEquals(1, users.size());
+        assertEquals(true, users.size() > 0);
     }
 
     /**
@@ -29,7 +55,7 @@ class UsersDAOTest {
      */
     @Test
     void getUserByUsername() {
-        List<Users> users = usersDao.getUserByUsername("landritsch");
+        List<Users> users = usersDao.getUserByUsername("Manji");
         logger.info("username: " + users);
         assertEquals(1, users.size());
     }
@@ -39,11 +65,12 @@ class UsersDAOTest {
      */
     @Test
     void createUserSuccess() {
+        int numberOfUsers = usersDao.getAllUsers().size();
         Users newUser = new Users();
         newUser.setUserName("lucy");
         newUser.setPassword("bananas");
-        logger.info(newUser);
-        assertEquals(2, usersDao.createUser(newUser));
+        usersDao.createUser(newUser);
+        assertEquals(numberOfUsers + 1, usersDao.getAllUsers().size());
 
     }
 
@@ -52,12 +79,32 @@ class UsersDAOTest {
      */
     @Test
     void getByIdSuccess() {
-        Users users = usersDao.getUserById(1);
-        assertEquals(1, 1);
+        Users users = usersDao.getUserById(testUserId);
+        assertEquals(true, users != null);
     }
 
+    /**
+     * Verify successful deletion of user
+     */
     @Test
     void deleteUserSuccess() {
-        Users
+        Users testUser = usersDao.getUserById(testUserId);
+        assertEquals(true, testUser != null);
+        usersDao.deleteUser(testUser);
+        assertEquals(null, usersDao.getUserById(testUserId));
+    }
+
+    /**
+     * Verify successful update of user
+     */
+    @Test
+    void saveOrUpdateUserSuccess() {
+        Users testUser = usersDao.getUserById(testUserId);
+        testUser.setUserName("The Big Lebowski");
+        usersDao.saveOrUpdate(testUser);
+        List<Users> updatedUser = usersDao.getUserByUsername("The Big Lebowski");
+        logger.info("Test updatedUser: " + updatedUser);
+        assertEquals(1, updatedUser.size());
+
     }
 }
