@@ -25,4 +25,14 @@
 * Completed Exercise 3
 * Completed weekly reading
 #### Indie Project Work Added: 
-* none yet
+* None added to git, but DB schema, and screen designs are created on Windows machine
+### Week 4
+#### Time: 5.25 hours
+#### Weekly Course Work: 
+* Watched all videos
+* Completed reading, Activities, and Demos
+* Completed Exercise in indie project
+#### Indie Project Work Added: 
+* Crud functionality added
+* Unit Tests added for UserDAO
+* UserDAO added. 
