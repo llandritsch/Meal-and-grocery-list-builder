@@ -1,0 +1,1334 @@
+[DEBUG] 2021-02-16 19:48:05.796 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-02-16 19:48:05.808 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-02-16 19:48:05.817 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-02-16 19:48:06.028 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-02-16 19:48:06.031 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-02-16 19:48:06.606 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-02-16 19:48:07.179 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-02-16 19:48:07.217 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-02-16 19:48:07.219 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-02-16 19:48:07.250 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-02-16 19:48:07.303 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@70242f38
+[DEBUG] 2021-02-16 19:48:07.304 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@70242f38
+[DEBUG] 2021-02-16 19:48:07.304 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@70242f38
+[DEBUG] 2021-02-16 19:48:07.306 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4390f46e
+[DEBUG] 2021-02-16 19:48:07.307 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1948ea69
+[DEBUG] 2021-02-16 19:48:07.308 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@3015db78
+[DEBUG] 2021-02-16 19:48:07.311 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7f9ab969
+[DEBUG] 2021-02-16 19:48:07.311 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@7f9ab969
+[DEBUG] 2021-02-16 19:48:07.312 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7f9ab969
+[DEBUG] 2021-02-16 19:48:07.314 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@749ab7b4
+[DEBUG] 2021-02-16 19:48:07.314 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@749ab7b4
+[DEBUG] 2021-02-16 19:48:07.314 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@749ab7b4
+[DEBUG] 2021-02-16 19:48:07.317 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@3b0ee03a
+[DEBUG] 2021-02-16 19:48:07.317 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@3b0ee03a
+[DEBUG] 2021-02-16 19:48:07.317 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3b0ee03a
+[DEBUG] 2021-02-16 19:48:07.322 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@28a6301f
+[DEBUG] 2021-02-16 19:48:07.322 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@28a6301f
+[DEBUG] 2021-02-16 19:48:07.323 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@28a6301f
+[DEBUG] 2021-02-16 19:48:07.325 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7abe27bf
+[DEBUG] 2021-02-16 19:48:07.327 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7abe27bf
+[DEBUG] 2021-02-16 19:48:07.327 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7abe27bf
+[DEBUG] 2021-02-16 19:48:07.329 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5bb7643d
+[DEBUG] 2021-02-16 19:48:07.332 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5bb7643d
+[DEBUG] 2021-02-16 19:48:07.332 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5bb7643d
+[DEBUG] 2021-02-16 19:48:07.335 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3c0fbd3a
+[DEBUG] 2021-02-16 19:48:07.335 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3c0fbd3a
+[DEBUG] 2021-02-16 19:48:07.335 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3c0fbd3a
+[DEBUG] 2021-02-16 19:48:07.337 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7cf162bc
+[DEBUG] 2021-02-16 19:48:07.337 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7cf162bc
+[DEBUG] 2021-02-16 19:48:07.338 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@60e21209
+[DEBUG] 2021-02-16 19:48:07.338 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@60e21209
+[DEBUG] 2021-02-16 19:48:07.339 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@2715644a
+[DEBUG] 2021-02-16 19:48:07.339 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@2715644a
+[DEBUG] 2021-02-16 19:48:07.339 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6edcd0d8
+[DEBUG] 2021-02-16 19:48:07.340 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@35835fa
+[DEBUG] 2021-02-16 19:48:07.341 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@5e8604bf
+[DEBUG] 2021-02-16 19:48:07.341 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5e8604bf
+[DEBUG] 2021-02-16 19:48:07.342 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@546621c4
+[DEBUG] 2021-02-16 19:48:07.342 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@546621c4
+[DEBUG] 2021-02-16 19:48:07.354 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@2679311f
+[DEBUG] 2021-02-16 19:48:07.354 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@2679311f
+[DEBUG] 2021-02-16 19:48:07.356 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@2e34384c
+[DEBUG] 2021-02-16 19:48:07.356 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@2e34384c
+[DEBUG] 2021-02-16 19:48:07.358 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3fa76c61
+[DEBUG] 2021-02-16 19:48:07.358 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3fa76c61
+[DEBUG] 2021-02-16 19:48:07.360 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7b3315a5
+[DEBUG] 2021-02-16 19:48:07.360 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7b3315a5
+[DEBUG] 2021-02-16 19:48:07.361 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2ce45a7b
+[DEBUG] 2021-02-16 19:48:07.362 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2ce45a7b
+[DEBUG] 2021-02-16 19:48:07.363 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@42f9c19a
+[DEBUG] 2021-02-16 19:48:07.364 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@42f9c19a
+[DEBUG] 2021-02-16 19:48:07.365 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@629ae7e
+[DEBUG] 2021-02-16 19:48:07.366 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@629ae7e
+[DEBUG] 2021-02-16 19:48:07.367 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5ce4369b
+[DEBUG] 2021-02-16 19:48:07.367 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5ce4369b
+[DEBUG] 2021-02-16 19:48:07.369 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@6ae7deac
+[DEBUG] 2021-02-16 19:48:07.369 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6ae7deac
+[DEBUG] 2021-02-16 19:48:07.370 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@3daa82be
+[DEBUG] 2021-02-16 19:48:07.371 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3daa82be
+[DEBUG] 2021-02-16 19:48:07.371 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3daa82be
+[DEBUG] 2021-02-16 19:48:07.373 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@e344ad3
+[DEBUG] 2021-02-16 19:48:07.373 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@597f48df
+[DEBUG] 2021-02-16 19:48:07.374 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@597f48df
+[DEBUG] 2021-02-16 19:48:07.374 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@597f48df
+[DEBUG] 2021-02-16 19:48:07.374 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@27d57a2c
+[DEBUG] 2021-02-16 19:48:07.375 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@486bc9a4
+[DEBUG] 2021-02-16 19:48:07.376 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@486bc9a4
+[DEBUG] 2021-02-16 19:48:07.377 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@1237e0be
+[DEBUG] 2021-02-16 19:48:07.377 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1237e0be
+[DEBUG] 2021-02-16 19:48:07.378 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@6441c486
+[DEBUG] 2021-02-16 19:48:07.378 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6441c486
+[DEBUG] 2021-02-16 19:48:07.379 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@58d63b16
+[DEBUG] 2021-02-16 19:48:07.379 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@58d63b16
+[DEBUG] 2021-02-16 19:48:07.380 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@369c9bb
+[DEBUG] 2021-02-16 19:48:07.380 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@369c9bb
+[DEBUG] 2021-02-16 19:48:07.381 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@25b5c5e3
+[DEBUG] 2021-02-16 19:48:07.382 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3047254d
+[DEBUG] 2021-02-16 19:48:07.382 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3047254d
+[DEBUG] 2021-02-16 19:48:07.382 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3047254d
+[DEBUG] 2021-02-16 19:48:07.383 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@655523dd
+[DEBUG] 2021-02-16 19:48:07.383 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@655523dd
+[DEBUG] 2021-02-16 19:48:07.384 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@655523dd
+[DEBUG] 2021-02-16 19:48:07.385 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@21a66d45
+[DEBUG] 2021-02-16 19:48:07.385 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@66f659e6
+[DEBUG] 2021-02-16 19:48:07.387 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@50a3d0f6
+[DEBUG] 2021-02-16 19:48:07.387 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@50a3d0f6
+[DEBUG] 2021-02-16 19:48:07.387 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@50a3d0f6
+[DEBUG] 2021-02-16 19:48:07.388 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@35636217
+[DEBUG] 2021-02-16 19:48:07.388 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@35636217
+[DEBUG] 2021-02-16 19:48:07.389 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@35636217
+[DEBUG] 2021-02-16 19:48:07.389 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@16ade133
+[DEBUG] 2021-02-16 19:48:07.390 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@4f82663e
+[DEBUG] 2021-02-16 19:48:07.391 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@77c7ed8e
+[DEBUG] 2021-02-16 19:48:07.391 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@77c7ed8e
+[DEBUG] 2021-02-16 19:48:07.392 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@640dc4c6
+[DEBUG] 2021-02-16 19:48:07.394 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@616b241a
+[DEBUG] 2021-02-16 19:48:07.394 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@616b241a
+[DEBUG] 2021-02-16 19:48:07.396 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@610df783
+[DEBUG] 2021-02-16 19:48:07.396 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@610df783
+[DEBUG] 2021-02-16 19:48:07.397 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@776802b0
+[DEBUG] 2021-02-16 19:48:07.397 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6ee8dcd3
+[DEBUG] 2021-02-16 19:48:07.398 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@14bf57b2
+[DEBUG] 2021-02-16 19:48:07.402 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7ce9e05a
+[DEBUG] 2021-02-16 19:48:07.402 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7ce9e05a
+[DEBUG] 2021-02-16 19:48:07.402 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4d774249
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@17b64941
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@53ac845a
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5136207f
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@26a4551a
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3fdecce
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@344426bf
+[DEBUG] 2021-02-16 19:48:07.403 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5411dd90
+[DEBUG] 2021-02-16 19:48:07.430 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-02-16 19:48:07.432 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-02-16 19:48:07.433 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-16 19:48:07.433 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-16 19:48:07.434 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-02-16 19:48:07.435 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-02-16 19:48:07.435 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-02-16 19:48:07.437 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-16 19:48:07.438 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-02-16 19:48:07.439 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-02-16 19:48:07.439 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-02-16 19:48:07.440 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-02-16 19:48:07.440 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-16 19:48:07.441 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-02-16 19:48:07.447 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/mealBuilder
+[INFO ] 2021-02-16 19:48:07.447 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-02-16 19:48:07.447 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-02-16 19:48:07.661 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-02-16 19:48:08.443 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.22
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-16 19:48:08.443 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.22 (Revision: d64b664fa93e81296a377de031b8123a67e6def2)
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-16 19:48:08.443 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-02-16 19:48:08.481 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-02-16 19:48:08.513 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-02-16 19:48:08.552 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-02-16 19:48:08.600 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-02-16 19:48:08.604 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@61cd1c71] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6724cdec]
+[DEBUG] 2021-02-16 19:48:08.675 [main] AnnotationBinder - Binding entity from annotated class: entity.Users
+[DEBUG] 2021-02-16 19:48:08.715 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-02-16 19:48:08.724 [main] EntityBinder - Import with entity name Users
+[DEBUG] 2021-02-16 19:48:08.729 [main] EntityBinder - Bind entity entity.Users on table Users
+[DEBUG] 2021-02-16 19:48:08.773 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-16 19:48:08.777 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-02-16 19:48:08.780 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:id]
+[DEBUG] 2021-02-16 19:48:08.785 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-02-16 19:48:08.790 [main] PropertyBinder - Building property id
+[DEBUG] 2021-02-16 19:48:08.796 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-02-16 19:48:08.798 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-16 19:48:08.798 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-02-16 19:48:08.798 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:password]
+[DEBUG] 2021-02-16 19:48:08.799 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-02-16 19:48:08.799 [main] PropertyBinder - Building property password
+[DEBUG] 2021-02-16 19:48:08.800 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-16 19:48:08.800 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2021-02-16 19:48:08.801 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:username]
+[DEBUG] 2021-02-16 19:48:08.801 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2021-02-16 19:48:08.801 [main] PropertyBinder - Building property username
+[DEBUG] 2021-02-16 19:48:08.806 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-02-16 19:48:08.807 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-02-16 19:48:08.807 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2021-02-16 19:48:08.809 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2021-02-16 19:48:08.862 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Statistics: disabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-02-16 19:48:08.864 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-02-16 19:48:08.865 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-02-16 19:48:08.866 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-02-16 19:48:08.867 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-02-16 19:48:08.938 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-02-16 19:48:08.960 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-02-16 19:48:08.960 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder/target/test-classes:/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder/target/classes:/Users/lisaandritsch/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/lisaandritsch/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/lisaandritsch/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/lisaandritsch/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar:/Users/lisaandritsch/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/lisaandritsch/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar:/Users/lisaandritsch/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/lisaandritsch/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/lisaandritsch/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/lisaandritsch/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/lisaandritsch/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/lisaandritsch/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/lisaandritsch/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/lisaandritsch/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/lisaandritsch/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/lisaandritsch/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/lisaandritsch/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/lisaandritsch/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/lisaandritsch/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/lisaandritsch/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/lisaandritsch/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/lisaandritsch/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/lisaandritsch/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/lisaandritsch/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/lisaandritsch/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/lisaandritsch/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 persistence.UsersDAOTest, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/lisaandritsch, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-10-20, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=1LoveBacon!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.9+7-LTS, user.name=lisaandritsch, path.separator=:, hibernate.connection.username=****, os.version=10.15.4, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/mealBuilder, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/t1/cf3c018n3358k026jslb5qb00000gn/T/, java.version=11.0.9, user.dir=/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@167381c7, java.library.path=/Users/lisaandritsch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.9+7-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/mealBuilder, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2021-02-16 19:48:08.983 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-02-16 19:48:08.984 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-02-16 19:48:08.985 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-02-16 19:48:08.985 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@61cd1c71] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@724aefc3]
+[DEBUG] 2021-02-16 19:48:09.044 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Users] is safe
+[DEBUG] 2021-02-16 19:48:09.044 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Users
+[DEBUG] 2021-02-16 19:48:09.075 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Users] is safe
+[DEBUG] 2021-02-16 19:48:09.075 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Users
+[DEBUG] 2021-02-16 19:48:09.533 [main] AbstractEntityPersister - Static SQL for entity: entity.Users
+[DEBUG] 2021-02-16 19:48:09.533 [main] AbstractEntityPersister -  Version select: select id from Users where id =?
+[DEBUG] 2021-02-16 19:48:09.533 [main] AbstractEntityPersister -  Snapshot select: select users_.id, users_.password as password2_0_, users_.username as username3_0_ from Users users_ where users_.id=?
+[DEBUG] 2021-02-16 19:48:09.534 [main] AbstractEntityPersister -  Insert 0: insert into Users (password, username, id) values (?, ?, ?)
+[DEBUG] 2021-02-16 19:48:09.534 [main] AbstractEntityPersister -  Update 0: update Users set password=?, username=? where id=?
+[DEBUG] 2021-02-16 19:48:09.534 [main] AbstractEntityPersister -  Delete 0: delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:09.534 [main] AbstractEntityPersister -  Identity insert: insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:09.587 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@664e848c]
+[DEBUG] 2021-02-16 19:48:09.589 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-16 19:48:09.590 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2021-02-16 19:48:09.590 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-16 19:48:09.617 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-16 19:48:09.626 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Users)
+    - Returns
+       - EntityReturnImpl(entity=entity.Users, querySpaceUid=<gen:0>, path=entity.Users)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2021-02-16 19:48:09.629 [main] EntityLoader - Static select for entity entity.Users [NONE]: select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:09.629 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f9ab79d]
+[DEBUG] 2021-02-16 19:48:09.630 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-16 19:48:09.630 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2021-02-16 19:48:09.630 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-16 19:48:09.630 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-16 19:48:09.630 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Users)
+    - Returns
+       - EntityReturnImpl(entity=entity.Users, querySpaceUid=<gen:0>, path=entity.Users)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[DEBUG] 2021-02-16 19:48:09.631 [main] EntityLoader - Static select for entity entity.Users [READ]: select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:09.655 [main] Loader - Static select for action ACTION_MERGE on entity entity.Users: select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:09.655 [main] Loader - Static select for action ACTION_REFRESH on entity entity.Users: select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:09.727 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-02-16 19:48:09.728 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-02-16 19:48:09.728 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-02-16 19:48:09.741 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-02-16 19:48:09.741 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-02-16 19:48:09.742 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-02-16 19:48:09.742 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-02-16 19:48:09.744 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6371cf2f
+[DEBUG] 2021-02-16 19:48:09.754 [main] SessionFactoryRegistry - Registering SessionFactory: 9569e46e-7ed2-4b89-bac2-7e66ab6023db (<unnamed>)
+[DEBUG] 2021-02-16 19:48:09.754 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-02-16 19:48:09.902 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-02-16 19:48:09.912 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:09.912 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:09.926 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:09.935 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:09.968 [main] IdentifierGeneratorHelper - Natively generated identity: 131
+[DEBUG] 2021-02-16 19:48:09.968 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:09.972 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:09.973 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:09.974 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:09.976 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:09.977 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:09.979 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:09.980 [main] EntityPrinter - entity.Users{password=bananas, id=131, username=Manji}
+[DEBUG] 2021-02-16 19:48:09.985 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:09.987 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.011 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.023 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.024 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.036 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#131]
+[DEBUG] 2021-02-16 19:48:10.036 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.036 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.037 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.037 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.038 [main] TwoPhaseLoad - Done materializing entity [entity.Users#131]
+[DEBUG] 2021-02-16 19:48:10.039 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.039 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#131
+[DEBUG] 2021-02-16 19:48:10.039 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.046 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.047 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.058 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.058 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.058 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.058 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.059 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.059 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.059 [main] EntityPrinter - entity.Users{password=bananas, id=131, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.071 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.078 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.079 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.080 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-16 19:48:10.080 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.083 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.084 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#131
+[DEBUG] 2021-02-16 19:48:10.084 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.089 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.092 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.092 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#131
+[DEBUG] 2021-02-16 19:48:10.092 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.098 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.099 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.102 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.102 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.104 [main] IdentifierGeneratorHelper - Natively generated identity: 132
+[DEBUG] 2021-02-16 19:48:10.105 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.105 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.105 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.105 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.105 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.105 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.105 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.106 [main] EntityPrinter - entity.Users{password=bananas, id=132, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.109 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.110 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.111 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.114 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.115 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.116 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.116 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.116 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.116 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.116 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.117 [main] TwoPhaseLoad - Done materializing entity [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.117 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.117 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#132
+[DEBUG] 2021-02-16 19:48:10.117 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.156 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.158 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.164 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.164 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.167 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.168 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.168 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.170 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.170 [main] EntityPrinter - entity.Users{password=bananas, id=132, username=The Big Lebowski}
+[DEBUG] 2021-02-16 19:48:10.171 [main] SQL - update Users set password=?, username=? where id=?
+[DEBUG] 2021-02-16 19:48:10.176 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.177 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.257 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Users as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2021-02-16 19:48:10.284 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@70d4f672
+[DEBUG] 2021-02-16 19:48:10.336 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.Users as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2021-02-16 19:48:10.346 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.355 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Users'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'username'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-02-16 19:48:10.408 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.431 [main] FromElement - FromClause{level=1} : entity.Users (generatedAlias0) -> users0_
+[DEBUG] 2021-02-16 19:48:10.432 [main] FromReferenceNode - Resolved : generatedAlias0 -> users0_.id
+[DEBUG] 2021-02-16 19:48:10.436 [main] FromReferenceNode - Resolved : generatedAlias0 -> users0_.id
+[DEBUG] 2021-02-16 19:48:10.439 [main] DotNode - getDataType() : username -> org.hibernate.type.StringType@2715644a
+[DEBUG] 2021-02-16 19:48:10.441 [main] FromReferenceNode - Resolved : generatedAlias0.username -> users0_.username
+[DEBUG] 2021-02-16 19:48:10.445 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.445 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} users0_.id ) ( FromClause{level=1} Users users0_ ) ( where ( like ( users0_.username users0_.id username ) ? ) ) )
+[DEBUG] 2021-02-16 19:48:10.455 [main] JoinProcessor - Using FROM fragment [Users users0_]
+[DEBUG] 2021-02-16 19:48:10.455 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.456 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'users0_.id as id1_0_' {alias=generatedAlias0, className=entity.Users, tableAlias=users0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'users0_.password as password2_0_, users0_.username as username3_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[users0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Users users0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=Users,tableAlias=users0_,origin=null,columns={,className=entity.Users}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'users0_.username' {propertyName=username,dereferenceType=PRIMITIVE,getPropertyPath=username,path=generatedAlias0.username,tableAlias=users0_,className=entity.Users,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'users0_.id' {alias=generatedAlias0, className=entity.Users, tableAlias=users0_}
+          |  \-[IDENT] IdentNode: 'username' {originalText=username}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@2715644a}
+
+[DEBUG] 2021-02-16 19:48:10.456 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.463 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.Users as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2021-02-16 19:48:10.463 [main] QueryTranslatorImpl - SQL: select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_ where users0_.username like ?
+[DEBUG] 2021-02-16 19:48:10.463 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.478 [main] SQL - select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_ where users0_.username like ?
+[DEBUG] 2021-02-16 19:48:10.482 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-16 19:48:10.483 [main] Loader - Result row: EntityKey[entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Processing attribute `username` : value = The Big Lebowski
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.484 [main] TwoPhaseLoad - Done materializing entity [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.486 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.488 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.490 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.491 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Processing attribute `username` : value = The Big Lebowski
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.491 [main] TwoPhaseLoad - Done materializing entity [entity.Users#132]
+[DEBUG] 2021-02-16 19:48:10.491 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.492 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#132
+[DEBUG] 2021-02-16 19:48:10.492 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.493 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.493 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.495 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.495 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.495 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.495 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.496 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.496 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.496 [main] EntityPrinter - entity.Users{password=bananas, id=132, username=The Big Lebowski}
+[DEBUG] 2021-02-16 19:48:10.496 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.499 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.500 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.500 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-16 19:48:10.504 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.505 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.508 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.508 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.510 [main] IdentifierGeneratorHelper - Natively generated identity: 133
+[DEBUG] 2021-02-16 19:48:10.511 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.511 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.511 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.511 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.511 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.512 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.512 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.512 [main] EntityPrinter - entity.Users{password=bananas, id=133, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.513 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.515 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.516 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Users as generatedAlias0 where generatedAlias0.username like :param0
+[DEBUG] 2021-02-16 19:48:10.517 [main] SQL - select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_ where users0_.username like ?
+[DEBUG] 2021-02-16 19:48:10.519 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-16 19:48:10.519 [main] Loader - Result row: EntityKey[entity.Users#133]
+[DEBUG] 2021-02-16 19:48:10.519 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#133]
+[DEBUG] 2021-02-16 19:48:10.520 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.520 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.520 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.520 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.520 [main] TwoPhaseLoad - Done materializing entity [entity.Users#133]
+[DEBUG] 2021-02-16 19:48:10.520 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.523 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.525 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.525 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.525 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#133]
+[DEBUG] 2021-02-16 19:48:10.525 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.525 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.526 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.526 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.526 [main] TwoPhaseLoad - Done materializing entity [entity.Users#133]
+[DEBUG] 2021-02-16 19:48:10.526 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.526 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#133
+[DEBUG] 2021-02-16 19:48:10.526 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.527 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.527 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.529 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.529 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.529 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.529 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.529 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.530 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.530 [main] EntityPrinter - entity.Users{password=bananas, id=133, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.530 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.534 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.536 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.536 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-16 19:48:10.539 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.539 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.541 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.541 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.545 [main] IdentifierGeneratorHelper - Natively generated identity: 134
+[DEBUG] 2021-02-16 19:48:10.546 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.546 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.546 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.547 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.547 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.547 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.547 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.547 [main] EntityPrinter - entity.Users{password=bananas, id=134, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.552 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.552 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.553 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Users as generatedAlias0
+[DEBUG] 2021-02-16 19:48:10.553 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.Users as generatedAlias0
+[DEBUG] 2021-02-16 19:48:10.554 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.554 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Users'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2021-02-16 19:48:10.554 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.555 [main] FromElement - FromClause{level=1} : entity.Users (generatedAlias0) -> users0_
+[DEBUG] 2021-02-16 19:48:10.555 [main] FromReferenceNode - Resolved : generatedAlias0 -> users0_.id
+[DEBUG] 2021-02-16 19:48:10.555 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.555 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} users0_.id ) ( FromClause{level=1} Users users0_ ) )
+[DEBUG] 2021-02-16 19:48:10.555 [main] JoinProcessor - Using FROM fragment [Users users0_]
+[DEBUG] 2021-02-16 19:48:10.555 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-16 19:48:10.556 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Users)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'users0_.id as id1_0_' {alias=generatedAlias0, className=entity.Users, tableAlias=users0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'users0_.password as password2_0_, users0_.username as username3_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[users0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Users users0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=Users,tableAlias=users0_,origin=null,columns={,className=entity.Users}}
+
+[DEBUG] 2021-02-16 19:48:10.556 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.556 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.Users as generatedAlias0
+[DEBUG] 2021-02-16 19:48:10.556 [main] QueryTranslatorImpl - SQL: select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_
+[DEBUG] 2021-02-16 19:48:10.556 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-16 19:48:10.557 [main] SQL - select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_
+[DEBUG] 2021-02-16 19:48:10.560 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-16 19:48:10.560 [main] Loader - Result row: EntityKey[entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.561 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-16 19:48:10.561 [main] Loader - Result row: EntityKey[entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.561 [main] Loader - Result set row: 2
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result row: EntityKey[entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result set row: 3
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result row: EntityKey[entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result set row: 4
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result row: EntityKey[entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.562 [main] Loader - Result set row: 5
+[DEBUG] 2021-02-16 19:48:10.563 [main] Loader - Result row: EntityKey[entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.563 [main] Loader - Result set row: 6
+[DEBUG] 2021-02-16 19:48:10.563 [main] Loader - Result row: EntityKey[entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.564 [main] Loader - Result set row: 7
+[DEBUG] 2021-02-16 19:48:10.565 [main] Loader - Result row: EntityKey[entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.566 [main] Loader - Result set row: 8
+[DEBUG] 2021-02-16 19:48:10.566 [main] Loader - Result row: EntityKey[entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.567 [main] Loader - Result set row: 9
+[DEBUG] 2021-02-16 19:48:10.567 [main] Loader - Result row: EntityKey[entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.568 [main] Loader - Result set row: 10
+[DEBUG] 2021-02-16 19:48:10.568 [main] Loader - Result row: EntityKey[entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.568 [main] Loader - Result set row: 11
+[DEBUG] 2021-02-16 19:48:10.569 [main] Loader - Result row: EntityKey[entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.569 [main] Loader - Result set row: 12
+[DEBUG] 2021-02-16 19:48:10.569 [main] Loader - Result row: EntityKey[entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.570 [main] Loader - Result set row: 13
+[DEBUG] 2021-02-16 19:48:10.570 [main] Loader - Result row: EntityKey[entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.570 [main] Loader - Result set row: 14
+[DEBUG] 2021-02-16 19:48:10.571 [main] Loader - Result row: EntityKey[entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.571 [main] Loader - Result set row: 15
+[DEBUG] 2021-02-16 19:48:10.572 [main] Loader - Result row: EntityKey[entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.573 [main] Loader - Result set row: 16
+[DEBUG] 2021-02-16 19:48:10.573 [main] Loader - Result row: EntityKey[entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.574 [main] Loader - Result set row: 17
+[DEBUG] 2021-02-16 19:48:10.574 [main] Loader - Result row: EntityKey[entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.574 [main] Loader - Result set row: 18
+[DEBUG] 2021-02-16 19:48:10.575 [main] Loader - Result row: EntityKey[entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.575 [main] Loader - Result set row: 19
+[DEBUG] 2021-02-16 19:48:10.575 [main] Loader - Result row: EntityKey[entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.576 [main] Loader - Result set row: 20
+[DEBUG] 2021-02-16 19:48:10.576 [main] Loader - Result row: EntityKey[entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.576 [main] Loader - Result set row: 21
+[DEBUG] 2021-02-16 19:48:10.576 [main] Loader - Result row: EntityKey[entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.577 [main] Loader - Result set row: 22
+[DEBUG] 2021-02-16 19:48:10.577 [main] Loader - Result row: EntityKey[entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.577 [main] Loader - Result set row: 23
+[DEBUG] 2021-02-16 19:48:10.577 [main] Loader - Result row: EntityKey[entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.577 [main] Loader - Result set row: 24
+[DEBUG] 2021-02-16 19:48:10.578 [main] Loader - Result row: EntityKey[entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.578 [main] Loader - Result set row: 25
+[DEBUG] 2021-02-16 19:48:10.578 [main] Loader - Result row: EntityKey[entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.579 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.579 [main] TwoPhaseLoad - Processing attribute `password` : value = bacon
+[DEBUG] 2021-02-16 19:48:10.579 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.580 [main] TwoPhaseLoad - Processing attribute `username` : value = lisa
+[DEBUG] 2021-02-16 19:48:10.580 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.580 [main] TwoPhaseLoad - Done materializing entity [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.581 [main] TwoPhaseLoad - Done materializing entity [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.582 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.583 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.584 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.584 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.584 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.584 [main] TwoPhaseLoad - Done materializing entity [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.585 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.585 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Done materializing entity [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.587 [main] TwoPhaseLoad - Done materializing entity [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Done materializing entity [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Done materializing entity [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Done materializing entity [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.588 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Done materializing entity [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Done materializing entity [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Done materializing entity [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.589 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Done materializing entity [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Done materializing entity [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.590 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Done materializing entity [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Done materializing entity [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.591 [main] TwoPhaseLoad - Done materializing entity [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Done materializing entity [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.592 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Done materializing entity [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Done materializing entity [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.593 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Done materializing entity [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.594 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Done materializing entity [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.595 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.596 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.596 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.596 [main] TwoPhaseLoad - Done materializing entity [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.596 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.597 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.597 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.597 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.597 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.598 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.598 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.598 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.599 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.599 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.599 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Done materializing entity [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Done materializing entity [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.600 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.601 [main] TwoPhaseLoad - Done materializing entity [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.601 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.603 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.603 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.604 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.604 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.605 [main] IdentifierGeneratorHelper - Natively generated identity: 135
+[DEBUG] 2021-02-16 19:48:10.606 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.606 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.606 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.606 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.606 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.606 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.606 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.606 [main] EntityPrinter - entity.Users{password=bananas, id=135, username=lucy}
+[DEBUG] 2021-02-16 19:48:10.608 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.609 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.609 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Users as generatedAlias0
+[DEBUG] 2021-02-16 19:48:10.609 [main] SQL - select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_
+[DEBUG] 2021-02-16 19:48:10.612 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-16 19:48:10.612 [main] Loader - Result row: EntityKey[entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.612 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-16 19:48:10.613 [main] Loader - Result row: EntityKey[entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.613 [main] Loader - Result set row: 2
+[DEBUG] 2021-02-16 19:48:10.613 [main] Loader - Result row: EntityKey[entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.613 [main] Loader - Result set row: 3
+[DEBUG] 2021-02-16 19:48:10.614 [main] Loader - Result row: EntityKey[entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.614 [main] Loader - Result set row: 4
+[DEBUG] 2021-02-16 19:48:10.614 [main] Loader - Result row: EntityKey[entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.615 [main] Loader - Result set row: 5
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result row: EntityKey[entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result set row: 6
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result row: EntityKey[entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result set row: 7
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result row: EntityKey[entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result set row: 8
+[DEBUG] 2021-02-16 19:48:10.616 [main] Loader - Result row: EntityKey[entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result set row: 9
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result row: EntityKey[entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result set row: 10
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result row: EntityKey[entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result set row: 11
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result row: EntityKey[entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result set row: 12
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result row: EntityKey[entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result set row: 13
+[DEBUG] 2021-02-16 19:48:10.617 [main] Loader - Result row: EntityKey[entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 14
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result row: EntityKey[entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 15
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result row: EntityKey[entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 16
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result row: EntityKey[entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 17
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result row: EntityKey[entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 18
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result row: EntityKey[entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.618 [main] Loader - Result set row: 19
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result row: EntityKey[entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result set row: 20
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result row: EntityKey[entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result set row: 21
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result row: EntityKey[entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result set row: 22
+[DEBUG] 2021-02-16 19:48:10.619 [main] Loader - Result row: EntityKey[entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result set row: 23
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result row: EntityKey[entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result set row: 24
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result row: EntityKey[entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result set row: 25
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result row: EntityKey[entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.620 [main] Loader - Result set row: 26
+[DEBUG] 2021-02-16 19:48:10.621 [main] Loader - Result row: EntityKey[entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Processing attribute `password` : value = bacon
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Processing attribute `username` : value = lisa
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Done materializing entity [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.621 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Done materializing entity [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Done materializing entity [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Done materializing entity [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.622 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Done materializing entity [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Done materializing entity [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Done materializing entity [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Done materializing entity [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.623 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Done materializing entity [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Done materializing entity [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.624 [main] TwoPhaseLoad - Done materializing entity [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Done materializing entity [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Done materializing entity [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Done materializing entity [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.625 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Done materializing entity [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Done materializing entity [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Done materializing entity [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Done materializing entity [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Done materializing entity [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.626 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Done materializing entity [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Done materializing entity [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Done materializing entity [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.627 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Done materializing entity [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Done materializing entity [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Done materializing entity [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.628 [main] TwoPhaseLoad - Done materializing entity [entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.629 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.631 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.633 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.633 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.634 [main] TwoPhaseLoad - Done materializing entity [entity.Users#134]
+[DEBUG] 2021-02-16 19:48:10.634 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.634 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#134
+[DEBUG] 2021-02-16 19:48:10.634 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.636 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.636 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.637 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.638 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.638 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.638 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.638 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.638 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.638 [main] EntityPrinter - entity.Users{password=bananas, id=134, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.638 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.641 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.642 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.642 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-16 19:48:10.645 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.646 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.650 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.650 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.653 [main] IdentifierGeneratorHelper - Natively generated identity: 136
+[DEBUG] 2021-02-16 19:48:10.653 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.653 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.654 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.654 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.654 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.654 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.654 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.654 [main] EntityPrinter - entity.Users{password=bananas, id=136, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.656 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.657 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.657 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Users as generatedAlias0
+[DEBUG] 2021-02-16 19:48:10.658 [main] SQL - select users0_.id as id1_0_, users0_.password as password2_0_, users0_.username as username3_0_ from Users users0_
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result row: EntityKey[entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result row: EntityKey[entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result set row: 2
+[DEBUG] 2021-02-16 19:48:10.660 [main] Loader - Result row: EntityKey[entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 3
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 4
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 5
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 6
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 7
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 8
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 9
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result set row: 10
+[DEBUG] 2021-02-16 19:48:10.661 [main] Loader - Result row: EntityKey[entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 11
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result row: EntityKey[entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 12
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result row: EntityKey[entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 13
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result row: EntityKey[entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 14
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result row: EntityKey[entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 15
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result row: EntityKey[entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.662 [main] Loader - Result set row: 16
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 17
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 18
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 19
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 20
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 21
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result row: EntityKey[entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.663 [main] Loader - Result set row: 22
+[DEBUG] 2021-02-16 19:48:10.664 [main] Loader - Result row: EntityKey[entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.664 [main] Loader - Result set row: 23
+[DEBUG] 2021-02-16 19:48:10.664 [main] Loader - Result row: EntityKey[entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.664 [main] Loader - Result set row: 24
+[DEBUG] 2021-02-16 19:48:10.664 [main] Loader - Result row: EntityKey[entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.665 [main] Loader - Result set row: 25
+[DEBUG] 2021-02-16 19:48:10.665 [main] Loader - Result row: EntityKey[entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.665 [main] Loader - Result set row: 26
+[DEBUG] 2021-02-16 19:48:10.665 [main] Loader - Result row: EntityKey[entity.Users#136]
+[DEBUG] 2021-02-16 19:48:10.665 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `password` : value = bacon
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `username` : value = lisa
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Done materializing entity [entity.Users#2]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Done materializing entity [entity.Users#18]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Done materializing entity [entity.Users#19]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.666 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Done materializing entity [entity.Users#20]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Done materializing entity [entity.Users#21]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Done materializing entity [entity.Users#22]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Done materializing entity [entity.Users#23]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.667 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Done materializing entity [entity.Users#24]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Done materializing entity [entity.Users#26]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Done materializing entity [entity.Users#31]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.668 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Done materializing entity [entity.Users#41]
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Done materializing entity [entity.Users#48]
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.669 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Done materializing entity [entity.Users#54]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Done materializing entity [entity.Users#68]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Done materializing entity [entity.Users#71]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Done materializing entity [entity.Users#72]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.670 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Done materializing entity [entity.Users#77]
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Done materializing entity [entity.Users#84]
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.671 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Done materializing entity [entity.Users#90]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Done materializing entity [entity.Users#96]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Done materializing entity [entity.Users#102]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Done materializing entity [entity.Users#108]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.672 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Done materializing entity [entity.Users#121]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Done materializing entity [entity.Users#128]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.673 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Processing attribute `username` : value = lucy
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Done materializing entity [entity.Users#135]
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#136]
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.674 [main] TwoPhaseLoad - Done materializing entity [entity.Users#136]
+[DEBUG] 2021-02-16 19:48:10.675 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.677 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.682 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.683 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.683 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#136]
+[DEBUG] 2021-02-16 19:48:10.683 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.683 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.683 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.683 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.684 [main] TwoPhaseLoad - Done materializing entity [entity.Users#136]
+[DEBUG] 2021-02-16 19:48:10.684 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.684 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#136
+[DEBUG] 2021-02-16 19:48:10.684 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.686 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.686 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.688 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.688 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.688 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.688 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.688 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.688 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.689 [main] EntityPrinter - entity.Users{password=bananas, id=136, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.689 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.693 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.693 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.694 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-16 19:48:10.697 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.697 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.698 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-16 19:48:10.699 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-16 19:48:10.700 [main] IdentifierGeneratorHelper - Natively generated identity: 137
+[DEBUG] 2021-02-16 19:48:10.701 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.701 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.701 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.702 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.702 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.702 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.702 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.703 [main] EntityPrinter - entity.Users{password=bananas, id=137, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.706 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.707 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.707 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.710 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.710 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.711 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#137]
+[DEBUG] 2021-02-16 19:48:10.711 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.711 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.711 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.711 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.712 [main] TwoPhaseLoad - Done materializing entity [entity.Users#137]
+[DEBUG] 2021-02-16 19:48:10.713 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.714 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#137
+[DEBUG] 2021-02-16 19:48:10.715 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.718 [main] SQL - select users0_.id as id1_0_0_, users0_.password as password2_0_0_, users0_.username as username3_0_0_ from Users users0_ where users0_.id=?
+[DEBUG] 2021-02-16 19:48:10.721 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-16 19:48:10.721 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#137]
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Processing attribute `username` : value = Manji
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-16 19:48:10.722 [main] TwoPhaseLoad - Done materializing entity [entity.Users#137]
+[DEBUG] 2021-02-16 19:48:10.722 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-16 19:48:10.722 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#137
+[DEBUG] 2021-02-16 19:48:10.722 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.724 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-16 19:48:10.724 [main] TransactionImpl - begin
+[DEBUG] 2021-02-16 19:48:10.726 [main] TransactionImpl - committing
+[DEBUG] 2021-02-16 19:48:10.726 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-16 19:48:10.726 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-16 19:48:10.726 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-16 19:48:10.726 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-16 19:48:10.726 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-16 19:48:10.726 [main] EntityPrinter - entity.Users{password=bananas, id=137, username=Manji}
+[DEBUG] 2021-02-16 19:48:10.726 [main] SQL - delete from Users where id=?
+[DEBUG] 2021-02-16 19:48:10.730 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.732 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-16 19:48:10.732 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch

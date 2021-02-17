@@ -22,6 +22,8 @@ class UsersDAOTest {
      */
     @BeforeEach
     void setUp() {
+        test.util.Database database = test.util.Database.getInstance();
+        //database.runSQL("cleandb.sql");
         Users newUser = new Users();
         newUser.setUserName("Manji");
         newUser.setPassword("bananas");
