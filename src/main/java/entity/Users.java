@@ -4,6 +4,8 @@ package entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 
 /**
@@ -24,6 +26,8 @@ public class Users {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    private Set<Recipes> recipes = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -90,6 +94,14 @@ public class Users {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    public Set<Recipes> getRecipes() {
+        return recipes;
+    }
+
+    public void setRecipes(Set<Recipes> recipes) {
+        this.recipes = recipes;
     }
 
     @Override
