@@ -27,6 +27,7 @@ public class Users {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Recipes> recipes = new HashSet<>();
 
     /**
