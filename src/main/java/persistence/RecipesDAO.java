@@ -22,7 +22,7 @@ public class RecipesDAO {
      * Creates the proper sql statement for search and sends the sql statement to be executed
      * @return users
      */
-    public List<Users> getAllUsers() {
+    public List<Users> getAllRecipes() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Users> query = builder.createQuery(Users.class);
@@ -37,7 +37,7 @@ public class RecipesDAO {
      * @param recipeName
      * @return users
      */
-    public List<Users> getRecipeByUsername(String recipeName) {
+    public List<Users> getRecipeByName(String recipeName) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Users> query = builder.createQuery(Users.class);
