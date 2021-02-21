@@ -77,6 +77,28 @@ class UsersDAOTest {
     }
 
     /**
+     * Verify user is created and added to the DB
+
+    @Test
+    void createUserWithRecipeSuccess() {
+        int numberOfUsers = 0;
+        Users newUser = new Users();
+        newUser.setUserName("Lucy");
+        newUser.setPassword("Banananananananana");
+        RecipesDAO recipeDao = new RecipesDAO();
+        Recipes recipe = new Recipes("Spicy Mahi Mahi", 1, newUser);
+        newUser.addRecipe(recipe);
+
+        usersDao.createUser(newUser);
+        assertEquals(numberOfUsers + 1, usersDao.getAllUsers().size());
+        List<Users> testUser = usersDao.getUserByUsername("Lucy");
+
+        assertEquals(1, recipeDao.getAllRecipes().size());
+
+    }
+    */
+
+    /**
      * Verify succuessful retrieval of user by ID
      */
     @Test

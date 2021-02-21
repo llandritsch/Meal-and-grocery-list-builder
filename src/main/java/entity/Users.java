@@ -27,7 +27,8 @@ public class Users {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JoinColumn(name = "Users_id")
     private Set<Recipes> recipes = new HashSet<>();
 
     /**
@@ -41,7 +42,7 @@ public class Users {
      *
      * @param username  the user name
      * @param password the password
-     * @param id        the id
+     * @param id
      */
     public Users(String username, String password, int id) {
         this.username = username;
@@ -96,7 +97,7 @@ public class Users {
     public void setId(int id) {
         this.id = id;
     }
-
+/*
     public Set<Recipes> getRecipes() {
         return recipes;
     }
@@ -105,6 +106,16 @@ public class Users {
         this.recipes = recipes;
     }
 
+    public void addRecipe(Recipes recipe) {
+        recipes.add(recipe);
+        recipe.setUser(this);
+    }
+
+    public void removeRecipe(Recipes recipe) {
+        recipes.remove(recipe);
+        recipe.setUser(null);
+    }
+*/
     @Override
     public String toString() {
         return "Users{" +
@@ -113,6 +124,5 @@ public class Users {
                 ", id='" + id + '\'' +
                 '}';
     }
-
 
 }
