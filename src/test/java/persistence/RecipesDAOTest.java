@@ -11,13 +11,25 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * The type Recipes dao test.
+ */
 class RecipesDAOTest {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     private RecipesDAO recipesDao = new RecipesDAO();
     private UsersDAO usersDao = new UsersDAO();
+    /**
+     * The Test user.
+     */
     Users testUser;
+    /**
+     * The Test user id.
+     */
     int testUserId = 0;
+    /**
+     * The Test recipe id.
+     */
     int testRecipeId = 0;
 
     /**
@@ -26,7 +38,8 @@ class RecipesDAOTest {
     @BeforeEach
     void setUp() {
         test.util.Database database = test.util.Database.getInstance();
-        database.runSQL("cleandb.sql");
+        recipesDao.deleteAllRecipes();
+        usersDao.deleteAllUsers();
         logger.info("after clean: " + recipesDao.getAllRecipes().size());
         Users newUser = new Users();
         newUser.setUserName("Lucy");
@@ -42,12 +55,18 @@ class RecipesDAOTest {
         logger.info("after created recipe" + recipesDao.getAllRecipes().size());
     }
 
+    /**
+     * Gets all recipes.
+     */
     @Test
     void getAllRecipes() {
         List<Recipes> recipes = recipesDao.getAllRecipes();
         assertEquals(true, recipes.size() > 0);
     }
 
+    /**
+     * Gets recipe by name.
+     */
     @Test
     void getRecipeByName() {
         List<Recipes> recipes = recipesDao.getRecipeByName("Chicken Tikka Masala");
@@ -55,12 +74,18 @@ class RecipesDAOTest {
         assertEquals(1, recipes.size());
     }
 
+    /**
+     * Gets recipe by id.
+     */
     @Test
     void getRecipeById() {
         Recipes recipes = recipesDao.getRecipeById(testRecipeId);
         assertEquals(true, recipes != null);
     }
 
+    /**
+     * Create recipe.
+     */
     @Test
     void createRecipe() {
         int numberOfRecipes = recipesDao.getAllRecipes().size();
@@ -72,6 +97,9 @@ class RecipesDAOTest {
         assertEquals(numberOfRecipes + 1, recipesDao.getAllRecipes().size());
     }
 
+    /**
+     * Save or update success.
+     */
     @Test
     void saveOrUpdateSuccess() {
         Recipes testRecipe = recipesDao.getRecipeById(testRecipeId);
@@ -82,6 +110,9 @@ class RecipesDAOTest {
         assertEquals(1, updatedRecipe.size());
     }
 
+    /**
+     * Delete recipe success.
+     */
     @Test
     void deleteRecipeSucess() {
         Recipes testRecipe = recipesDao.getRecipeById(testRecipeId);

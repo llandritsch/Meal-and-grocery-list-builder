@@ -36,3 +36,13 @@
 * Crud functionality added
 * Unit Tests added for UserDAO
 * UserDAO added. 
+### Week 5
+#### Time: 7.10 hours
+#### Weekly Course Work: 
+* Watched all videos
+* Completed Reading, Demo and exercise in indie project
+#### INdie Project Work Added:
+* Crud functionality for recipes with One to many relationship between Users and Recipes
+* RecipesDAO added
+* Unit Tests added for RecipesDAO
+  

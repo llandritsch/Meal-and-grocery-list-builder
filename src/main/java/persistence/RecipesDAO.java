@@ -98,5 +98,16 @@ public class RecipesDAO {
         transaction.commit();
         session.close();
     }
+
+    /**
+     * Deletes all recipes
+     */
+    public void deleteAllRecipes() {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.createQuery("delete from Recipes").executeUpdate();
+        transaction.commit();
+        session.close();
+    }
 }
 

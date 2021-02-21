@@ -98,5 +98,16 @@ public class UsersDAO {
         transaction.commit();
         session.close();
     }
+
+    /**
+     * Deletes all users
+     */
+    public void deleteAllUsers() {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.createQuery("delete from Users").executeUpdate();
+        transaction.commit();
+        session.close();
+    }
 }
 
