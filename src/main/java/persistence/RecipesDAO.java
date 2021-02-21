@@ -1,7 +1,6 @@
 package persistence;
 
 import entity.Recipes;
-import entity.Users;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;
@@ -22,14 +21,14 @@ public class RecipesDAO {
      * Creates the proper sql statement for search and sends the sql statement to be executed
      * @return users
      */
-    public List<Users> getAllRecipes() {
+    public List<Recipes> getAllRecipes() {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Users> query = builder.createQuery(Users.class);
-        Root<Users> root = query.from(Users.class);
-        List<Users> users = session.createQuery(query).getResultList();
+        CriteriaQuery<Recipes> query = builder.createQuery(Recipes.class);
+        Root<Recipes> root = query.from(Recipes.class);
+        List<Recipes> recipes = session.createQuery(query).getResultList();
         session.close();
-        return users;
+        return recipes;
     }
 
     /**
@@ -37,16 +36,16 @@ public class RecipesDAO {
      * @param recipeName
      * @return users
      */
-    public List<Users> getRecipeByName(String recipeName) {
+    public List<Recipes> getRecipeByName(String recipeName) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Users> query = builder.createQuery(Users.class);
-        Root<Users> root = query.from(Users.class);
+        CriteriaQuery<Recipes> query = builder.createQuery(Recipes.class);
+        Root<Recipes> root = query.from(Recipes.class);
         Expression<String> propertyPath = root.get("recipe_name");
         query.where(builder.like(propertyPath, "%" + recipeName + "%"));
-        List<Users> users = session.createQuery(query).getResultList();
+        List<Recipes> recipes = session.createQuery(query).getResultList();
         session.close();
-        return users;
+        return recipes;
     }
 
     /**
@@ -54,11 +53,11 @@ public class RecipesDAO {
      * @param recipeId
      * @return users
      */
-    public Users getRecipeById(int recipeId) {
+    public Recipes getRecipeById(int recipeId) {
         Session session = sessionFactory.openSession();
-        Users users = session.get(Users.class, recipeId);
+        Recipes recipes = session.get(Recipes.class, recipeId);
         session.close();
-        return users;
+        return recipes;
     }
 
     /**
@@ -92,7 +91,7 @@ public class RecipesDAO {
      * deletes a user
      * @param recipe
      */
-    public void deleteReipc(Recipes recipe) {
+    public void deleteRecipe(Recipes recipe) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(recipe);

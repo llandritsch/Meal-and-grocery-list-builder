@@ -24,6 +24,7 @@ public class Recipes {
     private int public_recipe;
 
     @ManyToOne
+    @JoinColumn(name = "Users_id")
     private Users user;
 
     /**

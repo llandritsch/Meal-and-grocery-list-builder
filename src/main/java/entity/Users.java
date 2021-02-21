@@ -97,7 +97,7 @@ public class Users {
     public void setId(int id) {
         this.id = id;
     }
-/*
+
     public Set<Recipes> getRecipes() {
         return recipes;
     }
@@ -115,7 +115,7 @@ public class Users {
         recipes.remove(recipe);
         recipe.setUser(null);
     }
-*/
+
     @Override
     public String toString() {
         return "Users{" +

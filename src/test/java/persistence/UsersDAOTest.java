@@ -78,7 +78,9 @@ class UsersDAOTest {
 
     /**
      * Verify user is created and added to the DB
+    */
 
+    /*
     @Test
     void createUserWithRecipeSuccess() {
         int numberOfUsers = 0;
@@ -92,11 +94,9 @@ class UsersDAOTest {
         usersDao.createUser(newUser);
         assertEquals(numberOfUsers + 1, usersDao.getAllUsers().size());
         List<Users> testUser = usersDao.getUserByUsername("Lucy");
-
         assertEquals(1, recipeDao.getAllRecipes().size());
-
     }
-    */
+*/
 
     /**
      * Verify succuessful retrieval of user by ID

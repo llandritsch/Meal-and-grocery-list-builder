@@ -35,3 +35,91 @@
 [INFO ] 2021-02-21 09:45:28.747 [main] UsersDAOTest - USERID28
 [INFO ] 2021-02-21 09:51:43.211 [main] UsersDAOTest - USERID29
 [INFO ] 2021-02-21 09:57:15.685 [main] UsersDAOTest - USERID30
+[INFO ] 2021-02-21 12:23:41.120 [main] UsersDAOTest - USERID31
+[INFO ] 2021-02-21 12:33:00.364 [main] UsersDAOTest - USERID32
+[INFO ] 2021-02-21 12:45:30.488 [main] UsersDAOTest - USERID34
+[INFO ] 2021-02-21 12:46:36.985 [main] UsersDAOTest - USERID36
+[INFO ] 2021-02-21 13:11:23.980 [main] RecipesDAOTest - RECIPE ID3
+[INFO ] 2021-02-21 13:22:15.549 [main] RecipesDAOTest - RECIPE ID4
+[INFO ] 2021-02-21 13:24:13.174 [main] RecipesDAOTest - RECIPE ID5
+[INFO ] 2021-02-21 13:30:38.683 [main] RecipesDAOTest - RECIPE ID6
+[INFO ] 2021-02-21 13:36:16.086 [main] RecipesDAOTest - RECIPE ID7
+[INFO ] 2021-02-21 13:38:39.338 [main] RecipesDAOTest - RECIPE ID8
+[INFO ] 2021-02-21 13:48:48.750 [main] RecipesDAOTest - RECIPE ID9
+[INFO ] 2021-02-21 13:51:10.307 [main] RecipesDAOTest - RECIPE ID10
+[INFO ] 2021-02-21 13:52:07.371 [main] UsersDAOTest - USERID47
+[INFO ] 2021-02-21 13:52:07.479 [main] UsersDAOTest - USERID48
+[INFO ] 2021-02-21 13:52:07.507 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='48'}
+[INFO ] 2021-02-21 13:52:07.746 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='48'}]
+[INFO ] 2021-02-21 13:52:07.774 [main] UsersDAOTest - USERID49
+[INFO ] 2021-02-21 13:52:07.838 [main] UsersDAOTest - USERID51
+[INFO ] 2021-02-21 13:52:07.857 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='51'}]
+[INFO ] 2021-02-21 13:52:07.896 [main] UsersDAOTest - USERID52
+[INFO ] 2021-02-21 13:52:07.978 [main] UsersDAOTest - USERID54
+[INFO ] 2021-02-21 13:52:08.025 [main] UsersDAOTest - USERID55
+[INFO ] 2021-02-21 13:57:43.902 [main] UsersDAOTest - USERID56
+[INFO ] 2021-02-21 13:57:43.994 [main] UsersDAOTest - USERID57
+[INFO ] 2021-02-21 13:57:44.030 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='57'}
+[INFO ] 2021-02-21 13:57:44.313 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='57'}]
+[INFO ] 2021-02-21 13:57:44.349 [main] UsersDAOTest - USERID58
+[INFO ] 2021-02-21 13:57:44.359 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='58'}]
+[INFO ] 2021-02-21 13:57:44.395 [main] UsersDAOTest - USERID59
+[INFO ] 2021-02-21 13:57:44.479 [main] UsersDAOTest - USERID61
+[INFO ] 2021-02-21 13:57:44.521 [main] UsersDAOTest - USERID62
+[INFO ] 2021-02-21 13:58:30.761 [main] RecipesDAOTest - RECIPE ID11
+[INFO ] 2021-02-21 13:59:50.532 [main] RecipesDAOTest - RECIPE ID12
+[INFO ] 2021-02-21 14:27:08.100 [main] RecipesDAOTest - RECIPE ID13
+[INFO ] 2021-02-21 14:40:57.500 [main] RecipesDAOTest - RECIPE ID14
+[INFO ] 2021-02-21 14:42:10.244 [main] RecipesDAOTest - RECIPE ID15
+[INFO ] 2021-02-21 14:42:10.507 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=14, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='66'}}, Recipes{recipe_id=15, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='67'}}]
+[INFO ] 2021-02-21 14:47:27.249 [main] RecipesDAOTest - after clean: 2
+[INFO ] 2021-02-21 14:47:27.312 [main] RecipesDAOTest - after creating user: 2
+[INFO ] 2021-02-21 14:47:27.343 [main] RecipesDAOTest - after created recipe3
+[INFO ] 2021-02-21 14:47:27.425 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=14, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='66'}}, Recipes{recipe_id=15, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='67'}}, Recipes{recipe_id=16, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='68'}}]
+[INFO ] 2021-02-21 14:49:39.310 [main] RecipesDAOTest - after clean: 3
+[INFO ] 2021-02-21 14:49:39.374 [main] RecipesDAOTest - after creating user: 3
+[INFO ] 2021-02-21 14:49:39.411 [main] RecipesDAOTest - after created recipe4
+[INFO ] 2021-02-21 14:49:39.499 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=14, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='66'}}, Recipes{recipe_id=15, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='67'}}, Recipes{recipe_id=16, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='68'}}, Recipes{recipe_id=17, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='69'}}]
+[INFO ] 2021-02-21 14:50:38.093 [main] RecipesDAOTest - after clean: 4
+[INFO ] 2021-02-21 14:50:38.169 [main] RecipesDAOTest - after creating user: 4
+[INFO ] 2021-02-21 14:50:38.206 [main] RecipesDAOTest - after created recipe5
+[INFO ] 2021-02-21 14:57:09.305 [main] RecipesDAOTest - after clean: 5
+[INFO ] 2021-02-21 14:57:09.379 [main] RecipesDAOTest - after creating user: 5
+[INFO ] 2021-02-21 14:57:09.426 [main] RecipesDAOTest - after created recipe6
+[INFO ] 2021-02-21 14:58:09.346 [main] RecipesDAOTest - after clean: 6
+[INFO ] 2021-02-21 14:58:09.426 [main] RecipesDAOTest - after creating user: 6
+[INFO ] 2021-02-21 14:58:09.475 [main] RecipesDAOTest - after created recipe7
+[INFO ] 2021-02-21 15:04:09.315 [main] RecipesDAOTest - after clean: 7
+[INFO ] 2021-02-21 15:04:09.438 [main] RecipesDAOTest - after creating user: 7
+[INFO ] 2021-02-21 15:04:09.498 [main] RecipesDAOTest - after created recipe8
+[INFO ] 2021-02-21 15:04:44.622 [main] RecipesDAOTest - after clean: 8
+[INFO ] 2021-02-21 15:04:44.744 [main] RecipesDAOTest - after creating user: 8
+[INFO ] 2021-02-21 15:04:44.797 [main] RecipesDAOTest - after created recipe9
+[INFO ] 2021-02-21 15:05:04.471 [main] RecipesDAOTest - after clean: 9
+[INFO ] 2021-02-21 15:05:04.575 [main] RecipesDAOTest - after creating user: 9
+[INFO ] 2021-02-21 15:05:04.642 [main] RecipesDAOTest - after created recipe10
+[INFO ] 2021-02-21 15:06:52.832 [main] RecipesDAOTest - after clean: 10
+[INFO ] 2021-02-21 15:06:52.935 [main] RecipesDAOTest - after creating user: 10
+[INFO ] 2021-02-21 15:06:52.986 [main] RecipesDAOTest - after created recipe11
+[INFO ] 2021-02-21 15:06:53.086 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=14, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='66'}}, Recipes{recipe_id=15, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='67'}}, Recipes{recipe_id=16, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='68'}}, Recipes{recipe_id=17, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='69'}}, Recipes{recipe_id=18, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='70'}}, Recipes{recipe_id=19, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='71'}}, Recipes{recipe_id=20, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='72'}}, Recipes{recipe_id=21, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='73'}}, Recipes{recipe_id=22, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='74'}}, Recipes{recipe_id=23, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='75'}}, Recipes{recipe_id=24, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='76'}}]
+[INFO ] 2021-02-21 15:07:24.001 [main] RecipesDAOTest - after clean: 11
+[INFO ] 2021-02-21 15:07:24.099 [main] RecipesDAOTest - after creating user: 11
+[INFO ] 2021-02-21 15:07:24.157 [main] RecipesDAOTest - after created recipe12
+[INFO ] 2021-02-21 15:12:47.272 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-02-21 15:12:47.378 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-02-21 15:12:47.407 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-02-21 15:12:47.493 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=26, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='78'}}]
+[INFO ] 2021-02-21 15:14:38.719 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-02-21 15:14:38.804 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-02-21 15:14:38.826 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-02-21 15:17:54.561 [main] RecipesDAOTest - after clean: 1
+[INFO ] 2021-02-21 15:17:54.632 [main] RecipesDAOTest - after creating user: 1
+[INFO ] 2021-02-21 15:17:54.662 [main] RecipesDAOTest - after created recipe2
+[INFO ] 2021-02-21 15:20:36.633 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-02-21 15:20:36.709 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-02-21 15:20:36.727 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-02-21 15:20:36.772 [main] RecipesDAO - Save/Update: Recipes{recipe_id=30, recipe_name='The Big Lebowski's big, scary meal', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='81'}}
+[INFO ] 2021-02-21 15:20:36.824 [main] RecipesDAOTest - Test updatedUser: [Recipes{recipe_id=30, recipe_name='The Big Lebowski's big, scary meal', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='81'}}]
+[INFO ] 2021-02-21 15:23:07.211 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-02-21 15:23:07.297 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-02-21 15:23:07.324 [main] RecipesDAOTest - after created recipe1
