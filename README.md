@@ -2,7 +2,7 @@
 
 ### Presentation Description/Overview
 #### Problem
-Putting together a weekly meal plan can be rough when you’re an athlete.  You need to make sure your hitting your daily macros (protein, carb, fat) and you might get bored eating the same thing every day.  When it comes to making that weekly ingredient list, it’s tough to make sure you don’t forget anything and you get the right quantities.
+Putting together a weekly meal plan can be rough when you’re an athlete.  You need to make sure you're hitting your daily macros (protein, carb, fat) and you might get bored eating the same thing every day.  When it comes to making that weekly ingredient list, it’s tough to make sure you don’t forget anything and you get the right quantities.
 
 #### Solution
 The goal of this project is to set up a recipe database where a user can build a weekly menu by picking ingredients or recipes from the database.  Picking food will populate a menu and grocery list with quantities.  The daily menu will include the total macros planned for the day. Users will also be able to enter their own recipes into the db.
