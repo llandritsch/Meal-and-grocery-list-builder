@@ -1,0 +1,1486 @@
+[DEBUG] 2021-02-21 15:43:36.920 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-02-21 15:43:36.938 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-02-21 15:43:36.952 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-02-21 15:43:37.169 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-02-21 15:43:37.173 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-02-21 15:43:37.650 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-02-21 15:43:38.301 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-02-21 15:43:38.342 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-02-21 15:43:38.345 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-02-21 15:43:38.405 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-02-21 15:43:38.471 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@31da6b2e
+[DEBUG] 2021-02-21 15:43:38.472 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@31da6b2e
+[DEBUG] 2021-02-21 15:43:38.472 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@31da6b2e
+[DEBUG] 2021-02-21 15:43:38.473 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@48c3205a
+[DEBUG] 2021-02-21 15:43:38.473 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2d746ce4
+[DEBUG] 2021-02-21 15:43:38.474 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@49798e84
+[DEBUG] 2021-02-21 15:43:38.475 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@67403656
+[DEBUG] 2021-02-21 15:43:38.475 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@67403656
+[DEBUG] 2021-02-21 15:43:38.475 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@67403656
+[DEBUG] 2021-02-21 15:43:38.476 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@77b9d0c7
+[DEBUG] 2021-02-21 15:43:38.476 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@77b9d0c7
+[DEBUG] 2021-02-21 15:43:38.476 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@77b9d0c7
+[DEBUG] 2021-02-21 15:43:38.478 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6a2eea2a
+[DEBUG] 2021-02-21 15:43:38.478 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6a2eea2a
+[DEBUG] 2021-02-21 15:43:38.478 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6a2eea2a
+[DEBUG] 2021-02-21 15:43:38.479 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@6b760460
+[DEBUG] 2021-02-21 15:43:38.479 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@6b760460
+[DEBUG] 2021-02-21 15:43:38.479 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6b760460
+[DEBUG] 2021-02-21 15:43:38.480 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3b7b05a8
+[DEBUG] 2021-02-21 15:43:38.480 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3b7b05a8
+[DEBUG] 2021-02-21 15:43:38.480 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3b7b05a8
+[DEBUG] 2021-02-21 15:43:38.482 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4567e53d
+[DEBUG] 2021-02-21 15:43:38.482 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4567e53d
+[DEBUG] 2021-02-21 15:43:38.482 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4567e53d
+[DEBUG] 2021-02-21 15:43:38.483 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@66ec9390
+[DEBUG] 2021-02-21 15:43:38.483 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@66ec9390
+[DEBUG] 2021-02-21 15:43:38.483 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@66ec9390
+[DEBUG] 2021-02-21 15:43:38.484 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2f7dcef2
+[DEBUG] 2021-02-21 15:43:38.485 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2f7dcef2
+[DEBUG] 2021-02-21 15:43:38.486 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2b4786dd
+[DEBUG] 2021-02-21 15:43:38.486 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2b4786dd
+[DEBUG] 2021-02-21 15:43:38.487 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@1f38957
+[DEBUG] 2021-02-21 15:43:38.487 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@1f38957
+[DEBUG] 2021-02-21 15:43:38.488 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@518cf84a
+[DEBUG] 2021-02-21 15:43:38.488 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@57ce634f
+[DEBUG] 2021-02-21 15:43:38.489 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@6fd1660
+[DEBUG] 2021-02-21 15:43:38.490 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6fd1660
+[DEBUG] 2021-02-21 15:43:38.491 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@60d1b21f
+[DEBUG] 2021-02-21 15:43:38.491 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@60d1b21f
+[DEBUG] 2021-02-21 15:43:38.501 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@57b75756
+[DEBUG] 2021-02-21 15:43:38.502 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@57b75756
+[DEBUG] 2021-02-21 15:43:38.504 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@17271176
+[DEBUG] 2021-02-21 15:43:38.504 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@17271176
+[DEBUG] 2021-02-21 15:43:38.506 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@67c277a0
+[DEBUG] 2021-02-21 15:43:38.506 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@67c277a0
+[DEBUG] 2021-02-21 15:43:38.508 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7baf6acf
+[DEBUG] 2021-02-21 15:43:38.508 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7baf6acf
+[DEBUG] 2021-02-21 15:43:38.509 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22bb5646
+[DEBUG] 2021-02-21 15:43:38.510 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@22bb5646
+[DEBUG] 2021-02-21 15:43:38.511 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2bc9a775
+[DEBUG] 2021-02-21 15:43:38.511 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2bc9a775
+[DEBUG] 2021-02-21 15:43:38.513 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3b36e000
+[DEBUG] 2021-02-21 15:43:38.514 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3b36e000
+[DEBUG] 2021-02-21 15:43:38.515 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5da7cee2
+[DEBUG] 2021-02-21 15:43:38.515 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5da7cee2
+[DEBUG] 2021-02-21 15:43:38.517 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@7ad54c55
+[DEBUG] 2021-02-21 15:43:38.517 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7ad54c55
+[DEBUG] 2021-02-21 15:43:38.518 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@5c0f79f0
+[DEBUG] 2021-02-21 15:43:38.518 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5c0f79f0
+[DEBUG] 2021-02-21 15:43:38.518 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5c0f79f0
+[DEBUG] 2021-02-21 15:43:38.520 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@29a69a35
+[DEBUG] 2021-02-21 15:43:38.521 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@b18c4
+[DEBUG] 2021-02-21 15:43:38.521 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@b18c4
+[DEBUG] 2021-02-21 15:43:38.521 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@b18c4
+[DEBUG] 2021-02-21 15:43:38.522 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@7bbbb6a8
+[DEBUG] 2021-02-21 15:43:38.523 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@314ed053
+[DEBUG] 2021-02-21 15:43:38.523 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@314ed053
+[DEBUG] 2021-02-21 15:43:38.525 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@dca2615
+[DEBUG] 2021-02-21 15:43:38.525 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@dca2615
+[DEBUG] 2021-02-21 15:43:38.526 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1d96d872
+[DEBUG] 2021-02-21 15:43:38.526 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1d96d872
+[DEBUG] 2021-02-21 15:43:38.527 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@1dc2de84
+[DEBUG] 2021-02-21 15:43:38.527 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1dc2de84
+[DEBUG] 2021-02-21 15:43:38.528 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@44de0113
+[DEBUG] 2021-02-21 15:43:38.528 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@44de0113
+[DEBUG] 2021-02-21 15:43:38.529 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@42b21d99
+[DEBUG] 2021-02-21 15:43:38.530 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@3162743f
+[DEBUG] 2021-02-21 15:43:38.530 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@3162743f
+[DEBUG] 2021-02-21 15:43:38.530 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@3162743f
+[DEBUG] 2021-02-21 15:43:38.531 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1b29d52b
+[DEBUG] 2021-02-21 15:43:38.531 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1b29d52b
+[DEBUG] 2021-02-21 15:43:38.531 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1b29d52b
+[DEBUG] 2021-02-21 15:43:38.532 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@c6e0f32
+[DEBUG] 2021-02-21 15:43:38.533 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@63fdffcd
+[DEBUG] 2021-02-21 15:43:38.534 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2a9bc08f
+[DEBUG] 2021-02-21 15:43:38.534 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2a9bc08f
+[DEBUG] 2021-02-21 15:43:38.534 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2a9bc08f
+[DEBUG] 2021-02-21 15:43:38.536 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@77cb9cd1
+[DEBUG] 2021-02-21 15:43:38.536 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@77cb9cd1
+[DEBUG] 2021-02-21 15:43:38.536 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@77cb9cd1
+[DEBUG] 2021-02-21 15:43:38.537 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@3e4f80cb
+[DEBUG] 2021-02-21 15:43:38.537 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@c6a6c1d
+[DEBUG] 2021-02-21 15:43:38.539 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@10667848
+[DEBUG] 2021-02-21 15:43:38.539 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@10667848
+[DEBUG] 2021-02-21 15:43:38.539 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@66bacdbc
+[DEBUG] 2021-02-21 15:43:38.541 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@2116b68b
+[DEBUG] 2021-02-21 15:43:38.542 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2116b68b
+[DEBUG] 2021-02-21 15:43:38.543 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@47ec7422
+[DEBUG] 2021-02-21 15:43:38.543 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@47ec7422
+[DEBUG] 2021-02-21 15:43:38.544 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2b56f5f8
+[DEBUG] 2021-02-21 15:43:38.544 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1aa99005
+[DEBUG] 2021-02-21 15:43:38.546 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@cfbc8e8
+[DEBUG] 2021-02-21 15:43:38.549 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@2b61a019
+[DEBUG] 2021-02-21 15:43:38.550 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2b61a019
+[DEBUG] 2021-02-21 15:43:38.551 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6fd5717c
+[DEBUG] 2021-02-21 15:43:38.552 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7e2f86e6
+[DEBUG] 2021-02-21 15:43:38.553 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4d774249
+[DEBUG] 2021-02-21 15:43:38.553 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@17b64941
+[DEBUG] 2021-02-21 15:43:38.554 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@53ac845a
+[DEBUG] 2021-02-21 15:43:38.554 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5136207f
+[DEBUG] 2021-02-21 15:43:38.554 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@26a4551a
+[DEBUG] 2021-02-21 15:43:38.555 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3fdecce
+[DEBUG] 2021-02-21 15:43:38.591 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-02-21 15:43:38.593 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-02-21 15:43:38.595 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-21 15:43:38.595 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-02-21 15:43:38.595 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-02-21 15:43:38.596 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-02-21 15:43:38.598 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-02-21 15:43:38.599 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-21 15:43:38.600 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-02-21 15:43:38.600 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-02-21 15:43:38.601 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-02-21 15:43:38.602 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-02-21 15:43:38.602 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-02-21 15:43:38.603 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-02-21 15:43:38.608 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_mealBuilder
+[INFO ] 2021-02-21 15:43:38.608 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-02-21 15:43:38.609 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-02-21 15:43:38.853 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-02-21 15:43:39.672 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.22
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-21 15:43:39.672 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.22 (Revision: d64b664fa93e81296a377de031b8123a67e6def2)
+      major : 8
+      minor : 0
+[DEBUG] 2021-02-21 15:43:39.672 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-02-21 15:43:39.711 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-02-21 15:43:39.742 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-02-21 15:43:39.784 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-02-21 15:43:39.839 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-02-21 15:43:39.842 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4339baec] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@62db3891]
+[DEBUG] 2021-02-21 15:43:39.920 [main] AnnotationBinder - Binding entity from annotated class: entity.Users
+[DEBUG] 2021-02-21 15:43:39.950 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-02-21 15:43:39.959 [main] EntityBinder - Import with entity name Users
+[DEBUG] 2021-02-21 15:43:39.964 [main] EntityBinder - Bind entity entity.Users on table Users
+[DEBUG] 2021-02-21 15:43:40.015 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.020 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-02-21 15:43:40.023 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:id]
+[DEBUG] 2021-02-21 15:43:40.028 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-02-21 15:43:40.030 [main] PropertyBinder - Building property id
+[DEBUG] 2021-02-21 15:43:40.036 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-02-21 15:43:40.038 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.039 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-02-21 15:43:40.039 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:password]
+[DEBUG] 2021-02-21 15:43:40.039 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-02-21 15:43:40.040 [main] PropertyBinder - Building property password
+[DEBUG] 2021-02-21 15:43:40.042 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Users_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-02-21 15:43:40.042 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=recipes, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.045 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.055 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.056 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=recipes_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.057 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='recipes_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-02-21 15:43:40.060 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-02-21 15:43:40.060 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-02-21 15:43:40.062 [main] CollectionBinder - Collection role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:40.067 [main] PropertyBinder - Building property recipes
+[DEBUG] 2021-02-21 15:43:40.068 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.068 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2021-02-21 15:43:40.068 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:username]
+[DEBUG] 2021-02-21 15:43:40.068 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2021-02-21 15:43:40.069 [main] PropertyBinder - Building property username
+[DEBUG] 2021-02-21 15:43:40.071 [main] AnnotationBinder - Binding entity from annotated class: entity.Recipes
+[DEBUG] 2021-02-21 15:43:40.071 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-02-21 15:43:40.071 [main] EntityBinder - Import with entity name Recipes
+[DEBUG] 2021-02-21 15:43:40.072 [main] EntityBinder - Bind entity entity.Recipes on table Recipes
+[DEBUG] 2021-02-21 15:43:40.075 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=recipe_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.075 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-02-21 15:43:40.075 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:id]
+[DEBUG] 2021-02-21 15:43:40.075 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-02-21 15:43:40.075 [main] PropertyBinder - Building property id
+[DEBUG] 2021-02-21 15:43:40.075 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(recipe_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-02-21 15:43:40.076 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=public_recipe, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.076 [main] PropertyBinder - MetadataSourceProcessor property public_recipe with lazy=false
+[DEBUG] 2021-02-21 15:43:40.076 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:public_recipe]
+[DEBUG] 2021-02-21 15:43:40.076 [main] SimpleValueBinder - building SimpleValue for public_recipe
+[DEBUG] 2021-02-21 15:43:40.076 [main] PropertyBinder - Building property public_recipe
+[DEBUG] 2021-02-21 15:43:40.076 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=recipe_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.077 [main] PropertyBinder - MetadataSourceProcessor property recipe_name with lazy=false
+[DEBUG] 2021-02-21 15:43:40.077 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:recipe_name]
+[DEBUG] 2021-02-21 15:43:40.077 [main] SimpleValueBinder - building SimpleValue for recipe_name
+[DEBUG] 2021-02-21 15:43:40.077 [main] PropertyBinder - Building property recipe_name
+[DEBUG] 2021-02-21 15:43:40.077 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Users_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-02-21 15:43:40.078 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-02-21 15:43:40.080 [main] PropertyBinder - Building property user
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for public_recipe
+[DEBUG] 2021-02-21 15:43:40.083 [main] SimpleValueBinder - Starting fillSimpleValue for recipe_name
+[DEBUG] 2021-02-21 15:43:40.090 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2021-02-21 15:43:40.091 [main] PrimaryKey - Forcing column [recipe_id] to be non-null as it is part of the primary key for table [recipes]
+[DEBUG] 2021-02-21 15:43:40.091 [main] CollectionSecondPass - Second pass for collection: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:40.091 [main] CollectionBinder - Binding a OneToMany: entity.Users.recipes through a foreign key
+[DEBUG] 2021-02-21 15:43:40.092 [main] CollectionBinder - Mapping collection: entity.Users.recipes -> Recipes
+[DEBUG] 2021-02-21 15:43:40.094 [main] CollectionSecondPass - Mapped collection key: Users_id, one-to-many: entity.Recipes
+[DEBUG] 2021-02-21 15:43:40.094 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users
+[DEBUG] 2021-02-21 15:43:40.098 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users
+[DEBUG] 2021-02-21 15:43:40.164 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2021-02-21 15:43:40.166 [main] Settings - SessionFactory name : null
+[DEBUG] 2021-02-21 15:43:40.167 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2021-02-21 15:43:40.167 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2021-02-21 15:43:40.167 [main] Settings - Statistics: disabled
+[DEBUG] 2021-02-21 15:43:40.167 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2021-02-21 15:43:40.167 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2021-02-21 15:43:40.168 [main] Settings - Default null ordering: NONE
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Query language substitutions: {}
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Named query checking : enabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Second-level cache: disabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2021-02-21 15:43:40.169 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - JDBC batch size: 15
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2021-02-21 15:43:40.170 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JPA compliance - query : 
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2021-02-21 15:43:40.171 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2021-02-21 15:43:40.247 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2021-02-21 15:43:40.271 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2021-02-21 15:43:40.271 [main] SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit5-rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder/target/test-classes:/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder/target/classes:/Users/lisaandritsch/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/lisaandritsch/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/lisaandritsch/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/lisaandritsch/.m2/repository/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar:/Users/lisaandritsch/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jsp/jstl/jstl-api/1.2/jstl-api-1.2.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/lisaandritsch/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/lisaandritsch/.m2/repository/taglibs/standard/1.1.2/standard-1.1.2.jar:/Users/lisaandritsch/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Users/lisaandritsch/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/lisaandritsch/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/Users/lisaandritsch/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/lisaandritsch/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/lisaandritsch/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/lisaandritsch/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/Users/lisaandritsch/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/lisaandritsch/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/lisaandritsch/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/Users/lisaandritsch/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Users/lisaandritsch/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/lisaandritsch/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/lisaandritsch/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/lisaandritsch/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/lisaandritsch/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/lisaandritsch/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/lisaandritsch/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/lisaandritsch/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/lisaandritsch/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/Users/lisaandritsch/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/Users/lisaandritsch/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://openjdk.java.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 persistence.RecipesDAOTest, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/lisaandritsch, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-10-20, java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, connection.password=1LoveBacon!, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.9+7-LTS, user.name=lisaandritsch, path.separator=:, hibernate.connection.username=****, os.version=10.15.4, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/test_mealBuilder, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, java.vendor.version=18.9, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/t1/cf3c018n3358k026jslb5qb00000gn/T/, java.version=11.0.9, user.dir=/Users/lisaandritsch/Desktop/Java/MealAndGroceryBuilder, os.arch=x86_64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@28369db0, java.library.path=/Users/lisaandritsch/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.9+7-LTS, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/test_mealBuilder, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2021-02-21 15:43:40.296 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2021-02-21 15:43:40.297 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2021-02-21 15:43:40.298 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2021-02-21 15:43:40.298 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4339baec] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@239f017e]
+[DEBUG] 2021-02-21 15:43:40.376 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Recipes] is safe
+[DEBUG] 2021-02-21 15:43:40.376 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Recipes
+[DEBUG] 2021-02-21 15:43:40.397 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Recipes] is safe
+[DEBUG] 2021-02-21 15:43:40.397 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Recipes
+[DEBUG] 2021-02-21 15:43:40.742 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Users] is safe
+[DEBUG] 2021-02-21 15:43:40.742 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Users
+[DEBUG] 2021-02-21 15:43:40.743 [main] ClassLoaderAccessImpl - Not known whether passed class name [entity.Users] is safe
+[DEBUG] 2021-02-21 15:43:40.743 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : entity.Users
+[DEBUG] 2021-02-21 15:43:40.785 [main] AbstractCollectionPersister - Static SQL for collection: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:40.785 [main] AbstractCollectionPersister -  Row insert: update Recipes set Users_id=? where recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.785 [main] AbstractCollectionPersister -  Row update: update Recipes set  where recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.785 [main] AbstractCollectionPersister -  Row delete: update Recipes set Users_id=null where Users_id=? and recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.785 [main] AbstractCollectionPersister -  One-shot delete: update Recipes set Users_id=null where Users_id=?
+[DEBUG] 2021-02-21 15:43:40.793 [main] AbstractEntityPersister - Static SQL for entity: entity.Recipes
+[DEBUG] 2021-02-21 15:43:40.793 [main] AbstractEntityPersister -  Version select: select recipe_id from Recipes where recipe_id =?
+[DEBUG] 2021-02-21 15:43:40.793 [main] AbstractEntityPersister -  Snapshot select: select recipes_.recipe_id, recipes_.public_recipe as public_r2_0_, recipes_.recipe_name as recipe_n3_0_, recipes_.Users_id as Users_id4_0_ from Recipes recipes_ where recipes_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.793 [main] AbstractEntityPersister -  Insert 0: insert into Recipes (public_recipe, recipe_name, Users_id, recipe_id) values (?, ?, ?, ?)
+[DEBUG] 2021-02-21 15:43:40.793 [main] AbstractEntityPersister -  Update 0: update Recipes set public_recipe=?, recipe_name=?, Users_id=? where recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.794 [main] AbstractEntityPersister -  Delete 0: delete from Recipes where recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.794 [main] AbstractEntityPersister -  Identity insert: insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:40.834 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4315c28c]
+[DEBUG] 2021-02-21 15:43:40.835 [main] MetamodelGraphWalker - Visiting attribute path : public_recipe
+[DEBUG] 2021-02-21 15:43:40.835 [main] MetamodelGraphWalker - Visiting attribute path : recipe_name
+[DEBUG] 2021-02-21 15:43:40.835 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-02-21 15:43:40.840 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@15986dd5]
+[DEBUG] 2021-02-21 15:43:40.841 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2021-02-21 15:43:40.841 [main] MetamodelGraphWalker - Visiting attribute path : user.recipes
+[DEBUG] 2021-02-21 15:43:40.841 [main] MetamodelGraphWalker - Property path deemed to be circular : user.recipes
+[DEBUG] 2021-02-21 15:43:40.842 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2021-02-21 15:43:40.842 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-21 15:43:40.856 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-21 15:43:40.863 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Recipes)
+    - Returns
+       - EntityReturnImpl(entity=entity.Recipes, querySpaceUid=<gen:0>, path=entity.Recipes)
+          - EntityAttributeFetchImpl(entity=entity.Users, querySpaceUid=<gen:1>, path=entity.Recipes.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Recipes)
+          - SQL table alias mapping - recipes0_
+          - alias suffix - 0_
+          - suffixed key columns - {recipe_i1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.Users)
+                - SQL table alias mapping - users1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2021-02-21 15:43:40.866 [main] EntityLoader - Static select for entity entity.Recipes [NONE]: select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.866 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7cfb0c4c]
+[DEBUG] 2021-02-21 15:43:40.866 [main] MetamodelGraphWalker - Visiting attribute path : public_recipe
+[DEBUG] 2021-02-21 15:43:40.866 [main] MetamodelGraphWalker - Visiting attribute path : recipe_name
+[DEBUG] 2021-02-21 15:43:40.866 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-02-21 15:43:40.867 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b63abdc]
+[DEBUG] 2021-02-21 15:43:40.867 [main] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2021-02-21 15:43:40.867 [main] MetamodelGraphWalker - Visiting attribute path : user.recipes
+[DEBUG] 2021-02-21 15:43:40.867 [main] MetamodelGraphWalker - Property path deemed to be circular : user.recipes
+[DEBUG] 2021-02-21 15:43:40.867 [main] MetamodelGraphWalker - Visiting attribute path : user.username
+[DEBUG] 2021-02-21 15:43:40.867 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-21 15:43:40.867 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-21 15:43:40.868 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Recipes)
+    - Returns
+       - EntityReturnImpl(entity=entity.Recipes, querySpaceUid=<gen:0>, path=entity.Recipes)
+          - EntityAttributeFetchImpl(entity=entity.Users, querySpaceUid=<gen:1>, path=entity.Recipes.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Recipes)
+          - SQL table alias mapping - recipes0_
+          - alias suffix - 0_
+          - suffixed key columns - {recipe_i1_0_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.Users)
+                - SQL table alias mapping - users1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2021-02-21 15:43:40.868 [main] EntityLoader - Static select for entity entity.Recipes [READ]: select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.882 [main] Loader - Static select for action ACTION_MERGE on entity entity.Recipes: select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_ from Recipes recipes0_ where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.883 [main] Loader - Static select for action ACTION_REFRESH on entity entity.Recipes: select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_ from Recipes recipes0_ where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister - Static SQL for entity: entity.Users
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Version select: select id from Users where id =?
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Snapshot select: select users_.id, users_.password as password2_1_, users_.username as username3_1_ from Users users_ where users_.id=?
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Insert 0: insert into Users (password, username, id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Update 0: update Users set password=?, username=? where id=?
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Delete 0: delete from Users where id=?
+[DEBUG] 2021-02-21 15:43:40.883 [main] AbstractEntityPersister -  Identity insert: insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:40.883 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@9cfc77]
+[DEBUG] 2021-02-21 15:43:40.883 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-21 15:43:40.884 [main] MetamodelGraphWalker - Visiting attribute path : recipes
+[DEBUG] 2021-02-21 15:43:40.884 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2f9a10df]
+[DEBUG] 2021-02-21 15:43:40.886 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4aebee4b]
+[DEBUG] 2021-02-21 15:43:40.887 [main] MetamodelGraphWalker - Visiting attribute path : recipes.public_recipe
+[DEBUG] 2021-02-21 15:43:40.887 [main] MetamodelGraphWalker - Visiting attribute path : recipes.recipe_name
+[DEBUG] 2021-02-21 15:43:40.887 [main] MetamodelGraphWalker - Visiting attribute path : recipes.user
+[DEBUG] 2021-02-21 15:43:40.887 [main] MetamodelGraphWalker - Property path deemed to be circular : recipes.user
+[DEBUG] 2021-02-21 15:43:40.889 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2021-02-21 15:43:40.890 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-21 15:43:40.890 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-21 15:43:40.893 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Users)
+    - Returns
+       - EntityReturnImpl(entity=entity.Users, querySpaceUid=<gen:0>, path=entity.Users)
+          - CollectionAttributeFetchImpl(collection=entity.Users.recipes, querySpaceUid=<gen:1>, path=entity.Users.recipes)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Recipes, querySpaceUid=<gen:2>, path=entity.Users.recipes.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(recipes)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.Users.recipes)
+                - SQL table alias mapping - recipes1_
+                - alias suffix - 1_
+                - suffixed key columns - {Users_id4_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - recipe_i1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Recipes)
+                      - SQL table alias mapping - recipes1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {recipe_i1_0_2_}
+
+[DEBUG] 2021-02-21 15:43:40.894 [main] EntityLoader - Static select for entity entity.Users [NONE]: select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:40.894 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1e545821]
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Visiting attribute path : recipes
+[DEBUG] 2021-02-21 15:43:40.894 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@76a7fcbd]
+[DEBUG] 2021-02-21 15:43:40.894 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@433ea2ac]
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Visiting attribute path : recipes.public_recipe
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Visiting attribute path : recipes.recipe_name
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Visiting attribute path : recipes.user
+[DEBUG] 2021-02-21 15:43:40.894 [main] MetamodelGraphWalker - Property path deemed to be circular : recipes.user
+[DEBUG] 2021-02-21 15:43:40.895 [main] MetamodelGraphWalker - Visiting attribute path : username
+[DEBUG] 2021-02-21 15:43:40.895 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-21 15:43:40.895 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-21 15:43:40.895 [main] LoadPlanTreePrinter - LoadPlan(entity=entity.Users)
+    - Returns
+       - EntityReturnImpl(entity=entity.Users, querySpaceUid=<gen:0>, path=entity.Users)
+          - CollectionAttributeFetchImpl(collection=entity.Users.recipes, querySpaceUid=<gen:1>, path=entity.Users.recipes)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Recipes, querySpaceUid=<gen:2>, path=entity.Users.recipes.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=entity.Users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(recipes)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=entity.Users.recipes)
+                - SQL table alias mapping - recipes1_
+                - alias suffix - 1_
+                - suffixed key columns - {Users_id4_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - recipe_i1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=entity.Recipes)
+                      - SQL table alias mapping - recipes1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {recipe_i1_0_2_}
+
+[DEBUG] 2021-02-21 15:43:40.896 [main] EntityLoader - Static select for entity entity.Users [READ]: select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:40.897 [main] Loader - Static select for action ACTION_MERGE on entity entity.Users: select users0_.id as id1_1_1_, users0_.password as password2_1_1_, users0_.username as username3_1_1_, recipes1_.Users_id as Users_id4_0_3_, recipes1_.recipe_id as recipe_i1_0_3_, recipes1_.recipe_id as recipe_i1_0_0_, recipes1_.public_recipe as public_r2_0_0_, recipes1_.recipe_name as recipe_n3_0_0_, recipes1_.Users_id as Users_id4_0_0_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:40.898 [main] Loader - Static select for action ACTION_REFRESH on entity entity.Users: select users0_.id as id1_1_1_, users0_.password as password2_1_1_, users0_.username as username3_1_1_, recipes1_.Users_id as Users_id4_0_3_, recipes1_.recipe_id as recipe_i1_0_3_, recipes1_.recipe_id as recipe_i1_0_0_, recipes1_.public_recipe as public_r2_0_0_, recipes1_.recipe_name as recipe_n3_0_0_, recipes1_.Users_id as Users_id4_0_0_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:40.903 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@372461a9]
+[DEBUG] 2021-02-21 15:43:40.903 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5fffb692]
+[DEBUG] 2021-02-21 15:43:40.903 [main] MetamodelGraphWalker - Visiting attribute path : public_recipe
+[DEBUG] 2021-02-21 15:43:40.903 [main] MetamodelGraphWalker - Visiting attribute path : recipe_name
+[DEBUG] 2021-02-21 15:43:40.904 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2021-02-21 15:43:40.904 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2021-02-21 15:43:40.904 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2021-02-21 15:43:40.906 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2021-02-21 15:43:40.906 [main] LoadPlanTreePrinter - LoadPlan(collection=entity.Users.recipes)
+    - Returns
+       - CollectionReturnImpl(collection=entity.Users.recipes, querySpaceUid=<gen:0>, path=[entity.Users.recipes])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=entity.Recipes, querySpaceUid=<gen:1>, path=[entity.Users.recipes].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=entity.Users.recipes)
+          - SQL table alias mapping - recipes0_
+          - alias suffix - 0_
+          - suffixed key columns - {Users_id4_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - recipe_i1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=entity.Recipes)
+                - SQL table alias mapping - recipes0_
+                - alias suffix - 1_
+                - suffixed key columns - {recipe_i1_0_1_}
+
+[DEBUG] 2021-02-21 15:43:40.907 [main] CollectionLoader - Static select for collection entity.Users.recipes: select recipes0_.Users_id as Users_id4_0_0_, recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.recipe_id as recipe_i1_0_1_, recipes0_.public_recipe as public_r2_0_1_, recipes0_.recipe_name as recipe_n3_0_1_, recipes0_.Users_id as Users_id4_0_1_ from Recipes recipes0_ where recipes0_.Users_id=?
+[DEBUG] 2021-02-21 15:43:40.956 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2021-02-21 15:43:40.956 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2021-02-21 15:43:40.957 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2021-02-21 15:43:40.962 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2021-02-21 15:43:40.962 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2021-02-21 15:43:40.963 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2021-02-21 15:43:40.963 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2021-02-21 15:43:40.965 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@69ed5ea2
+[DEBUG] 2021-02-21 15:43:40.967 [main] SessionFactoryRegistry - Registering SessionFactory: 1bd10ec9-43e4-4bb7-b34b-42af213051b6 (<unnamed>)
+[DEBUG] 2021-02-21 15:43:40.968 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2021-02-21 15:43:41.112 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2021-02-21 15:43:41.128 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.129 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.149 [main] QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@5b48f0f4
+[DEBUG] 2021-02-21 15:43:41.226 [main] QueryTranslatorImpl - parse() - HQL: delete from entity.Recipes
+[DEBUG] 2021-02-21 15:43:41.234 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.245 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[DELETE] Node: 'delete'
+    \-[FROM] Node: 'FROM'
+       \-[RANGE] Node: 'RANGE'
+          \-[DOT] Node: '.'
+             +-[IDENT] Node: 'entity'
+             \-[IDENT] Node: 'Recipes'
+
+[DEBUG] 2021-02-21 15:43:41.276 [main] HqlSqlBaseWalker - delete << begin [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.299 [main] FromElement - FromClause{level=1} : entity.Recipes (<no alias>) -> recipes0_
+[DEBUG] 2021-02-21 15:43:41.299 [main] HqlSqlBaseWalker - delete : finishing up [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.300 [main] HqlSqlBaseWalker - delete >> end [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.301 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[DELETE] DeleteStatement: 'delete'  querySpaces (Recipes)
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[recipes0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Recipes' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Recipes,tableAlias=recipes0_,origin=null,columns={,className=entity.Recipes}}
+
+[DEBUG] 2021-02-21 15:43:41.301 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.309 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.318 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.345 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.347 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.349 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.353 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.353 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.355 [main] QueryTranslatorImpl - parse() - HQL: delete from entity.Users
+[DEBUG] 2021-02-21 15:43:41.355 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.356 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[DELETE] Node: 'delete'
+    \-[FROM] Node: 'FROM'
+       \-[RANGE] Node: 'RANGE'
+          \-[DOT] Node: '.'
+             +-[IDENT] Node: 'entity'
+             \-[IDENT] Node: 'Users'
+
+[DEBUG] 2021-02-21 15:43:41.356 [main] HqlSqlBaseWalker - delete << begin [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.357 [main] FromElement - FromClause{level=1} : entity.Users (<no alias>) -> users0_
+[DEBUG] 2021-02-21 15:43:41.357 [main] HqlSqlBaseWalker - delete : finishing up [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.357 [main] HqlSqlBaseWalker - delete >> end [level=1, statement=delete]
+[DEBUG] 2021-02-21 15:43:41.357 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[DELETE] DeleteStatement: 'delete'  querySpaces (Users)
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[users0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Users' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Users,tableAlias=users0_,origin=null,columns={,className=entity.Users}}
+
+[DEBUG] 2021-02-21 15:43:41.357 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.358 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.358 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.360 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.361 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.362 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.391 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.392 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.394 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.394 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[IDENT] Node: 'entity'
+       |     |  \-[IDENT] Node: 'Recipes'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+[DEBUG] 2021-02-21 15:43:41.395 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.395 [main] FromElement - FromClause{level=1} : entity.Recipes (generatedAlias0) -> recipes0_
+[DEBUG] 2021-02-21 15:43:41.396 [main] FromReferenceNode - Resolved : generatedAlias0 -> recipes0_.recipe_id
+[DEBUG] 2021-02-21 15:43:41.397 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.397 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} recipes0_.recipe_id ) ( FromClause{level=1} Recipes recipes0_ ) )
+[DEBUG] 2021-02-21 15:43:41.407 [main] JoinProcessor - Using FROM fragment [Recipes recipes0_]
+[DEBUG] 2021-02-21 15:43:41.407 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.407 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Recipes)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'recipes0_.recipe_id as recipe_i1_0_' {alias=generatedAlias0, className=entity.Recipes, tableAlias=recipes0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[recipes0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Recipes recipes0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=Recipes,tableAlias=recipes0_,origin=null,columns={,className=entity.Recipes}}
+
+[DEBUG] 2021-02-21 15:43:41.408 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.408 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.408 [main] QueryTranslatorImpl - SQL: select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.408 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.416 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.421 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.426 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.426 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.449 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.451 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.457 [main] IdentifierGeneratorHelper - Natively generated identity: 114
+[DEBUG] 2021-02-21 15:43:41.457 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.461 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.462 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.463 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.470 [main] Collections - Collection found: [entity.Users.recipes#114], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.472 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.472 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.473 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.474 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=114, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.474 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.474 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.479 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.479 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.484 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.491 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.493 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.496 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.500 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.501 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.501 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.501 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.501 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.501 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#114
+[DEBUG] 2021-02-21 15:43:41.501 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.503 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.504 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.508 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.510 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.510 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.511 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.512 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.513 [main] IdentifierGeneratorHelper - Natively generated identity: 60
+[DEBUG] 2021-02-21 15:43:41.513 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.514 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.514 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.514 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.514 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.514 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.514 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.514 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=60, user=entity.Users#114}
+[DEBUG] 2021-02-21 15:43:41.516 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.517 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.517 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.518 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.520 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.521 [main] Loader - Result row: EntityKey[entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.521 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.521 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.522 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.522 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.522 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.522 [main] TwoPhaseLoad - Processing attribute `user` : value = 114
+[DEBUG] 2021-02-21 15:43:41.522 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.522 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.524 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.525 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.525 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.526 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.526 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.527 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.527 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.527 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.527 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#114
+[DEBUG] 2021-02-21 15:43:41.527 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.527 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.531 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.532 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.534 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.534 [main] Loader - Result row: EntityKey[entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.535 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.535 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.535 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.536 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.536 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.536 [main] TwoPhaseLoad - Processing attribute `user` : value = 114
+[DEBUG] 2021-02-21 15:43:41.536 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.536 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.538 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.539 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.539 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.539 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.540 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.540 [main] TwoPhaseLoad - Done materializing entity [entity.Users#114]
+[DEBUG] 2021-02-21 15:43:41.540 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.540 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#114]
+[DEBUG] 2021-02-21 15:43:41.540 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.540 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.540 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#114
+[DEBUG] 2021-02-21 15:43:41.540 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#60]
+[DEBUG] 2021-02-21 15:43:41.540 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.551 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.552 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.554 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.555 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.558 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.560 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.560 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.560 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.561 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.562 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.565 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.565 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.566 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.566 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.568 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.569 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.569 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.571 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.571 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.573 [main] IdentifierGeneratorHelper - Natively generated identity: 115
+[DEBUG] 2021-02-21 15:43:41.576 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.577 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.577 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.577 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.578 [main] Collections - Collection found: [entity.Users.recipes#115], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.578 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.578 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.578 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.578 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=115, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.578 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.578 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.580 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.581 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.581 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.584 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.584 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.584 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.584 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.585 [main] TwoPhaseLoad - Done materializing entity [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.585 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.585 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.585 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.585 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.585 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#115
+[DEBUG] 2021-02-21 15:43:41.586 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.587 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.587 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.590 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.591 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.591 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.593 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.593 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.594 [main] IdentifierGeneratorHelper - Natively generated identity: 61
+[DEBUG] 2021-02-21 15:43:41.595 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.595 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.595 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.595 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.595 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.596 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.596 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.596 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=61, user=entity.Users#115}
+[DEBUG] 2021-02-21 15:43:41.611 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.612 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.613 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.614 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.616 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.616 [main] Loader - Result row: EntityKey[entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.616 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.616 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.616 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.616 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.616 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.617 [main] TwoPhaseLoad - Processing attribute `user` : value = 115
+[DEBUG] 2021-02-21 15:43:41.617 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.617 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.618 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.619 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.619 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.619 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.620 [main] TwoPhaseLoad - Done materializing entity [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.620 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.620 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.620 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.620 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.621 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#115
+[DEBUG] 2021-02-21 15:43:41.621 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.621 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.636 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0 where generatedAlias0.recipe_name like :param0
+[DEBUG] 2021-02-21 15:43:41.637 [main] QueryTranslatorImpl - parse() - HQL: select generatedAlias0 from entity.Recipes as generatedAlias0 where generatedAlias0.recipe_name like :param0
+[DEBUG] 2021-02-21 15:43:41.638 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.639 [main] QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'from'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[IDENT] Node: 'entity'
+    |  |     |  \-[IDENT] Node: 'Recipes'
+    |  |     \-[ALIAS] Node: 'generatedAlias0'
+    |  \-[SELECT] Node: 'select'
+    |     \-[IDENT] Node: 'generatedAlias0'
+    \-[WHERE] Node: 'where'
+       \-[LIKE] Node: 'like'
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'generatedAlias0'
+          |  \-[IDENT] Node: 'recipe_name'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'param0'
+
+[DEBUG] 2021-02-21 15:43:41.639 [main] HqlSqlBaseWalker - select << begin [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.639 [main] FromElement - FromClause{level=1} : entity.Recipes (generatedAlias0) -> recipes0_
+[DEBUG] 2021-02-21 15:43:41.640 [main] FromReferenceNode - Resolved : generatedAlias0 -> recipes0_.recipe_id
+[DEBUG] 2021-02-21 15:43:41.642 [main] FromReferenceNode - Resolved : generatedAlias0 -> recipes0_.recipe_id
+[DEBUG] 2021-02-21 15:43:41.643 [main] DotNode - getDataType() : recipe_name -> org.hibernate.type.StringType@1f38957
+[DEBUG] 2021-02-21 15:43:41.645 [main] FromReferenceNode - Resolved : generatedAlias0.recipe_name -> recipes0_.recipe_name
+[DEBUG] 2021-02-21 15:43:41.648 [main] HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.648 [main] HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} recipes0_.recipe_id ) ( FromClause{level=1} Recipes recipes0_ ) ( where ( like ( recipes0_.recipe_name recipes0_.recipe_id recipe_name ) ? ) ) )
+[DEBUG] 2021-02-21 15:43:41.648 [main] JoinProcessor - Using FROM fragment [Recipes recipes0_]
+[DEBUG] 2021-02-21 15:43:41.648 [main] HqlSqlBaseWalker - select >> end [level=1, statement=select]
+[DEBUG] 2021-02-21 15:43:41.649 [main] QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Recipes)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'recipes0_.recipe_id as recipe_i1_0_' {alias=generatedAlias0, className=entity.Recipes, tableAlias=recipes0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[recipes0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Recipes recipes0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=Recipes,tableAlias=recipes0_,origin=null,columns={,className=entity.Recipes}}
+    \-[WHERE] SqlNode: 'where'
+       \-[LIKE] BinaryLogicOperatorNode: 'like'
+          +-[DOT] DotNode: 'recipes0_.recipe_name' {propertyName=recipe_name,dereferenceType=PRIMITIVE,getPropertyPath=recipe_name,path=generatedAlias0.recipe_name,tableAlias=recipes0_,className=entity.Recipes,classAlias=generatedAlias0}
+          |  +-[ALIAS_REF] IdentNode: 'recipes0_.recipe_id' {alias=generatedAlias0, className=entity.Recipes, tableAlias=recipes0_}
+          |  \-[IDENT] IdentNode: 'recipe_name' {originalText=recipe_name}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=param0, expectedType=org.hibernate.type.StringType@1f38957}
+
+[DEBUG] 2021-02-21 15:43:41.649 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.649 [main] QueryTranslatorImpl - HQL: select generatedAlias0 from entity.Recipes as generatedAlias0 where generatedAlias0.recipe_name like :param0
+[DEBUG] 2021-02-21 15:43:41.649 [main] QueryTranslatorImpl - SQL: select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_ where recipes0_.recipe_name like ?
+[DEBUG] 2021-02-21 15:43:41.649 [main] ErrorTracker - throwQueryException() : no errors
+[DEBUG] 2021-02-21 15:43:41.654 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_ where recipes0_.recipe_name like ?
+[DEBUG] 2021-02-21 15:43:41.657 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.657 [main] Loader - Result row: EntityKey[entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Processing attribute `user` : value = 115
+[DEBUG] 2021-02-21 15:43:41.658 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.658 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.660 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.660 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.661 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.661 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.662 [main] TwoPhaseLoad - Done materializing entity [entity.Users#115]
+[DEBUG] 2021-02-21 15:43:41.662 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.662 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#115]
+[DEBUG] 2021-02-21 15:43:41.662 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.662 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.662 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#115
+[DEBUG] 2021-02-21 15:43:41.662 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#61]
+[DEBUG] 2021-02-21 15:43:41.662 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.703 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.704 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.708 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.710 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.711 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.712 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.712 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.713 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.714 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.715 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.716 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.717 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.717 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.717 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.719 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.721 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.721 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.723 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.723 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.725 [main] IdentifierGeneratorHelper - Natively generated identity: 116
+[DEBUG] 2021-02-21 15:43:41.725 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.726 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.726 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.726 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.726 [main] Collections - Collection found: [entity.Users.recipes#116], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.726 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.726 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.726 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.727 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=116, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.727 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.727 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.729 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.730 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.731 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.734 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.734 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.735 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.735 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.735 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.735 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.735 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.736 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.736 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.736 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.736 [main] TwoPhaseLoad - Done materializing entity [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.737 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.737 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.737 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.737 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.738 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#116
+[DEBUG] 2021-02-21 15:43:41.738 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.739 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.740 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.743 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.744 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.744 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.745 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.745 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.747 [main] IdentifierGeneratorHelper - Natively generated identity: 62
+[DEBUG] 2021-02-21 15:43:41.747 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.747 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.747 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.747 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.747 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.748 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.748 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.748 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=62, user=entity.Users#116}
+[DEBUG] 2021-02-21 15:43:41.750 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.750 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.751 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.751 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.753 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.754 [main] Loader - Result row: EntityKey[entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.754 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.754 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.755 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.755 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.755 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.755 [main] TwoPhaseLoad - Processing attribute `user` : value = 116
+[DEBUG] 2021-02-21 15:43:41.755 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.756 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.759 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.760 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.760 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.761 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.761 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.761 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.761 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.761 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.762 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.762 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.762 [main] TwoPhaseLoad - Done materializing entity [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.762 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.762 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.763 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.763 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.764 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#116
+[DEBUG] 2021-02-21 15:43:41.764 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.764 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.768 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.770 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.770 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `user` : value = 116
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.771 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.772 [main] TwoPhaseLoad - Done materializing entity [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.772 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.774 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.774 [main] SQL - select recipes0_.Users_id as Users_id4_0_0_, recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.recipe_id as recipe_i1_0_1_, recipes0_.public_recipe as public_r2_0_1_, recipes0_.recipe_name as recipe_n3_0_1_, recipes0_.Users_id as Users_id4_0_1_ from Recipes recipes0_ where recipes0_.Users_id=?
+[DEBUG] 2021-02-21 15:43:41.776 [main] ResultSetProcessorImpl - Preparing collection initializer : [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.777 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.777 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.777 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.777 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.777 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.777 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.777 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-02-21 15:43:41.777 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Recipes#62
+[DEBUG] 2021-02-21 15:43:41.777 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.782 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.782 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.783 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.783 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.783 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.784 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.784 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.784 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.784 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=The Big Lebowski's big, scary meal, id=62, user=entity.Users#116}
+[DEBUG] 2021-02-21 15:43:41.787 [main] SQL - update Recipes set public_recipe=?, recipe_name=?, Users_id=? where recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.791 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.792 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.793 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0 where generatedAlias0.recipe_name like :param0
+[DEBUG] 2021-02-21 15:43:41.793 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_ where recipes0_.recipe_name like ?
+[DEBUG] 2021-02-21 15:43:41.795 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.795 [main] Loader - Result row: EntityKey[entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = The Big Lebowski's big, scary meal
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Processing attribute `user` : value = 116
+[DEBUG] 2021-02-21 15:43:41.796 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.796 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.798 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.798 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.798 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.799 [main] TwoPhaseLoad - Done materializing entity [entity.Users#116]
+[DEBUG] 2021-02-21 15:43:41.799 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.800 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#116]
+[DEBUG] 2021-02-21 15:43:41.800 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.800 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.800 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#116
+[DEBUG] 2021-02-21 15:43:41.800 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#62]
+[DEBUG] 2021-02-21 15:43:41.800 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.803 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.803 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.805 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.808 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.811 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.812 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.813 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.813 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.815 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.816 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.818 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.818 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.819 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.819 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.821 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.822 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.822 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.823 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.824 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.825 [main] IdentifierGeneratorHelper - Natively generated identity: 117
+[DEBUG] 2021-02-21 15:43:41.825 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.825 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.825 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.825 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.825 [main] Collections - Collection found: [entity.Users.recipes#117], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.825 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.826 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.826 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.826 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=117, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.826 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.826 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.827 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.828 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.829 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.831 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.831 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.832 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.832 [main] TwoPhaseLoad - Done materializing entity [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.832 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.832 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.832 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.832 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.833 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#117
+[DEBUG] 2021-02-21 15:43:41.833 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.834 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.835 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.837 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.838 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.838 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.839 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.839 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.841 [main] IdentifierGeneratorHelper - Natively generated identity: 63
+[DEBUG] 2021-02-21 15:43:41.841 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.841 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.841 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.841 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.841 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.842 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.842 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.842 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=63, user=entity.Users#117}
+[DEBUG] 2021-02-21 15:43:41.844 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.845 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.845 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.845 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.847 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.847 [main] Loader - Result row: EntityKey[entity.Recipes#63]
+[DEBUG] 2021-02-21 15:43:41.847 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#63]
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Processing attribute `user` : value = 117
+[DEBUG] 2021-02-21 15:43:41.848 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.848 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.849 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.850 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.850 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.850 [main] TwoPhaseLoad - Done materializing entity [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.850 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.850 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.850 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.851 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.851 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#117
+[DEBUG] 2021-02-21 15:43:41.851 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#63]
+[DEBUG] 2021-02-21 15:43:41.851 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.852 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.854 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.854 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#63]
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `user` : value = 117
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#63]
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.855 [main] TwoPhaseLoad - Done materializing entity [entity.Users#117]
+[DEBUG] 2021-02-21 15:43:41.855 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.856 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.856 [main] SQL - select recipes0_.Users_id as Users_id4_0_0_, recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.recipe_id as recipe_i1_0_1_, recipes0_.public_recipe as public_r2_0_1_, recipes0_.recipe_name as recipe_n3_0_1_, recipes0_.Users_id as Users_id4_0_1_ from Recipes recipes0_ where recipes0_.Users_id=?
+[DEBUG] 2021-02-21 15:43:41.858 [main] ResultSetProcessorImpl - Preparing collection initializer : [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.858 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.858 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.858 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.859 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#117]
+[DEBUG] 2021-02-21 15:43:41.859 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.859 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.860 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-02-21 15:43:41.860 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Recipes#63
+[DEBUG] 2021-02-21 15:43:41.860 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.863 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.863 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.865 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.866 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.868 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.869 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.869 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.869 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.871 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.874 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.876 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.877 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.878 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.878 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.881 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.883 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.883 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.890 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.890 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.894 [main] IdentifierGeneratorHelper - Natively generated identity: 118
+[DEBUG] 2021-02-21 15:43:41.895 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.895 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.895 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.895 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.896 [main] Collections - Collection found: [entity.Users.recipes#118], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.896 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.896 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.896 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.896 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=118, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.896 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.896 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.898 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.898 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.899 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.901 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.901 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.901 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.902 [main] TwoPhaseLoad - Done materializing entity [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.902 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.902 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.902 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.902 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.903 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#118
+[DEBUG] 2021-02-21 15:43:41.903 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.904 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.904 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.908 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.911 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.911 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.912 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.912 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.913 [main] IdentifierGeneratorHelper - Natively generated identity: 64
+[DEBUG] 2021-02-21 15:43:41.914 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.914 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.914 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.914 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.914 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.915 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.915 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.915 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=64, user=entity.Users#118}
+[DEBUG] 2021-02-21 15:43:41.917 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.918 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.919 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.919 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.922 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:41.923 [main] Loader - Result row: EntityKey[entity.Recipes#64]
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#64]
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.923 [main] TwoPhaseLoad - Processing attribute `user` : value = 118
+[DEBUG] 2021-02-21 15:43:41.924 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.924 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.926 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.926 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.929 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.929 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.930 [main] TwoPhaseLoad - Done materializing entity [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.930 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.930 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.930 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.930 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.930 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#118
+[DEBUG] 2021-02-21 15:43:41.930 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#64]
+[DEBUG] 2021-02-21 15:43:41.930 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.932 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.934 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.935 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#64]
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Processing attribute `user` : value = 118
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#64]
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.936 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.937 [main] TwoPhaseLoad - Done materializing entity [entity.Users#118]
+[DEBUG] 2021-02-21 15:43:41.937 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.937 [main] AbstractLoadPlanBasedCollectionInitializer - Loading collection: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.938 [main] SQL - select recipes0_.Users_id as Users_id4_0_0_, recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.recipe_id as recipe_i1_0_1_, recipes0_.public_recipe as public_r2_0_1_, recipes0_.recipe_name as recipe_n3_0_1_, recipes0_.Users_id as Users_id4_0_1_ from Recipes recipes0_ where recipes0_.Users_id=?
+[DEBUG] 2021-02-21 15:43:41.940 [main] ResultSetProcessorImpl - Preparing collection initializer : [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.940 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.940 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.941 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.941 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#118]
+[DEBUG] 2021-02-21 15:43:41.941 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.941 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.942 [main] AbstractLoadPlanBasedCollectionInitializer - Done loading collection
+[DEBUG] 2021-02-21 15:43:41.942 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Recipes#64
+[DEBUG] 2021-02-21 15:43:41.942 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.944 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.944 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.946 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.946 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.946 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.947 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.947 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.947 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.947 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=64, user=entity.Users#118}
+[DEBUG] 2021-02-21 15:43:41.950 [main] SQL - delete from Recipes where recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.954 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.955 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.955 [main] JdbcCoordinatorImpl - HHH000420: Closing un-released batch
+[DEBUG] 2021-02-21 15:43:41.956 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_0_, recipes0_.public_recipe as public_r2_0_0_, recipes0_.recipe_name as recipe_n3_0_0_, recipes0_.Users_id as Users_id4_0_0_, users1_.id as id1_1_1_, users1_.password as password2_1_1_, users1_.username as username3_1_1_ from Recipes recipes0_ left outer join Users users1_ on recipes0_.Users_id=users1_.id where recipes0_.recipe_id=?
+[DEBUG] 2021-02-21 15:43:41.957 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.957 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Recipes#64
+[DEBUG] 2021-02-21 15:43:41.957 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.961 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.962 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.964 [main] SQL - delete from Recipes
+[DEBUG] 2021-02-21 15:43:41.965 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.967 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.967 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.968 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.968 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.970 [main] SQL - delete from Users
+[DEBUG] 2021-02-21 15:43:41.971 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.973 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.974 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.975 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.976 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.978 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.979 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.979 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.980 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.980 [main] SQL - insert into Users (password, username) values (?, ?)
+[DEBUG] 2021-02-21 15:43:41.981 [main] IdentifierGeneratorHelper - Natively generated identity: 119
+[DEBUG] 2021-02-21 15:43:41.981 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.982 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.982 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.982 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.982 [main] Collections - Collection found: [entity.Users.recipes#119], was: [<unreferenced>] (initialized)
+[DEBUG] 2021-02-21 15:43:41.982 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.983 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2021-02-21 15:43:41.983 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.983 [main] EntityPrinter - entity.Users{recipes=[], password=bananas, id=119, username=Lucy}
+[DEBUG] 2021-02-21 15:43:41.983 [main] AbstractCollectionPersister - Inserting collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:41.983 [main] AbstractCollectionPersister - Collection was empty
+[DEBUG] 2021-02-21 15:43:41.985 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.986 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.986 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:41.988 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:41.988 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:41.988 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:41.989 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:41.990 [main] TwoPhaseLoad - Done materializing entity [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:41.990 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.990 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:41.990 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:41.991 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.991 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#119
+[DEBUG] 2021-02-21 15:43:41.991 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.992 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:41.993 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:41.994 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:41.995 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:41.995 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:41.996 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:41.997 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:41.998 [main] IdentifierGeneratorHelper - Natively generated identity: 65
+[DEBUG] 2021-02-21 15:43:41.998 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:41.999 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:41.999 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:41.999 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:41.999 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:41.999 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:41.999 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:41.999 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Tikka Masala, id=65, user=entity.Users#119}
+[DEBUG] 2021-02-21 15:43:42.001 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.002 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.003 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:42.003 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:42.006 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:42.006 [main] Loader - Result row: EntityKey[entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Processing attribute `user` : value = 119
+[DEBUG] 2021-02-21 15:43:42.008 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.008 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:42.010 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:42.010 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:42.010 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.010 [main] TwoPhaseLoad - Done materializing entity [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.010 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.010 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.011 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.011 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:42.011 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#119
+[DEBUG] 2021-02-21 15:43:42.011 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.011 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.012 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:42.013 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:42.014 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:42.015 [main] Loader - Result row: EntityKey[entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.015 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.015 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:42.015 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.015 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:42.016 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.016 [main] TwoPhaseLoad - Processing attribute `user` : value = 119
+[DEBUG] 2021-02-21 15:43:42.016 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.016 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:42.018 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:42.018 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:42.019 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.019 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.019 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:42.019 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.020 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:42.020 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.020 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:42.020 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.020 [main] TwoPhaseLoad - Done materializing entity [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.020 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.020 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.020 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.021 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:42.021 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#119
+[DEBUG] 2021-02-21 15:43:42.021 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.021 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.023 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2021-02-21 15:43:42.023 [main] TransactionImpl - begin
+[DEBUG] 2021-02-21 15:43:42.025 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2021-02-21 15:43:42.026 [main] SQL - insert into Recipes (public_recipe, recipe_name, Users_id) values (?, ?, ?)
+[DEBUG] 2021-02-21 15:43:42.029 [main] IdentifierGeneratorHelper - Natively generated identity: 66
+[DEBUG] 2021-02-21 15:43:42.029 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:42.029 [main] TransactionImpl - committing
+[DEBUG] 2021-02-21 15:43:42.029 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2021-02-21 15:43:42.029 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2021-02-21 15:43:42.029 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2021-02-21 15:43:42.029 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2021-02-21 15:43:42.030 [main] EntityPrinter - Listing entities:
+[DEBUG] 2021-02-21 15:43:42.030 [main] EntityPrinter - entity.Recipes{public_recipe=1, recipe_name=Chicken Street Tacos, id=66, user=entity.Users#119}
+[DEBUG] 2021-02-21 15:43:42.032 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.033 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2021-02-21 15:43:42.033 [main] CriteriaQueryImpl - Rendered criteria query -> select generatedAlias0 from Recipes as generatedAlias0
+[DEBUG] 2021-02-21 15:43:42.034 [main] SQL - select recipes0_.recipe_id as recipe_i1_0_, recipes0_.public_recipe as public_r2_0_, recipes0_.recipe_name as recipe_n3_0_, recipes0_.Users_id as Users_id4_0_ from Recipes recipes0_
+[DEBUG] 2021-02-21 15:43:42.036 [main] Loader - Result set row: 0
+[DEBUG] 2021-02-21 15:43:42.036 [main] Loader - Result row: EntityKey[entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.036 [main] Loader - Result set row: 1
+[DEBUG] 2021-02-21 15:43:42.036 [main] Loader - Result row: EntityKey[entity.Recipes#66]
+[DEBUG] 2021-02-21 15:43:42.037 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.037 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:42.037 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.037 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Tikka Masala
+[DEBUG] 2021-02-21 15:43:42.038 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.038 [main] TwoPhaseLoad - Processing attribute `user` : value = 119
+[DEBUG] 2021-02-21 15:43:42.038 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.038 [main] SQL - select users0_.id as id1_1_0_, users0_.password as password2_1_0_, users0_.username as username3_1_0_, recipes1_.Users_id as Users_id4_0_1_, recipes1_.recipe_id as recipe_i1_0_1_, recipes1_.recipe_id as recipe_i1_0_2_, recipes1_.public_recipe as public_r2_0_2_, recipes1_.recipe_name as recipe_n3_0_2_, recipes1_.Users_id as Users_id4_0_2_ from Users users0_ left outer join Recipes recipes1_ on users0_.id=recipes1_.Users_id where users0_.id=?
+[DEBUG] 2021-02-21 15:43:42.041 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2021-02-21 15:43:42.042 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:42.042 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.043 [main] ResultSetProcessorImpl - Starting ResultSet row #1
+[DEBUG] 2021-02-21 15:43:42.043 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2021-02-21 15:43:42.043 [main] CollectionReferenceInitializerImpl - Found row of collection: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.043 [main] TwoPhaseLoad - Resolving attributes for [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.043 [main] TwoPhaseLoad - Processing attribute `password` : value = bananas
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Attribute (`password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Processing attribute `recipes` : value = NOT NULL COLLECTION
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Attribute (`recipes`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Processing attribute `username` : value = Lucy
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Attribute (`username`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.044 [main] TwoPhaseLoad - Done materializing entity [entity.Users#119]
+[DEBUG] 2021-02-21 15:43:42.044 [main] CollectionLoadContext - 1 collections were found in result set for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.044 [main] CollectionLoadContext - Collection fully initialized: [entity.Users.recipes#119]
+[DEBUG] 2021-02-21 15:43:42.044 [main] CollectionLoadContext - 1 collections initialized for role: entity.Users.recipes
+[DEBUG] 2021-02-21 15:43:42.044 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2021-02-21 15:43:42.044 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : entity.Users#119
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#65]
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Resolving attributes for [entity.Recipes#66]
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Processing attribute `public_recipe` : value = 1
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Attribute (`public_recipe`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Processing attribute `recipe_name` : value = Chicken Street Tacos
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Attribute (`recipe_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Processing attribute `user` : value = 119
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Attribute (`user`)  - enhanced for lazy-loading? - false
+[DEBUG] 2021-02-21 15:43:42.045 [main] TwoPhaseLoad - Done materializing entity [entity.Recipes#66]
+[DEBUG] 2021-02-21 15:43:42.045 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
