@@ -45,4 +45,12 @@
 * Crud functionality for recipes with One to many relationship between Users and Recipes
 * RecipesDAO added
 * Unit Tests added for RecipesDAO
+### Week 6
+#### Time: 12.62 hours
+#### Worked weekly course work on indie project
+* added jsp's to display user data
+* researched how to implement angular for front end 
+* tested project structure with angular on side project
+* researched using vue and vue materials instead of angular. 
+* researched deployment with angular/vue options. 
   
