@@ -1,0 +1,30 @@
+[INFO ] 2021-03-11 14:16:26.905 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.005 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.030 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.063 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.081 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.098 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.162 [main] RecipesDAOTest - recipe name: [Recipes{recipe_id=201, recipe_name='Chicken Tikka Masala', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='361'}}]
+[INFO ] 2021-03-11 14:16:27.178 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.198 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.213 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.227 [main] RecipesDAO - Save/Update: Recipes{recipe_id=202, recipe_name='The Big Lebowski's big, scary meal', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='362'}}
+[INFO ] 2021-03-11 14:16:27.250 [main] RecipesDAOTest - Test updatedUser: [Recipes{recipe_id=202, recipe_name='The Big Lebowski's big, scary meal', public_recipe=1, user=Users{userName='Lucy', password='bananas', id='362'}}]
+[INFO ] 2021-03-11 14:16:27.271 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.290 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.305 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.334 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.348 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.361 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.403 [main] RecipesDAOTest - after clean: 0
+[INFO ] 2021-03-11 14:16:27.425 [main] RecipesDAOTest - after creating user: 0
+[INFO ] 2021-03-11 14:16:27.441 [main] RecipesDAOTest - after created recipe1
+[INFO ] 2021-03-11 14:16:27.485 [main] UsersDAOTest - USERID366
+[INFO ] 2021-03-11 14:16:27.510 [main] UsersDAOTest - USERID367
+[INFO ] 2021-03-11 14:16:27.515 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='367'}
+[INFO ] 2021-03-11 14:16:27.533 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='367'}]
+[INFO ] 2021-03-11 14:16:27.564 [main] UsersDAOTest - USERID368
+[INFO ] 2021-03-11 14:16:27.571 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='368'}]
+[INFO ] 2021-03-11 14:16:27.593 [main] UsersDAOTest - USERID369
+[INFO ] 2021-03-11 14:16:27.642 [main] UsersDAOTest - USERID371
+[INFO ] 2021-03-11 14:16:27.671 [main] UsersDAOTest - USERID372
