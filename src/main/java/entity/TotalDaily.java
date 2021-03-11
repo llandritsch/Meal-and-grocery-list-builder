@@ -2,13 +2,10 @@ package entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class TotalNutrients{
+public class TotalDaily{
 
 	@JsonProperty("VITB6A")
 	private VITB6A vITB6A;
-
-	@JsonProperty("FAMS")
-	private FAMS fAMS;
 
 	@JsonProperty("VITC")
 	private VITC vITC;
@@ -21,9 +18,6 @@ public class TotalNutrients{
 
 	@JsonProperty("VITD")
 	private VITD vITD;
-
-	@JsonProperty("FATRN")
-	private FATRN fATRN;
 
 	@JsonProperty("P")
 	private P P;
@@ -49,15 +43,6 @@ public class TotalNutrients{
 	@JsonProperty("CA")
 	private CA cA;
 
-	@JsonProperty("FOLFD")
-	private FOLFD fOLFD;
-
-	@JsonProperty("WATER")
-	private WATER wATER;
-
-	@JsonProperty("FAPU")
-	private FAPU fAPU;
-
 	@JsonProperty("NIA")
 	private NIA nIA;
 
@@ -72,9 +57,6 @@ public class TotalNutrients{
 
 	@JsonProperty("TOCPHA")
 	private TOCPHA tOCPHA;
-
-	@JsonProperty("SUGAR")
-	private SUGAR sUGAR;
 
 	@JsonProperty("PROCNT")
 	private PROCNT pROCNT;
@@ -94,9 +76,6 @@ public class TotalNutrients{
 	@JsonProperty("FAT")
 	private FAT fAT;
 
-	@JsonProperty("FOLAC")
-	private FOLAC fOLAC;
-
 	@JsonProperty("FE")
 	private FE fE;
 
@@ -106,14 +85,6 @@ public class TotalNutrients{
 
 	public VITB6A getVITB6A(){
 		return vITB6A;
-	}
-
-	public void setFAMS(FAMS fAMS){
-		this.fAMS = fAMS;
-	}
-
-	public FAMS getFAMS(){
-		return fAMS;
 	}
 
 	public void setVITC(VITC vITC){
@@ -146,14 +117,6 @@ public class TotalNutrients{
 
 	public VITD getVITD(){
 		return vITD;
-	}
-
-	public void setFATRN(FATRN fATRN){
-		this.fATRN = fATRN;
-	}
-
-	public FATRN getFATRN(){
-		return fATRN;
 	}
 
 	public void setP(P P){
@@ -220,30 +183,6 @@ public class TotalNutrients{
 		return cA;
 	}
 
-	public void setFOLFD(FOLFD fOLFD){
-		this.fOLFD = fOLFD;
-	}
-
-	public FOLFD getFOLFD(){
-		return fOLFD;
-	}
-
-	public void setWATER(WATER wATER){
-		this.wATER = wATER;
-	}
-
-	public WATER getWATER(){
-		return wATER;
-	}
-
-	public void setFAPU(FAPU fAPU){
-		this.fAPU = fAPU;
-	}
-
-	public FAPU getFAPU(){
-		return fAPU;
-	}
-
 	public void setNIA(NIA nIA){
 		this.nIA = nIA;
 	}
@@ -282,14 +221,6 @@ public class TotalNutrients{
 
 	public TOCPHA getTOCPHA(){
 		return tOCPHA;
-	}
-
-	public void setSUGAR(SUGAR sUGAR){
-		this.sUGAR = sUGAR;
-	}
-
-	public SUGAR getSUGAR(){
-		return sUGAR;
 	}
 
 	public void setPROCNT(PROCNT pROCNT){
@@ -340,14 +271,6 @@ public class TotalNutrients{
 		return fAT;
 	}
 
-	public void setFOLAC(FOLAC fOLAC){
-		this.fOLAC = fOLAC;
-	}
-
-	public FOLAC getFOLAC(){
-		return fOLAC;
-	}
-
 	public void setFE(FE fE){
 		this.fE = fE;
 	}
@@ -359,14 +282,12 @@ public class TotalNutrients{
 	@Override
  	public String toString(){
 		return 
-			"TotalNutrients{" + 
+			"TotalDaily{" + 
 			"vITB6A = '" + vITB6A + '\'' + 
-			",fAMS = '" + fAMS + '\'' + 
 			",vITC = '" + vITC + '\'' + 
 			",cHOCDF = '" + cHOCDF + '\'' + 
 			",K = '" + K + '\'' + 
 			",vITD = '" + vITD + '\'' + 
-			",fATRN = '" + fATRN + '\'' + 
 			",P = '" + P + '\'' + 
 			",cHOLE = '" + cHOLE + '\'' + 
 			",eNERC_KCAL = '" + eNERCKCAL + '\'' + 
@@ -375,22 +296,17 @@ public class TotalNutrients{
 			",mG = '" + mG + '\'' + 
 			",rIBF = '" + rIBF + '\'' + 
 			",cA = '" + cA + '\'' + 
-			",fOLFD = '" + fOLFD + '\'' + 
-			",wATER = '" + wATER + '\'' + 
-			",fAPU = '" + fAPU + '\'' + 
 			",nIA = '" + nIA + '\'' + 
 			",tHIA = '" + tHIA + '\'' + 
 			",fIBTG = '" + fIBTG + '\'' + 
 			",vITB12 = '" + vITB12 + '\'' + 
 			",tOCPHA = '" + tOCPHA + '\'' + 
-			",sUGAR = '" + sUGAR + '\'' + 
 			",pROCNT = '" + pROCNT + '\'' + 
 			",fOLDFE = '" + fOLDFE + '\'' + 
 			",nA = '" + nA + '\'' + 
 			",zN = '" + zN + '\'' + 
 			",vITA_RAE = '" + vITARAE + '\'' + 
 			",fAT = '" + fAT + '\'' + 
-			",fOLAC = '" + fOLAC + '\'' + 
 			",fE = '" + fE + '\'' + 
 			"}";
 		}
