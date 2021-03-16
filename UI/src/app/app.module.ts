@@ -15,6 +15,8 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { MatIcon, MatIconModule} from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { MatTableModule }  from "@angular/material/table";
+import { FooterComponent } from './navigation/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     NavigationComponent,
     LayoutComponent,
     HeaderComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    FooterComponent
   ],
     imports: [
         BrowserModule,
@@ -35,7 +38,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
         MatToolbarModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule
+        MatListModule,
+        MatTableModule
     ],
   providers: [],
   bootstrap: [AppComponent]

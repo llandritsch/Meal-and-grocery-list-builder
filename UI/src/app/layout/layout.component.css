@@ -1,0 +1,9 @@
+#pageHeader {
+  height: 10%;
+  padding: 10px;
+}
+
+#pageHeader h1 {
+  vertical-align: center;
+  margin-left: 5%;
+}

@@ -2,10 +2,16 @@
   <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
     <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
   </a>
-  <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
-    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Owner Actions</span>
+  <a mat-list-item routerLink="/browse" (click)="onSidenavClose()">
+    <mat-icon>library_add</mat-icon> <span class="nav-caption">Browse</span>
   </a>
-  <a mat-list-item routerLink="#" (click)="onSidenavClose()">
-    <mat-icon>account_balance</mat-icon><span class="nav-caption">Account Actions</span>
+  <a mat-list-item routerLink="/menu" (click)="onSidenavClose()">
+    <mat-icon>view_list</mat-icon><span class="nav-caption">Menu</span>
+  </a>
+  <a mat-list-item routerLink="/groceryList" (click)="onSidenavClose()">
+    <mat-icon> list_alt</mat-icon><span class="nav-caption">Grocery List</span>
+  </a>
+  <a mat-list-item routerLink="/logout" (click)="onSidenavClose()">
+    <mat-icon>account_box</mat-icon><span class="nav-caption">Logout</span>
   </a>
 </mat-nav-list>

@@ -1,3 +1,6 @@
+<div id="pageHeader">
+  <h1>Meal and Grocery Builder</h1>
+</div>
 <mat-sidenav-container>
   <mat-sidenav #sidenav role="navigation">
     <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
@@ -7,5 +10,6 @@
     <main>
       <router-outlet></router-outlet>
     </main>
+    <app-footer></app-footer>
   </mat-sidenav-content>
 </mat-sidenav-container>

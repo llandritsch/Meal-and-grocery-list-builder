@@ -1,0 +1,9 @@
+div {
+  background-color: rgb(123, 31, 162);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  float: left;
+}
