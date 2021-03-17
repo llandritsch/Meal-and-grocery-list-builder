@@ -17,6 +17,7 @@ import { MatListModule } from '@angular/material/list';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { MatTableModule }  from "@angular/material/table";
 import { FooterComponent } from './navigation/footer/footer.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { FooterComponent } from './navigation/footer/footer.component';
         MatSidenavModule,
         MatIconModule,
         MatListModule,
-        MatTableModule
+        MatTableModule,
+        FlexLayoutModule
+
     ],
   providers: [],
   bootstrap: [AppComponent]
