@@ -53,4 +53,13 @@
 * tested project structure with angular on side project
 * researched using vue and vue materials instead of angular. 
 * researched deployment with angular/vue options. 
+### Week 7
+#### Time: 15.5 hours
+#### Worked weekly course work on indie project
+* added angular to build out front end
+* spent lots of time researching how to implement angular with project structure as the JSFW class doesn't go over it. 
+### Week 8
+#### Time: 18 hours
+#### Worked weekly course work on indie project
+* Trial and error with angular.  Having issues getting it to connect
   
