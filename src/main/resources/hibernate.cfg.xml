@@ -1,6 +1,6 @@
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/mealBuilder</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/mealBuilder?serverTimezone=UTC</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.username">root</property>
         <property name="connection.password">1LoveBacon!</property>
@@ -9,6 +9,7 @@
         <property name="hibernate.c3p0.timeout">300</property>
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
         <mapping class="entity.Users"/>
         <mapping class="entity.Recipes"/>
