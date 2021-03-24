@@ -18,6 +18,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { MatTableModule }  from "@angular/material/table";
 import { FooterComponent } from './navigation/footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { HttpClientModule} from "@angular/common/http";
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     LayoutComponent,
     HeaderComponent,
     SidenavListComponent,
-    FooterComponent
+    FooterComponent,
+    SignupComponent
   ],
     imports: [
         BrowserModule,
@@ -41,7 +44,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
         MatIconModule,
         MatListModule,
         MatTableModule,
-        FlexLayoutModule
+        FlexLayoutModule,
+        HttpClientModule
 
     ],
   providers: [],
