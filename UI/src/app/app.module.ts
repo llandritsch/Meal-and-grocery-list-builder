@@ -20,6 +20,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HttpClientModule} from "@angular/common/http";
 import { SignupComponent } from './signup/signup.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -32,22 +33,23 @@ import { SignupComponent } from './signup/signup.component';
     FooterComponent,
     SignupComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatCardModule,
-        RoutingModule,
-        MatToolbarModule,
-        MatSidenavModule,
-        MatIconModule,
-        MatListModule,
-        MatTableModule,
-        FlexLayoutModule,
-        HttpClientModule
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    RoutingModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatTableModule,
+    FlexLayoutModule,
+    HttpClientModule,
+    MatFormFieldModule
 
-    ],
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
