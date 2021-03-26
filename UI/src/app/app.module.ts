@@ -20,7 +20,9 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { HttpClientModule} from "@angular/common/http";
 import { SignupComponent } from './signup/signup.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -47,8 +49,9 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatTableModule,
     FlexLayoutModule,
     HttpClientModule,
-    MatFormFieldModule
-
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
