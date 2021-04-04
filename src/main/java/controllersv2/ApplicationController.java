@@ -1,5 +1,7 @@
 package controllersv2;
 
+import controller.UsersService;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
@@ -12,6 +14,7 @@ public class ApplicationController extends Application {
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
         h.add(SearchUserV2.class);
+        h.add(UsersService.class);
         return h;
     }
 }
