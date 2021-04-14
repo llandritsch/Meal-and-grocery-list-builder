@@ -58,4 +58,33 @@ public class UsersService {
             return Response.status(500).build();
         }
     }
+
+    @DELETE
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteUser(@PathParam("id") int id) {
+        Users userToDelete = usersDAO.getUserById(id);
+        usersDAO.deleteUser(userToDelete);
+        return Response.status(204).build();
+    }
+
+    @PUT
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateUser(@PathParam("id") int id, Users userData) {
+        Users user = usersDAO.getUserById(id);
+
+        if (userData.getUserName() != null) {
+            user.setUserName(userData.getUserName());
+        }
+
+        if (userData.getPassword() != null) {
+            user.setPassword(userData.getPassword());
+        }
+
+        usersDAO.saveOrUpdate(user);
+        GenericEntity<Users> myEntity = new GenericEntity<>(user) {};
+        return Response.status(200).entity(myEntity).build();
+    }
 }
