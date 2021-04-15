@@ -1,0 +1,270 @@
+[DEBUG] 2021-04-15 12:28:41.328 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2021-04-15 12:28:41.346 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2021-04-15 12:28:41.365 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2021-04-15 12:28:41.610 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2021-04-15 12:28:41.614 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2021-04-15 12:28:42.145 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2021-04-15 12:28:42.606 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2021-04-15 12:28:42.654 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2021-04-15 12:28:42.657 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2021-04-15 12:28:42.701 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2021-04-15 12:28:42.780 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4567e53d
+[DEBUG] 2021-04-15 12:28:42.781 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4567e53d
+[DEBUG] 2021-04-15 12:28:42.781 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4567e53d
+[DEBUG] 2021-04-15 12:28:42.782 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4074023c
+[DEBUG] 2021-04-15 12:28:42.783 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@6e91893
+[DEBUG] 2021-04-15 12:28:42.785 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1a35993f
+[DEBUG] 2021-04-15 12:28:42.788 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@14e2e1c3
+[DEBUG] 2021-04-15 12:28:42.788 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@14e2e1c3
+[DEBUG] 2021-04-15 12:28:42.788 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@14e2e1c3
+[DEBUG] 2021-04-15 12:28:42.791 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@aac3f4e
+[DEBUG] 2021-04-15 12:28:42.791 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@aac3f4e
+[DEBUG] 2021-04-15 12:28:42.791 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@aac3f4e
+[DEBUG] 2021-04-15 12:28:42.793 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6edcd0d8
+[DEBUG] 2021-04-15 12:28:42.793 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6edcd0d8
+[DEBUG] 2021-04-15 12:28:42.793 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6edcd0d8
+[DEBUG] 2021-04-15 12:28:42.794 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@2a27cb34
+[DEBUG] 2021-04-15 12:28:42.794 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@2a27cb34
+[DEBUG] 2021-04-15 12:28:42.794 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2a27cb34
+[DEBUG] 2021-04-15 12:28:42.795 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@64aad6db
+[DEBUG] 2021-04-15 12:28:42.796 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@64aad6db
+[DEBUG] 2021-04-15 12:28:42.796 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@64aad6db
+[DEBUG] 2021-04-15 12:28:42.797 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2822c6ff
+[DEBUG] 2021-04-15 12:28:42.797 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@2822c6ff
+[DEBUG] 2021-04-15 12:28:42.797 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2822c6ff
+[DEBUG] 2021-04-15 12:28:42.798 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@74ad8d05
+[DEBUG] 2021-04-15 12:28:42.798 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@74ad8d05
+[DEBUG] 2021-04-15 12:28:42.798 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@74ad8d05
+[DEBUG] 2021-04-15 12:28:42.799 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7159139f
+[DEBUG] 2021-04-15 12:28:42.799 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7159139f
+[DEBUG] 2021-04-15 12:28:42.800 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@37c2eacb
+[DEBUG] 2021-04-15 12:28:42.800 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@37c2eacb
+[DEBUG] 2021-04-15 12:28:42.801 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@385ef531
+[DEBUG] 2021-04-15 12:28:42.801 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@385ef531
+[DEBUG] 2021-04-15 12:28:42.802 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3cbcd8f3
+[DEBUG] 2021-04-15 12:28:42.802 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@2301b75
+[DEBUG] 2021-04-15 12:28:42.803 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@4930539b
+[DEBUG] 2021-04-15 12:28:42.803 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@4930539b
+[DEBUG] 2021-04-15 12:28:42.804 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@29a4f594
+[DEBUG] 2021-04-15 12:28:42.804 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@29a4f594
+[DEBUG] 2021-04-15 12:28:42.816 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@5bca7664
+[DEBUG] 2021-04-15 12:28:42.816 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5bca7664
+[DEBUG] 2021-04-15 12:28:42.818 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@78830d9a
+[DEBUG] 2021-04-15 12:28:42.818 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@78830d9a
+[DEBUG] 2021-04-15 12:28:42.820 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7ad54c55
+[DEBUG] 2021-04-15 12:28:42.820 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7ad54c55
+[DEBUG] 2021-04-15 12:28:42.822 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@34a0ef00
+[DEBUG] 2021-04-15 12:28:42.822 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@34a0ef00
+[DEBUG] 2021-04-15 12:28:42.823 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@e344ad3
+[DEBUG] 2021-04-15 12:28:42.824 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@e344ad3
+[DEBUG] 2021-04-15 12:28:42.825 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4cbf4f53
+[DEBUG] 2021-04-15 12:28:42.825 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4cbf4f53
+[DEBUG] 2021-04-15 12:28:42.827 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3eee3e2b
+[DEBUG] 2021-04-15 12:28:42.828 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@3eee3e2b
+[DEBUG] 2021-04-15 12:28:42.829 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5c748168
+[DEBUG] 2021-04-15 12:28:42.829 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5c748168
+[DEBUG] 2021-04-15 12:28:42.831 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@58d63b16
+[DEBUG] 2021-04-15 12:28:42.831 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@58d63b16
+[DEBUG] 2021-04-15 12:28:42.832 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@76d05cc9
+[DEBUG] 2021-04-15 12:28:42.832 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@76d05cc9
+[DEBUG] 2021-04-15 12:28:42.832 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@76d05cc9
+[DEBUG] 2021-04-15 12:28:42.834 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5177e388
+[DEBUG] 2021-04-15 12:28:42.835 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@6cf31447
+[DEBUG] 2021-04-15 12:28:42.835 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@6cf31447
+[DEBUG] 2021-04-15 12:28:42.835 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@6cf31447
+[DEBUG] 2021-04-15 12:28:42.836 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@47547132
+[DEBUG] 2021-04-15 12:28:42.837 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@6f3f0fae
+[DEBUG] 2021-04-15 12:28:42.837 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6f3f0fae
+[DEBUG] 2021-04-15 12:28:42.838 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@46678e49
+[DEBUG] 2021-04-15 12:28:42.838 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@46678e49
+[DEBUG] 2021-04-15 12:28:42.839 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@1abc9f14
+[DEBUG] 2021-04-15 12:28:42.839 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@1abc9f14
+[DEBUG] 2021-04-15 12:28:42.840 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3e4f80cb
+[DEBUG] 2021-04-15 12:28:42.840 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3e4f80cb
+[DEBUG] 2021-04-15 12:28:42.841 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@e04ccf8
+[DEBUG] 2021-04-15 12:28:42.841 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@e04ccf8
+[DEBUG] 2021-04-15 12:28:42.842 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6e0cff20
+[DEBUG] 2021-04-15 12:28:42.843 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@2c6ee758
+[DEBUG] 2021-04-15 12:28:42.843 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@2c6ee758
+[DEBUG] 2021-04-15 12:28:42.843 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@2c6ee758
+[DEBUG] 2021-04-15 12:28:42.844 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@256aa5f2
+[DEBUG] 2021-04-15 12:28:42.844 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@256aa5f2
+[DEBUG] 2021-04-15 12:28:42.845 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@256aa5f2
+[DEBUG] 2021-04-15 12:28:42.846 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7cb2651f
+[DEBUG] 2021-04-15 12:28:42.847 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@dcc6211
+[DEBUG] 2021-04-15 12:28:42.848 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@776802b0
+[DEBUG] 2021-04-15 12:28:42.848 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@776802b0
+[DEBUG] 2021-04-15 12:28:42.848 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@776802b0
+[DEBUG] 2021-04-15 12:28:42.849 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@14f3c6fc
+[DEBUG] 2021-04-15 12:28:42.849 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@14f3c6fc
+[DEBUG] 2021-04-15 12:28:42.849 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@14f3c6fc
+[DEBUG] 2021-04-15 12:28:42.849 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1cc9cfb2
+[DEBUG] 2021-04-15 12:28:42.850 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@46d9aec8
+[DEBUG] 2021-04-15 12:28:42.851 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5c82cd4f
+[DEBUG] 2021-04-15 12:28:42.851 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5c82cd4f
+[DEBUG] 2021-04-15 12:28:42.852 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@30814f43
+[DEBUG] 2021-04-15 12:28:42.853 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@17b64941
+[DEBUG] 2021-04-15 12:28:42.853 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@17b64941
+[DEBUG] 2021-04-15 12:28:42.856 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@73ad4ecc
+[DEBUG] 2021-04-15 12:28:42.856 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@73ad4ecc
+[DEBUG] 2021-04-15 12:28:42.856 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@408b87aa
+[DEBUG] 2021-04-15 12:28:42.857 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@76c52298
+[DEBUG] 2021-04-15 12:28:42.858 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@507d20bb
+[DEBUG] 2021-04-15 12:28:42.865 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@4eb30d44
+[DEBUG] 2021-04-15 12:28:42.865 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4eb30d44
+[DEBUG] 2021-04-15 12:28:42.865 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1ab6718
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3910fe11
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@460510aa
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@351e414e
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6fd77352
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5109e8cf
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3f672204
+[DEBUG] 2021-04-15 12:28:42.866 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@78b41097
+[DEBUG] 2021-04-15 12:28:42.911 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2021-04-15 12:28:42.913 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2021-04-15 12:28:42.914 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-04-15 12:28:42.915 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2021-04-15 12:28:42.916 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2021-04-15 12:28:42.918 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2021-04-15 12:28:42.918 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2021-04-15 12:28:42.921 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-04-15 12:28:42.922 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2021-04-15 12:28:42.924 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2021-04-15 12:28:42.925 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2021-04-15 12:28:42.926 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2021-04-15 12:28:42.926 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2021-04-15 12:28:42.928 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2021-04-15 12:28:42.935 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/test_mealBuilder
+[INFO ] 2021-04-15 12:28:42.935 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2021-04-15 12:28:42.935 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2021-04-15 12:28:43.177 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2021-04-15 12:28:43.903 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.22
+      major : 8
+      minor : 0
+[DEBUG] 2021-04-15 12:28:43.904 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.22 (Revision: d64b664fa93e81296a377de031b8123a67e6def2)
+      major : 8
+      minor : 0
+[DEBUG] 2021-04-15 12:28:43.904 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2021-04-15 12:28:43.968 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2021-04-15 12:28:43.994 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2021-04-15 12:28:44.027 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2021-04-15 12:28:44.078 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2021-04-15 12:28:44.081 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4047d2d9] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@48d293ee]
+[DEBUG] 2021-04-15 12:28:44.199 [main] AnnotationBinder - Binding entity from annotated class: entity.Users
+[DEBUG] 2021-04-15 12:28:44.238 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-04-15 12:28:44.246 [main] EntityBinder - Import with entity name Users
+[DEBUG] 2021-04-15 12:28:44.251 [main] EntityBinder - Bind entity entity.Users on table Users
+[DEBUG] 2021-04-15 12:28:44.289 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.295 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-04-15 12:28:44.298 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:id]
+[DEBUG] 2021-04-15 12:28:44.301 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.304 [main] PropertyBinder - Building property id
+[DEBUG] 2021-04-15 12:28:44.309 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-04-15 12:28:44.311 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.311 [main] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2021-04-15 12:28:44.311 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:password]
+[DEBUG] 2021-04-15 12:28:44.312 [main] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2021-04-15 12:28:44.312 [main] PropertyBinder - Building property password
+[DEBUG] 2021-04-15 12:28:44.314 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Users_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-04-15 12:28:44.314 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=recipes, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.316 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.331 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.331 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=recipes_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.332 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='recipes_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2021-04-15 12:28:44.334 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-04-15 12:28:44.335 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy=''}
+[DEBUG] 2021-04-15 12:28:44.335 [main] CollectionBinder - Collection role: entity.Users.recipes
+[DEBUG] 2021-04-15 12:28:44.341 [main] PropertyBinder - Building property recipes
+[DEBUG] 2021-04-15 12:28:44.341 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Users), mappingColumn=username, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.341 [main] PropertyBinder - MetadataSourceProcessor property username with lazy=false
+[DEBUG] 2021-04-15 12:28:44.342 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Users:username]
+[DEBUG] 2021-04-15 12:28:44.342 [main] SimpleValueBinder - building SimpleValue for username
+[DEBUG] 2021-04-15 12:28:44.342 [main] PropertyBinder - Building property username
+[DEBUG] 2021-04-15 12:28:44.343 [main] AnnotationBinder - Binding entity from annotated class: entity.Recipes
+[DEBUG] 2021-04-15 12:28:44.343 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-04-15 12:28:44.344 [main] EntityBinder - Import with entity name Recipes
+[DEBUG] 2021-04-15 12:28:44.344 [main] EntityBinder - Bind entity entity.Recipes on table Recipes
+[DEBUG] 2021-04-15 12:28:44.346 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=recipe_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.347 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-04-15 12:28:44.347 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:id]
+[DEBUG] 2021-04-15 12:28:44.347 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.347 [main] PropertyBinder - Building property id
+[DEBUG] 2021-04-15 12:28:44.348 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(recipe_id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-04-15 12:28:44.348 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=public_recipe, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.348 [main] PropertyBinder - MetadataSourceProcessor property public_recipe with lazy=false
+[DEBUG] 2021-04-15 12:28:44.349 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:public_recipe]
+[DEBUG] 2021-04-15 12:28:44.349 [main] SimpleValueBinder - building SimpleValue for public_recipe
+[DEBUG] 2021-04-15 12:28:44.349 [main] PropertyBinder - Building property public_recipe
+[DEBUG] 2021-04-15 12:28:44.349 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=recipe_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.349 [main] PropertyBinder - MetadataSourceProcessor property recipe_name with lazy=false
+[DEBUG] 2021-04-15 12:28:44.350 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.Recipes:recipe_name]
+[DEBUG] 2021-04-15 12:28:44.350 [main] SimpleValueBinder - building SimpleValue for recipe_name
+[DEBUG] 2021-04-15 12:28:44.350 [main] PropertyBinder - Building property recipe_name
+[DEBUG] 2021-04-15 12:28:44.350 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Users_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-04-15 12:28:44.351 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Recipes), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.353 [main] PropertyBinder - Building property user
+[DEBUG] 2021-04-15 12:28:44.353 [main] AnnotationBinder - Binding entity from annotated class: entity.UserGoals
+[DEBUG] 2021-04-15 12:28:44.353 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2021-04-15 12:28:44.353 [main] EntityBinder - Import with entity name UserGoals
+[DEBUG] 2021-04-15 12:28:44.354 [main] EntityBinder - Bind entity entity.UserGoals on table User_Macro_Goals
+[DEBUG] 2021-04-15 12:28:44.355 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.355 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2021-04-15 12:28:44.355 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:id]
+[DEBUG] 2021-04-15 12:28:44.355 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.355 [main] PropertyBinder - Building property id
+[DEBUG] 2021-04-15 12:28:44.355 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2021-04-15 12:28:44.356 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=calorie_goal, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.356 [main] PropertyBinder - MetadataSourceProcessor property calorieGoal with lazy=false
+[DEBUG] 2021-04-15 12:28:44.356 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:calorieGoal]
+[DEBUG] 2021-04-15 12:28:44.356 [main] SimpleValueBinder - building SimpleValue for calorieGoal
+[DEBUG] 2021-04-15 12:28:44.356 [main] PropertyBinder - Building property calorieGoal
+[DEBUG] 2021-04-15 12:28:44.356 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=carb_goal, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.357 [main] PropertyBinder - MetadataSourceProcessor property carbGoal with lazy=false
+[DEBUG] 2021-04-15 12:28:44.357 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:carbGoal]
+[DEBUG] 2021-04-15 12:28:44.357 [main] SimpleValueBinder - building SimpleValue for carbGoal
+[DEBUG] 2021-04-15 12:28:44.357 [main] PropertyBinder - Building property carbGoal
+[DEBUG] 2021-04-15 12:28:44.357 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=fat_goal, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.357 [main] PropertyBinder - MetadataSourceProcessor property fatGoal with lazy=false
+[DEBUG] 2021-04-15 12:28:44.358 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:fatGoal]
+[DEBUG] 2021-04-15 12:28:44.358 [main] SimpleValueBinder - building SimpleValue for fatGoal
+[DEBUG] 2021-04-15 12:28:44.358 [main] PropertyBinder - Building property fatGoal
+[DEBUG] 2021-04-15 12:28:44.358 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=protein_goal, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.359 [main] PropertyBinder - MetadataSourceProcessor property proteinGoal with lazy=false
+[DEBUG] 2021-04-15 12:28:44.359 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:proteinGoal]
+[DEBUG] 2021-04-15 12:28:44.359 [main] SimpleValueBinder - building SimpleValue for proteinGoal
+[DEBUG] 2021-04-15 12:28:44.360 [main] PropertyBinder - Building property proteinGoal
+[DEBUG] 2021-04-15 12:28:44.360 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='userid', referencedColumn='', mappedBy=''}
+[DEBUG] 2021-04-15 12:28:44.360 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.360 [main] PropertyBinder - Building property user
+[DEBUG] 2021-04-15 12:28:44.361 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(User_Macro_Goals), mappingColumn=userid, insertable=true, updatable=true, unique=false}
+[DEBUG] 2021-04-15 12:28:44.361 [main] PropertyBinder - MetadataSourceProcessor property userid with lazy=false
+[DEBUG] 2021-04-15 12:28:44.361 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [entity.UserGoals:userid]
+[DEBUG] 2021-04-15 12:28:44.361 [main] SimpleValueBinder - building SimpleValue for userid
+[DEBUG] 2021-04-15 12:28:44.362 [main] PropertyBinder - Building property userid
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for username
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for public_recipe
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for recipe_name
+[DEBUG] 2021-04-15 12:28:44.364 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2021-04-15 12:28:44.365 [main] SimpleValueBinder - Starting fillSimpleValue for calorieGoal
+[DEBUG] 2021-04-15 12:28:44.365 [main] SimpleValueBinder - Starting fillSimpleValue for carbGoal
+[DEBUG] 2021-04-15 12:28:44.365 [main] SimpleValueBinder - Starting fillSimpleValue for fatGoal
+[DEBUG] 2021-04-15 12:28:44.365 [main] SimpleValueBinder - Starting fillSimpleValue for proteinGoal
+[DEBUG] 2021-04-15 12:28:44.365 [main] SimpleValueBinder - Starting fillSimpleValue for userid
+[DEBUG] 2021-04-15 12:28:44.370 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+[DEBUG] 2021-04-15 12:28:44.370 [main] PrimaryKey - Forcing column [recipe_id] to be non-null as it is part of the primary key for table [recipes]
+[DEBUG] 2021-04-15 12:28:44.370 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user_macro_goals]
+[DEBUG] 2021-04-15 12:28:44.370 [main] CollectionSecondPass - Second pass for collection: entity.Users.recipes
+[DEBUG] 2021-04-15 12:28:44.370 [main] CollectionBinder - Binding a OneToMany: entity.Users.recipes through a foreign key
+[DEBUG] 2021-04-15 12:28:44.371 [main] CollectionBinder - Mapping collection: entity.Users.recipes -> Recipes
+[DEBUG] 2021-04-15 12:28:44.372 [main] CollectionSecondPass - Mapped collection key: Users_id, one-to-many: entity.Recipes
+[DEBUG] 2021-04-15 12:28:44.372 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users
+[DEBUG] 2021-04-15 12:28:44.375 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users
+[DEBUG] 2021-04-15 12:28:44.378 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users
+[DEBUG] 2021-04-15 12:28:44.378 [main] InFlightMetadataCollectorImpl - Resolving reference to class: entity.Users

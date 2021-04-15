@@ -30,8 +30,10 @@ public class UserGoals {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "Userid")
+    @JoinColumn(name = "userid", referencedColumnName = "id", insertable = false, updatable = false)
     private Users user;
+
+    private int userid;
 
     /**
      * Instantiates new userGoal
@@ -46,6 +48,7 @@ public class UserGoals {
      * @param fatGoal
      * @param calorieGoal
      * @param id
+     * @param user
      */
     public UserGoals(int proteinGoal, int carbGoal, int fatGoal, int calorieGoal, Users user,int id) {
         this.user = user;
@@ -54,6 +57,22 @@ public class UserGoals {
         this.fatGoal = fatGoal;
         this.calorieGoal = calorieGoal;
         this.id = id;
+    }
+
+    /**
+     * gets userid
+     * @return userid
+     */
+    public int getUserid() {
+        return user.getId();
+    }
+
+    /**
+     * sets userid
+     * @param userid
+     */
+    public void setUserid(int userid) {
+        this.userid = getUserid();
     }
 
     /**
@@ -134,6 +153,7 @@ public class UserGoals {
         this.user = user;
     }
 
+
     @Override
     public String toString() {
         return "User Goals{" +
@@ -142,7 +162,7 @@ public class UserGoals {
                 ", protein goal=" + proteinGoal +
                 ", carb goal=" + carbGoal +
                 ", fat goal=" + fatGoal +
-                ", user=" + user +
+                ", userid=" + userid +
                 '}';
     }
 
