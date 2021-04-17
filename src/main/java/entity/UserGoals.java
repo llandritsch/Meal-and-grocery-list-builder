@@ -29,7 +29,7 @@ public class UserGoals {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "userid", referencedColumnName = "id", insertable = false, updatable = false)
     private Users user;
 
@@ -72,7 +72,7 @@ public class UserGoals {
      * @param userid
      */
     public void setUserid(int userid) {
-        this.userid = getUserid();
+        this.userid = userid;
     }
 
     /**

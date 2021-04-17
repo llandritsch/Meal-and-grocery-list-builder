@@ -49,6 +49,11 @@ public class UserGoalsDAO {
         return goals;
     }
 
+    /**
+     * creates new userGoals
+     * @param userGoals
+     * @return
+     */
     public int createGoals(UserGoals userGoals) {
         int id = 0;
         Session session = sessionFactory.openSession();
@@ -59,4 +64,27 @@ public class UserGoalsDAO {
         return id;
     }
 
+    /**
+     * updates an existing goal
+     * @param userGoals
+     */
+    public void saveOrUpdate(UserGoals userGoals) {
+        Session session = sessionFactory.openSession();
+        logger.info("Save/Update: " + userGoals);
+        session.saveOrUpdate(userGoals);
+        session.beginTransaction().commit();
+        session.close();
+    }
+
+    /**
+     * deletes goals
+     * @param userGoals
+     */
+    public void deleteGoal(UserGoals userGoals) {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(userGoals);
+        transaction.commit();
+        session.close();
+    }
 }

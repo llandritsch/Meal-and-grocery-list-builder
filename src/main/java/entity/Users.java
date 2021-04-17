@@ -15,6 +15,7 @@ import java.util.Set;
  */
 @Entity(name = "Users")
 @Table(name = "Users")
+@SecondaryTable(name = "User_Macro_Goals", pkJoinColumns = @PrimaryKeyJoinColumn(name = "userid"))
 public class Users {
     @Column(name = "username")
     private String username;
