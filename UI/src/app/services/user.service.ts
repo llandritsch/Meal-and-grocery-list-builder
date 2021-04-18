@@ -15,10 +15,10 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  rootURL = '/api/v2/users';
+  rootURL = '/api/UserService';
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.rootURL);
+    return this.http.get<User[]>(this.rootURL + "/users");
   }
 
   createUser(user: User): Observable<User> {

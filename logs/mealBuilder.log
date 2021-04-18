@@ -89,3 +89,4 @@
 [INFO ] 2021-03-11 14:56:31.302 [main] UsersDAOTest - USERID397
 [INFO ] 2021-03-11 14:56:31.341 [main] UsersDAOTest - USERID398
 [INFO ] 2021-04-15 17:42:36.794 [main] UserGoalsDAO - Save/Update: User Goals{goal id=1, calorie goal='1200, protein goal=100, carb goal=200, fat goal=100, userid=391}
+[INFO ] 2021-04-17 18:28:31.171 [main] UserGoalsDAO - Save/Update: User Goals{goal id=1, calorie goal='1200, protein goal=100, carb goal=200, fat goal=100, userid=391}

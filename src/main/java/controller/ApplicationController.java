@@ -1,20 +1,19 @@
-package controllersv2;
-
-import controller.UsersService;
+package controller;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-@ApplicationPath("/api/v2")
+@ApplicationPath("/api")
 public class ApplicationController extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(SearchUserV2.class);
+        h.add(SearchUser.class);
         h.add(UsersService.class);
+        h.add(GoalService.class);
         return h;
     }
 }
