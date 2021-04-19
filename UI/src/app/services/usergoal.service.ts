@@ -18,7 +18,7 @@ export class UserGoalService {
 
   constructor(private http: HttpClient) { }
 
-  rootURL = '/api/UsersService';
+  rootURL = '/api/GoalService';
 
   createUserGoal(goal: UserGoal): Observable<UserGoal> {
     return this.http.post<UserGoal>(this.rootURL, goal);
