@@ -60,6 +60,18 @@ public class UserGoals {
     }
 
     /**
+     * gets id
+     * @return
+     */
+    public int getId() {return this.id;}
+
+    /**
+     * sets id
+     * @param id
+     */
+    public void setId(int id) {this.id = id;}
+
+    /**
      * gets userid
      * @return userid
      */
