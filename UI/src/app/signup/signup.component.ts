@@ -46,10 +46,9 @@ export class SignupComponent implements OnInit {
     // with its id property.
     const user = await this.userService.createUser(userData).toPromise();
     // Associate the goal to the user we just created...
-    userGoalData.userId = user.id;
+    userGoalData.userid = user.id;
     // Then create the goal for that user
     await this.userGoalService.createUserGoal(userGoalData).toPromise();
-
   }
 
 }

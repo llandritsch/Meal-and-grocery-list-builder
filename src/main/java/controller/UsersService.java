@@ -35,7 +35,7 @@ public class UsersService {
         GenericEntity<Users> myEntity = new GenericEntity<Users>(user) {};
         return Response.status(200).entity(myEntity).build();
     }
-
+/*
     @POST
     @Path("/users")
     @Produces(MediaType.APPLICATION_JSON)
@@ -54,6 +54,22 @@ public class UsersService {
             user.setId(id);
             GenericEntity<Users> myEntity = new GenericEntity<Users>(user) {};
             return Response.status(200).entity(myEntity).build();
+        } else {
+            return Response.status(500).build();
+        }
+    }
+*/
+
+    @POST
+    @Path("/users")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createUser(Users user) {
+        int id = usersDAO.createUser(user);
+        if (id != 0) {
+            user.setId(id);
+            GenericEntity<Users> myEntity = new GenericEntity<Users> (user) {};
+            return Response.status(201).entity(myEntity).build();
         } else {
             return Response.status(500).build();
         }

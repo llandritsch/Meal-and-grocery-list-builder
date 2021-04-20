@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 
 export type UserGoal = {
   id?: number;
-  userId?: number;
+  userid?: number;
   calorieGoal: number;
   carbGoal: number;
   fatGoal: number;
@@ -21,6 +21,10 @@ export class UserGoalService {
   rootURL = '/api/GoalService';
 
   createUserGoal(goal: UserGoal): Observable<UserGoal> {
-    return this.http.post<UserGoal>(this.rootURL, goal);
+    const payload = {};
+    Object.keys(goal).forEach(key => {
+      payload[key] = parseInt(goal[key], 10);
+    });
+    return this.http.post<UserGoal>(this.rootURL + "/goals", payload);
   }
 }

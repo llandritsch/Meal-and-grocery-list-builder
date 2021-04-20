@@ -11,10 +11,10 @@ export class IndexComponent implements OnInit {
 
   constructor(private indexSvc: UserService) { }
 
-    users: Observable<User[]> = null;
+    user: Observable<User[]> = null;
 
   ngOnInit(): void {
-    this.users = this.indexSvc.getUsers();
+    this.user = this.indexSvc.getUsers();
   }
 
 }

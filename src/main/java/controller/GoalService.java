@@ -36,6 +36,7 @@ public class GoalService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /*
     @POST
     @Path("/goals")
     @Produces(MediaType.APPLICATION_JSON)
@@ -59,6 +60,22 @@ public class GoalService {
             goals.setId(id);
             GenericEntity<UserGoals> myEntity = new GenericEntity<UserGoals>(goals) {};
             return Response.status(200).entity(myEntity).build();
+        } else {
+            return Response.status(500).build();
+        }
+    }
+    */
+
+    @POST
+    @Path("/goals")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createUserGoal(UserGoals goals) {
+        int id = goalsDAO.createGoals(goals);
+        if(id != 0) {
+            goals.setId(id);
+            GenericEntity<UserGoals> myEntity = new GenericEntity<>(goals) {};
+            return Response.status(201).entity(myEntity).build();
         } else {
             return Response.status(500).build();
         }
