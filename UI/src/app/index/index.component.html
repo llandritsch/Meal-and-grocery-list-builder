@@ -5,7 +5,7 @@
 
   <div id="testConection">
     <h1>Data from backend: </h1>
-    <h2 *ng="let u of users | async">{{ u.userName }}</h2>
+    <h2 *ngFor="let u of user | async">{{ u.userName }}</h2>
   </div>
 
   <div id="macroBox">

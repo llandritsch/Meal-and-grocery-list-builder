@@ -14,6 +14,7 @@ public class ApplicationController extends Application {
         h.add(SearchUser.class);
         h.add(UsersService.class);
         h.add(GoalService.class);
+        h.add(RecipeService.class);
         return h;
     }
 }
