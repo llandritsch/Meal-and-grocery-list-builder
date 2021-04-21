@@ -61,4 +61,27 @@ public class RecipeService {
         }
     }
 
+    @DELETE
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteRecipe(@PathParam("id") int id) {
+        Recipes recipeToDelete = dao.getRecipeById(id);
+        dao.deleteRecipe(recipeToDelete);
+        return Response.status(204).build();
+    }
+
+    @PUT
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response updateRecipe(@PathParam("id") int id, Recipes recipeData) {
+         Recipes recipe = dao.getRecipeById(id);
+
+         if(recipeData.getRecipe_name() != null) {
+             recipe.setRecipe_name(recipeData.getRecipe_name());
+         }
+         dao.saveOrUpdate(recipe);
+         GenericEntity<Recipes> myEntity = new GenericEntity<Recipes>(recipe) {};
+         return Response.status(200).entity(myEntity).build();
+    }
 }
