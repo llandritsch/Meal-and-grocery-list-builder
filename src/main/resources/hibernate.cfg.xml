@@ -14,6 +14,7 @@
         <mapping class="entity.Users"/>
         <mapping class="entity.Recipes"/>
         <mapping class="entity.UserGoals"/>
+        <mapping class="entity.AuthenticationToken"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -48,6 +48,20 @@ public class UsersDAO {
         return users;
     }
 
+    public Users getUserByUsernameAndPassword(String username, String password) {
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Users> query = builder.createQuery(Users.class);
+        Root<Users> root = query.from(Users.class);
+        // TODO: The password should be case-sensitive
+        query.where(builder.equal(root.get("username"), username), builder.equal(root.get("password"), password));
+        List<Users> users = session.createQuery(query).getResultList();
+        session.close();
+
+        if (users.size() < 1) { return null; }
+        return users.get(0);
+    }
+
     /**
      * gets user by Id
      * @param userId
