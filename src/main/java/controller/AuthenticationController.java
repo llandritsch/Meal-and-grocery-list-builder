@@ -47,5 +47,15 @@ public class AuthenticationController {
         return Response.status(201).entity(myEntity).build();
     }
 
+    @DELETE
+    @Path("{token}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response delete(@PathParam("token") String token) {
+        AuthenticationToken authToken = authenticationTokenDAO.getByToken(token);
+        if (authToken == null) { return Response.status(400).build(); }
+
+        authenticationTokenDAO.delete(authToken);
+        return Response.status(204).build();
+    }
 }
 

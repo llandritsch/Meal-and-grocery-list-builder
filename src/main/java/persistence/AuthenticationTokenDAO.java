@@ -20,10 +20,13 @@ public class AuthenticationTokenDAO {
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     public AuthenticationToken getByToken(String token) {
+        if (token == null) {
+            return null;
+        }
         Session session = sessionFactory.openSession();
-        AuthenticationToken tokens = session.get(AuthenticationToken.class, token);
+        AuthenticationToken authToken = session.get(AuthenticationToken.class, token);
         session.close();
-        return tokens;
+        return authToken;
     }
 
     public AuthenticationToken create(int userId) {

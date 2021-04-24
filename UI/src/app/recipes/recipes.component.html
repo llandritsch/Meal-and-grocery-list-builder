@@ -1,1 +1,4 @@
-<p>recipes works!</p>
+<h1>Choose a recipe to add to your weekly menu</h1>
+<div *ngFor="let r of recipe | async">{{ r.recipeName }}">
+
+</div>

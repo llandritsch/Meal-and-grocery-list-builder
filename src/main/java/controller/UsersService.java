@@ -1,6 +1,8 @@
 package controller;
 
+import entity.AuthenticationToken;
 import entity.Users;
+import persistence.AuthenticationTokenDAO;
 import persistence.UsersDAO;
 
 import javax.ws.rs.*;
@@ -12,11 +14,22 @@ import java.util.List;
 @Path("/UserService")
 public class UsersService {
     UsersDAO usersDAO = new UsersDAO();
+    AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
 
     @GET
     @Path("/users")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getUsers() {
+    public Response getUsers(
+            @HeaderParam("userToken") String userToken
+    ) {
+        // Look up the token in the database.
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        // If there is no token, OR the existing token is expired,
+        // then tell the user they are not authorized to access this
+        // resource (401 means Unauthorized).
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
         // get all users from database
         List<Users> users = new UsersDAO().getAllUsers();
         // build an entity response containing all users
