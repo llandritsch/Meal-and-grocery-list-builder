@@ -3,6 +3,8 @@ package entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * The type Recipes.
@@ -23,9 +25,14 @@ public class Recipes {
     @Column(name = "public_recipe")
     private int public_recipe;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Users_id")
+    @Transient
     private Users user;
+
+    @OneToMany
+    @JoinColumn(name = "Recipes_recipe_id")
+    private Set<Ingredients> ingredients = new HashSet<>();
 
     /**
      * Instantiates a new Recipes.
@@ -41,10 +48,11 @@ public class Recipes {
      * @param public_recipe the public recipe
      * @param user          the user
      */
-    public Recipes(String recipe_name, int public_recipe, Users user) {
+    public Recipes(String recipe_name, int public_recipe, Users user, Set<Ingredients> ingredients) {
         this.user = user;
         this.recipe_name = recipe_name;
         this.public_recipe = public_recipe;
+        this.ingredients = ingredients;
     }
 
     /**
@@ -117,6 +125,12 @@ public class Recipes {
      */
     public void setUser(Users user) {
         this.user = user;
+    }
+
+    public Set<Ingredients> getIngredients() {return ingredients;}
+
+    public void setIngredients(Set<Ingredients> ingredients) {
+        this.ingredients = ingredients;
     }
 
     @Override

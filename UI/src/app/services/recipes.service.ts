@@ -25,7 +25,7 @@ export class RecipesService {
   rootURL = '/api/RecipeService';
 
   getRecipes(): Observable<Recipe[]> {
-    return this.http.get<Recipe[]>(this.rootURL + "recipes");
+    return this.http.get<Recipe[]>(this.rootURL + "/recipes");
   }
   create(recipe: Recipe): Observable<Recipe> {
     return this.http.post<Recipe>(this.rootURL + "/recipes", recipe);

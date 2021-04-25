@@ -29,8 +29,9 @@ public class UserGoals {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userid", referencedColumnName = "id", insertable = false, updatable = false)
+    @Transient
     private Users user;
 
     private int userid;

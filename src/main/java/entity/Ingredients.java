@@ -37,8 +37,9 @@ public class Ingredients {
     @Column(name = "Fat")
     private double fat;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Recipes_recipe_id")
+    @Transient
     private Recipes recipe;
 
     /**

@@ -28,8 +28,9 @@ public class Users {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "Users_id")
+    @Transient
     private Set<Recipes> recipes = new HashSet<>();
 
     /**
