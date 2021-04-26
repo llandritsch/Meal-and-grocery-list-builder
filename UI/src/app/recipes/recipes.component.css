@@ -1,0 +1,23 @@
+span {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.recipe {
+  margin-left: 2em;
+  margin-right: 2em;
+  border: 2px solid #25be88;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: center;
+  margin: 2em;
+  border-bottom: rebeccapurple 3px solid;
+}
+

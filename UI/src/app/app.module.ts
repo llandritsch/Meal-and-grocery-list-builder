@@ -24,6 +24,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
 import { RecipesComponent } from './recipes/recipes.component';
+import { MenuComponent } from './menu/menu.component';
+import { GroceryListComponent } from './grocery-list/grocery-list.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { RecipesComponent } from './recipes/recipes.component';
     SidenavListComponent,
     FooterComponent,
     SignupComponent,
-    RecipesComponent
+    RecipesComponent,
+    MenuComponent,
+    GroceryListComponent
   ],
   imports: [
     BrowserModule,
