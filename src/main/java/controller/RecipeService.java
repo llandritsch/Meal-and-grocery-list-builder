@@ -1,7 +1,8 @@
 package controller;
 
+import entity.Ingredients;
 import entity.Recipes;
-import entity.Users;
+import persistence.IngredientsDAO;
 import persistence.RecipesDAO;
 
 import javax.ws.rs.*;
@@ -13,7 +14,7 @@ import java.util.List;
 @Path("/RecipeService")
 public class RecipeService {
     RecipesDAO dao = new RecipesDAO();
-    Users user = new Users();
+    IngredientsDAO ingredientsDAO = new IngredientsDAO();
 
     @GET
     @Path("/recipes")
@@ -21,6 +22,15 @@ public class RecipeService {
     public Response getRecipes() {
         List<Recipes> recipes = new RecipesDAO().getAllRecipes();
         GenericEntity<List<Recipes>> myEntity = new GenericEntity<List<Recipes>>(recipes) {};
+        return Response.status(200).entity(myEntity).build();
+    }
+
+    @GET
+    @Path("/ingredients")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getIngredients() {
+        List<Ingredients> ingredients = ingredientsDAO.getAllIngredients();
+        GenericEntity<List<Ingredients>> myEntity = new GenericEntity<>(ingredients) {};
         return Response.status(200).entity(myEntity).build();
     }
 

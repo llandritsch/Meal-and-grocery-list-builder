@@ -11,7 +11,7 @@ import javax.persistence.*;
 @Table(name = "Recipe_Ingredients")
 public class Ingredients {
     @Id
-    @Column(name = "Recipes_recipe_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
@@ -37,10 +37,10 @@ public class Ingredients {
     @Column(name = "Fat")
     private double fat;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Recipes_recipe_id")
-    @Transient
-    private Recipes recipe;
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "Recipes_recipe_id")
+//    @Transient
+//    private Recipes recipe;
 
     /**
      * Instantiates a new Ingredients
@@ -49,8 +49,8 @@ public class Ingredients {
 
     }
 
-    public Ingredients(Recipes recipe, String ingredientName, int id, double ingredientQuantity, String measurementType, double protein, double carbs, double fat, String grocerySection) {
-        this.recipe = recipe;
+    public Ingredients(/*Recipes recipe,*/ String ingredientName, int id, double ingredientQuantity, String measurementType, double protein, double carbs, double fat, String grocerySection) {
+//        this.recipe = recipe;
         this.ingredientName = ingredientName;
         this.id = id;
         this.ingredientQuantity = ingredientQuantity;
@@ -210,24 +210,20 @@ public class Ingredients {
      *
      * @return the recipe
      */
-    public Recipes getRecipe() {
-        return recipe;
-    }
+//    public Recipes getRecipe() {
+//        return recipe;
+//    }
 
-    /**
-     * Sets recipe.
-     *
-     * @param recipe the recipe
-     */
-    public void setRecipe(Recipes recipe) {
-        this.recipe = recipe;
-    }
+
+//    public void setRecipe(Recipes recipe) {
+//        this.recipe = recipe;
+//    }
 
     @Override
     public String toString() {
         return "Ingredients{" +
                 "recipe_id=" + id +
-                ", recipe_name='" + recipe.getRecipe_name() + ' ' +
+//                ", recipe_name='" + recipe.getRecipe_name() + ' ' +
                 ", ingredient name=" + ingredientName + ' ' +
                 ", quantity" + ingredientQuantity + ' ' +
                 ", measurement type" + measurementType +

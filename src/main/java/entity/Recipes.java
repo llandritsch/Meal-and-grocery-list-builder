@@ -3,12 +3,12 @@ package entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
 import java.util.Set;
 
 /**
  * The type Recipes.
  */
+
 @Entity(name = "Recipes")
 @Table(name = "Recipes")
 public class Recipes {
@@ -30,9 +30,9 @@ public class Recipes {
     @Transient
     private Users user;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "Recipes_recipe_id")
-    private Set<Ingredients> ingredients = new HashSet<>();
+    private Set<Ingredients> ingredients;
 
     /**
      * Instantiates a new Recipes.

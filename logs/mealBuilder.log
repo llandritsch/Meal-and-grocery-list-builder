@@ -90,3 +90,86 @@
 [INFO ] 2021-03-11 14:56:31.341 [main] UsersDAOTest - USERID398
 [INFO ] 2021-04-15 17:42:36.794 [main] UserGoalsDAO - Save/Update: User Goals{goal id=1, calorie goal='1200, protein goal=100, carb goal=200, fat goal=100, userid=391}
 [INFO ] 2021-04-17 18:28:31.171 [main] UserGoalsDAO - Save/Update: User Goals{goal id=1, calorie goal='1200, protein goal=100, carb goal=200, fat goal=100, userid=391}
+[INFO ] 2021-04-25 18:59:36.433 [main] UsersDAOTest - USERID420
+[INFO ] 2021-04-25 18:59:49.885 [main] UsersDAOTest - USERID421
+[INFO ] 2021-04-25 19:00:39.111 [main] UsersDAOTest - USERID422
+[INFO ] 2021-04-25 19:00:39.217 [main] UsersDAOTest - USERID423
+[INFO ] 2021-04-25 19:00:39.244 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='423'}
+[INFO ] 2021-04-25 19:00:39.547 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='423'}]
+[INFO ] 2021-04-25 19:00:39.577 [main] UsersDAOTest - USERID424
+[INFO ] 2021-04-25 19:00:39.583 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='424'}]
+[INFO ] 2021-04-25 19:00:39.615 [main] UsersDAOTest - USERID425
+[INFO ] 2021-04-25 19:00:39.703 [main] UsersDAOTest - USERID427
+[INFO ] 2021-04-25 19:00:39.746 [main] UsersDAOTest - USERID428
+[INFO ] 2021-04-25 19:07:22.669 [main] UsersDAOTest - USERID429
+[INFO ] 2021-04-25 19:07:22.789 [main] UsersDAOTest - USERID430
+[INFO ] 2021-04-25 19:07:22.829 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='430'}
+[INFO ] 2021-04-25 19:07:23.165 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='430'}]
+[INFO ] 2021-04-25 19:07:23.201 [main] UsersDAOTest - USERID431
+[INFO ] 2021-04-25 19:07:23.210 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='431'}]
+[INFO ] 2021-04-25 19:07:23.243 [main] UsersDAOTest - USERID432
+[INFO ] 2021-04-25 19:07:23.352 [main] UsersDAOTest - USERID434
+[INFO ] 2021-04-25 19:07:23.417 [main] UsersDAOTest - USERID435
+[INFO ] 2021-04-25 19:13:35.814 [main] UsersDAOTest - USERID436
+[INFO ] 2021-04-25 19:13:35.893 [main] UsersDAOTest - USERID437
+[INFO ] 2021-04-25 19:13:35.931 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='437'}
+[INFO ] 2021-04-25 19:13:36.175 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='437'}]
+[INFO ] 2021-04-25 19:13:36.208 [main] UsersDAOTest - USERID438
+[INFO ] 2021-04-25 19:13:36.215 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='438'}]
+[INFO ] 2021-04-25 19:13:36.242 [main] UsersDAOTest - USERID439
+[INFO ] 2021-04-25 19:13:36.337 [main] UsersDAOTest - USERID441
+[INFO ] 2021-04-25 19:13:36.384 [main] UsersDAOTest - USERID442
+[INFO ] 2021-04-25 19:23:12.196 [main] UsersDAOTest - USERID443
+[INFO ] 2021-04-25 19:23:12.287 [main] UsersDAOTest - USERID444
+[INFO ] 2021-04-25 19:23:12.314 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='444'}
+[INFO ] 2021-04-25 19:23:12.585 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='444'}]
+[INFO ] 2021-04-25 19:23:12.610 [main] UsersDAOTest - USERID445
+[INFO ] 2021-04-25 19:23:12.615 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='445'}]
+[INFO ] 2021-04-25 19:23:12.646 [main] UsersDAOTest - USERID446
+[INFO ] 2021-04-25 19:23:12.724 [main] UsersDAOTest - USERID448
+[INFO ] 2021-04-25 19:23:12.773 [main] UsersDAOTest - USERID449
+[INFO ] 2021-04-25 19:27:11.369 [main] UsersDAOTest - USERID450
+[INFO ] 2021-04-25 19:27:11.480 [main] UsersDAOTest - USERID451
+[INFO ] 2021-04-25 19:27:11.510 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='451'}
+[INFO ] 2021-04-25 19:27:11.767 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='451'}]
+[INFO ] 2021-04-25 19:27:11.796 [main] UsersDAOTest - USERID452
+[INFO ] 2021-04-25 19:27:11.802 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='452'}]
+[INFO ] 2021-04-25 19:27:11.834 [main] UsersDAOTest - USERID453
+[INFO ] 2021-04-25 19:27:11.930 [main] UsersDAOTest - USERID455
+[INFO ] 2021-04-25 19:27:11.973 [main] UsersDAOTest - USERID456
+[INFO ] 2021-04-25 19:32:56.593 [main] UsersDAOTest - USERID457
+[INFO ] 2021-04-25 19:32:56.677 [main] UsersDAOTest - USERID458
+[INFO ] 2021-04-25 19:32:56.702 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='458'}
+[INFO ] 2021-04-25 19:32:56.961 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='458'}]
+[INFO ] 2021-04-25 19:32:57.006 [main] UsersDAOTest - USERID459
+[INFO ] 2021-04-25 19:32:57.012 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='459'}]
+[INFO ] 2021-04-25 19:32:57.049 [main] UsersDAOTest - USERID460
+[INFO ] 2021-04-25 19:32:57.148 [main] UsersDAOTest - USERID462
+[INFO ] 2021-04-25 19:32:57.185 [main] UsersDAOTest - USERID463
+[INFO ] 2021-04-25 19:36:20.637 [main] UsersDAOTest - USERID464
+[INFO ] 2021-04-25 19:36:20.713 [main] UsersDAOTest - USERID465
+[INFO ] 2021-04-25 19:36:20.749 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='465'}
+[INFO ] 2021-04-25 19:36:20.966 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='465'}]
+[INFO ] 2021-04-25 19:36:20.994 [main] UsersDAOTest - USERID466
+[INFO ] 2021-04-25 19:36:21.002 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='466'}]
+[INFO ] 2021-04-25 19:36:21.026 [main] UsersDAOTest - USERID467
+[INFO ] 2021-04-25 19:36:21.102 [main] UsersDAOTest - USERID469
+[INFO ] 2021-04-25 19:36:21.145 [main] UsersDAOTest - USERID470
+[INFO ] 2021-04-25 19:41:47.020 [main] UsersDAOTest - USERID471
+[INFO ] 2021-04-25 19:41:47.114 [main] UsersDAOTest - USERID472
+[INFO ] 2021-04-25 19:41:47.151 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='472'}
+[INFO ] 2021-04-25 19:41:47.433 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='472'}]
+[INFO ] 2021-04-25 19:41:47.458 [main] UsersDAOTest - USERID473
+[INFO ] 2021-04-25 19:41:47.464 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='473'}]
+[INFO ] 2021-04-25 19:41:47.517 [main] UsersDAOTest - USERID474
+[INFO ] 2021-04-25 19:41:47.604 [main] UsersDAOTest - USERID476
+[INFO ] 2021-04-25 19:41:47.645 [main] UsersDAOTest - USERID477
+[INFO ] 2021-04-25 19:43:40.665 [main] UsersDAOTest - USERID478
+[INFO ] 2021-04-25 19:43:40.742 [main] UsersDAOTest - USERID479
+[INFO ] 2021-04-25 19:43:40.770 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='479'}
+[INFO ] 2021-04-25 19:43:40.988 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='479'}]
+[INFO ] 2021-04-25 19:43:41.018 [main] UsersDAOTest - USERID480
+[INFO ] 2021-04-25 19:43:41.023 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='480'}]
+[INFO ] 2021-04-25 19:43:41.052 [main] UsersDAOTest - USERID481
+[INFO ] 2021-04-25 19:43:41.132 [main] UsersDAOTest - USERID483
+[INFO ] 2021-04-25 19:43:41.178 [main] UsersDAOTest - USERID484
