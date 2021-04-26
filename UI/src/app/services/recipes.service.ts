@@ -13,6 +13,12 @@ export type RecipeIngredient = {
   Ingredient_Name: string;
   Recipes_recipe_id: number;
   Ingredient_Quantity: number;
+  Quantity_Measurement_Type: string;
+  protein: number;
+  carbs: number;
+  fat: number;
+  grocery_section: string;
+
 }
 
 @Injectable({

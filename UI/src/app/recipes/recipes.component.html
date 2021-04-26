@@ -1,5 +1,6 @@
 <h1>Choose a recipe to add to your weekly menu</h1>
 <div *ngFor="let r of recipes | async">
-  {{ r.recipe_name }}
+  <h2>{{ r.recipe_name }}</h2>
+  <h3>Total protein: {{ getTotalProtein(r)}}</h3>
 
 </div>

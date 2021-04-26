@@ -17,4 +17,12 @@ export class RecipesComponent implements OnInit {
     this.recipes = this.recipeSvc.getRecipes();
   }
 
+  getTotalProtein(recipe: Recipe): number {
+    let protein = 0;
+    recipe.ingredients.forEach(ingredient => {
+      protein += ingredient.protein;
+    });
+    return protein;
+  }
+
 }
