@@ -182,3 +182,12 @@
 [INFO ] 2021-04-26 09:45:03.556 [main] UsersDAOTest - USERID488
 [INFO ] 2021-04-26 09:45:03.720 [main] UsersDAOTest - USERID490
 [INFO ] 2021-04-26 09:45:03.776 [main] UsersDAOTest - USERID491
+[INFO ] 2021-04-27 18:33:36.637 [main] UsersDAOTest - USERID492
+[INFO ] 2021-04-27 18:33:36.743 [main] UsersDAOTest - USERID493
+[INFO ] 2021-04-27 18:33:36.776 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='493'}
+[INFO ] 2021-04-27 18:33:37.118 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='493'}]
+[INFO ] 2021-04-27 18:33:37.144 [main] UsersDAOTest - USERID494
+[INFO ] 2021-04-27 18:33:37.153 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='494'}]
+[INFO ] 2021-04-27 18:33:37.180 [main] UsersDAOTest - USERID495
+[INFO ] 2021-04-27 18:33:37.253 [main] UsersDAOTest - USERID497
+[INFO ] 2021-04-27 18:33:37.303 [main] UsersDAOTest - USERID498

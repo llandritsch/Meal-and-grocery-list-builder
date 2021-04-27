@@ -21,6 +21,28 @@ export class RecipesComponent implements OnInit {
     this.recipes = await this.recipeSvc.getRecipes();
   }
 
+  handleButtonClick(recipe: Recipe): void {
+    if (this.menusService.checkForRecipe(recipe)) {
+      this.menusService.removeFromMenu(recipe);
+    } else {
+      this.menusService.addToMenu(recipe);
+    }
+  }
+
+  getButtonStyle(recipe: Recipe): string {
+    if (this.menusService.checkForRecipe(recipe)) {
+      return "warn";
+    }
+    return "primary";
+  }
+
+  getButtonText(recipe: Recipe): string {
+    if (this.menusService.checkForRecipe(recipe)) {
+      return "Remove from menu";
+    }
+    return "Add to menu";
+  }
+
   getTotalProtein(recipe: Recipe): number {
     let protein = 0;
     recipe.ingredients.forEach(ingredient => {

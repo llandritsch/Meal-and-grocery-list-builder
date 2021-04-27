@@ -1,14 +1,17 @@
 <h1>Choose a recipe to add to your weekly menu</h1>
 <div class="recipe" *ngFor="let r of recipes">
   <h2>{{ r.recipe_name }}</h2>
-  <p><span>Total protein: {{ getTotalProtein(r)}}</span>
+  <p>
+    <span>Total protein: {{ getTotalProtein(r)}}</span>
     <span>Total carbs: {{getTotalCarbs(r)}}</span>
     <span>fat: {{getTotalFat(r)}}</span>
-  <button
-    mat-raised-button
-    color="primary"
-    (click)="menusService.addToMenu(r)"
-  >
-    Add To Menu
-  </button></p>
+
+    <button
+      mat-raised-button
+      color="{{ getButtonStyle(r) }}"
+      (click)="handleButtonClick(r)"
+    >
+      {{ getButtonText(r) }}
+    </button>
+  </p>
 </div>

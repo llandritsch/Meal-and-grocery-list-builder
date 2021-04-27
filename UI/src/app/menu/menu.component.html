@@ -1,6 +1,15 @@
 <div class="menuContainer">
   <h1>Your Meals</h1>
-  <div class="recipe" *ngFor="let r of menuService.recipes">
+  <div class="recipe" *ngFor="let r of menuService.getMenu()">
     <h2>{{r.recipe_name}}</h2>
+
+    <button
+      mat-raised-button
+      color="warn"
+      (click)="menuService.removeFromMenu(r)"
+    >
+      Remove From Menu
+    </button>
+
   </div>
 </div>

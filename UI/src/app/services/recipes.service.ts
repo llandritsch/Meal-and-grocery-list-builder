@@ -29,14 +29,12 @@ export class RecipesService {
 
   rootURL = '/api/RecipeService';
   // Local cache of ALL recipes.
-  recipes: Recipe[] = [];
+  private recipes: Recipe[] = [];
 
   async getRecipes(): Promise<Recipe[]> {
     if (this.recipes.length) {
-      console.log('Found existing recipes in the RecipesService');
       return this.recipes;
     }
-    console.log('No recipe data in the RecipesService...getting from API');
     const recipes = await this.http.get<Recipe[]>(this.rootURL + "/recipes").toPromise();
     this.recipes = recipes;
     return recipes;
