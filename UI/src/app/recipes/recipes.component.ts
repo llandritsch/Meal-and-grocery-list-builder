@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipesService, Recipe } from '../services/recipes.service';
 import {Observable} from "rxjs";
+import {MenuService} from "../services/menu.service";
 
 @Component({
   selector: 'app-recipes',
@@ -9,12 +10,15 @@ import {Observable} from "rxjs";
 })
 export class RecipesComponent implements OnInit {
 
-  constructor(private recipeSvc: RecipesService) { }
+  constructor(
+    private recipeSvc: RecipesService,
+    private menusService: MenuService
+  ) { }
 
-  recipes: Observable<Recipe[]> = null;
+  recipes: Recipe[] = [];
 
-  ngOnInit(): void {
-    this.recipes = this.recipeSvc.getRecipes();
+  async ngOnInit(): Promise<void> {
+    this.recipes = await this.recipeSvc.getRecipes();
   }
 
   getTotalProtein(recipe: Recipe): number {

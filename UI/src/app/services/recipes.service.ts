@@ -18,7 +18,6 @@ export type RecipeIngredient = {
   carbs: number;
   fat: number;
   grocery_section: string;
-
 }
 
 @Injectable({
@@ -29,12 +28,23 @@ export class RecipesService {
   constructor(private http: HttpClient) { }
 
   rootURL = '/api/RecipeService';
+  // Local cache of ALL recipes.
+  recipes: Recipe[] = [];
 
-  getRecipes(): Observable<Recipe[]> {
-    return this.http.get<Recipe[]>(this.rootURL + "/recipes");
+  async getRecipes(): Promise<Recipe[]> {
+    if (this.recipes.length) {
+      console.log('Found existing recipes in the RecipesService');
+      return this.recipes;
+    }
+    console.log('No recipe data in the RecipesService...getting from API');
+    const recipes = await this.http.get<Recipe[]>(this.rootURL + "/recipes").toPromise();
+    this.recipes = recipes;
+    return recipes;
   }
+
   create(recipe: Recipe): Observable<Recipe> {
     return this.http.post<Recipe>(this.rootURL + "/recipes", recipe);
   }
+
 }
 

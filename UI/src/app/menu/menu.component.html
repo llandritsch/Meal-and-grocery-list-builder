@@ -1,1 +1,6 @@
-<p>menu works!</p>
+<div class="menuContainer">
+  <h1>Your Meals</h1>
+  <div class="recipe" *ngFor="let r of menuService.recipes">
+    <h2>{{r.recipe_name}}</h2>
+  </div>
+</div>
