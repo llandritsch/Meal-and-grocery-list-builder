@@ -1,0 +1,18 @@
+<h2>Sign in</h2>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)" novalidate>
+
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label matLabel>Username</mat-label>
+    <input matInput name="username" ngModel>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" color="accent">
+    <mat-label matLabel>Password</mat-label>
+    <input matInput type="password" name="password" ngModel>
+  </mat-form-field>
+
+  <p>
+    <button mat-button type="submit" color="accent">Submit</button>
+  </p>
+</form>

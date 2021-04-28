@@ -15,15 +15,19 @@ export class AuthenticationService {
 
   constructor(private http: HttpClient) { }
 
-  rootURL = '/api/auth';
-  authenticationToken: AuthenticationToken = null;
+  private rootURL = '/api/auth';
+  private key = "authToken";
 
   getToken(): AuthenticationToken {
-    return this.authenticationToken;
+    return JSON.parse(localStorage.getItem(this.key));
+  }
+
+  isAuthenticated(): boolean {
+    return this.getToken() != null;
   }
 
   // A method to sign a user in via username/password.
-  // It sends the crednetials to the auth API and then
+  // It sends the credentials to the auth API and then
   // stores the returned AuthenticationToken object for later usage.
   async login(username: string, password: string): Promise<void> {
     // Create a user token by authenticating with a username and password against
@@ -32,10 +36,10 @@ export class AuthenticationService {
       username,
       password
     }).toPromise();
-    // Store the returned auth token in this service. Other HTTP calls will need to use
+    // Store the returned auth token in localStorage. Other HTTP calls will need to use
     // this token by attaching it as a "userToken" header to the request. They can get
     // the current token via the "getToken()" method above.
-    this.authenticationToken = authToken;
+    localStorage.setItem(this.key, JSON.stringify(authToken));
   }
 
   // Sign a user out by calling DELETE with the token string in the URL

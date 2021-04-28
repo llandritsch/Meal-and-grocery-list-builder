@@ -26,6 +26,7 @@ import { FormsModule } from "@angular/forms";
 import { RecipesComponent } from './recipes/recipes.component';
 import { MenuComponent } from './menu/menu.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { GroceryListComponent } from './grocery-list/grocery-list.component';
     SignupComponent,
     RecipesComponent,
     MenuComponent,
-    GroceryListComponent
+    GroceryListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

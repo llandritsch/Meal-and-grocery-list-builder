@@ -6,14 +6,19 @@ import { SignupComponent } from "../signup/signup.component";
 import {RecipesComponent} from "../recipes/recipes.component";
 import {MenuComponent} from "../menu/menu.component";
 import {GroceryListComponent} from "../grocery-list/grocery-list.component";
+import { AuthGuardService } from "../services/authguard.service";
+import { LoginComponent } from "../login/login.component";
 
 const routes: Routes = [
-  { path: 'index', component: IndexComponent },
-  { path: '',redirectTo: '/index', pathMatch: 'full' },
+  // Routes that do not require authentication
   { path: 'signup', component: SignupComponent },
-  { path: 'browse', component: RecipesComponent },
-  { path: 'menu', component: MenuComponent},
-  { path: 'groceryList', component: GroceryListComponent}
+  { path: 'login', component: LoginComponent },
+  // Routes that DO require authentication
+  { path: 'index', component: IndexComponent, canActivate: [AuthGuardService] },
+  { path: '',redirectTo: '/index', pathMatch: 'full' },
+  { path: 'browse', component: RecipesComponent, canActivate: [AuthGuardService] },
+  { path: 'menu', component: MenuComponent, canActivate: [AuthGuardService] },
+  { path: 'groceryList', component: GroceryListComponent, canActivate: [AuthGuardService] }
 ];
 
 @NgModule({
