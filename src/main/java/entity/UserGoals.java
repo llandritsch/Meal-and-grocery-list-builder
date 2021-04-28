@@ -29,11 +29,6 @@ public class UserGoals {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userid", referencedColumnName = "id", insertable = false, updatable = false)
-    @Transient
-    private Users user;
-
     private int userid;
 
     /**
@@ -49,10 +44,10 @@ public class UserGoals {
      * @param fatGoal
      * @param calorieGoal
      * @param id
-     * @param user
+     * @param userId
      */
-    public UserGoals(int proteinGoal, int carbGoal, int fatGoal, int calorieGoal, Users user,int id) {
-        this.user = user;
+    public UserGoals(int proteinGoal, int carbGoal, int fatGoal, int calorieGoal, int userId, int id) {
+        this.userid = userId;
         this.proteinGoal = proteinGoal;
         this.carbGoal = carbGoal;
         this.fatGoal = fatGoal;
@@ -76,9 +71,7 @@ public class UserGoals {
      * gets userid
      * @return userid
      */
-    public int getUserid() {
-        return user.getId();
-    }
+    public int getUserid() { return this.userid; }
 
     /**
      * sets userid
@@ -147,25 +140,6 @@ public class UserGoals {
     public void setCalorieGoal(int calorieGoal) {
         this.calorieGoal = calorieGoal;
     }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
-    public Users getUser() {
-        return user;
-    }
-
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
-    public void setUser(Users user) {
-        this.user = user;
-    }
-
 
     @Override
     public String toString() {

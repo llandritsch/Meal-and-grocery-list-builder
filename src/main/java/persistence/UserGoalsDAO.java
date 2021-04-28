@@ -37,7 +37,7 @@ public class UserGoalsDAO {
      * @param userid
      * @return
      */
-    public List<UserGoals> getGoalsByUserid(int userid) {
+    public UserGoals getGoalsByUserid(int userid) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<UserGoals> query = builder.createQuery(UserGoals.class);
@@ -46,7 +46,7 @@ public class UserGoalsDAO {
         query.where(builder.equal(propertyPath,  userid));
         List<UserGoals> goals = session.createQuery(query).getResultList();
         session.close();
-        return goals;
+        return goals.get(0);
     }
 
     /**

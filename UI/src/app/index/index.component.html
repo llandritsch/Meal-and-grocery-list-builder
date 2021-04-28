@@ -1,24 +1,24 @@
 <div *ngIf="goal">
-<body>
+
   <div id="calorieBox">
     <h1>Daily Calorie Goal</h1>
-    <!-- <h2>{{(goal | async).calorieGoal}}</h2> -->
+    <h2>{{goal.calorieGoal}}</h2>
   </div>
 
   <div id="macroBox">
     <h1>Macronutrient Goal</h1>
     <table>
       <tr>
-        <th>Carbs</th><th>Protein</th><th>Fat</th>
+        <th>Carbs</th>
+        <th>Protein</th>
+        <th>Fat</th>
       </tr>
       <tr>
-        <td>test 1</td><td>Test 2</td><td>Test 3</td>
+        <td>{{ goal.carbGoal }}</td>
+        <td>{{ goal.proteinGoal }}</td>
+        <td>{{ goal.fatGoal }}</td>
       </tr>
     </table>
   </div>
 
-  <div id="update">
-    <button color="accent">Change Daily Goals</button>
-  </div>
-</body>
 </div>

@@ -10,7 +10,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 @Path("/GoalService")
 public class GoalService {
@@ -35,59 +34,27 @@ public class GoalService {
             return Response.status(401).build();
         }
         // If we get here, then the user must have a valid auth token.
-        List<UserGoals> goals = new UserGoalsDAO().getGoalsByUserid(token.getUserId());
-        GenericEntity<List<UserGoals>> myEntity = new GenericEntity<List<UserGoals>>(goals) {};
+        UserGoals goal = new UserGoalsDAO().getGoalsByUserid(token.getUserId());
+        GenericEntity<UserGoals> myEntity = new GenericEntity<>(goal) {};
         return Response.status(200).entity(myEntity).build();
     }
-
-    @GET
-    @Path("/goals/{userid}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getUserById(
-            @PathParam("userid") int userid
-    ) {
-        List<UserGoals> userGoals = new UserGoalsDAO().getGoalsByUserid(userid);
-        UserGoals goals = userGoals.get(0);
-        GenericEntity<UserGoals> myEntity = new GenericEntity<UserGoals>(goals) {};
-        return Response.status(200).entity(myEntity).build();
-    }
-
-    /*
-    @POST
-    @Path("/goals")
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response createUserGoals(
-            @FormParam("calorieGoal") int calorieGoal,
-            @FormParam("proteinGoal") int proteinGoal,
-            @FormParam("carbGoal") int carbGoal,
-            @FormParam("fatGoal") int fatGoal
-    ) {
-        UserGoals goals = new UserGoals();
-        goals.setUser(this.user);
-        goals.setCalorieGoal(calorieGoal);
-        goals.setProteinGoal(proteinGoal);
-        goals.setFatGoal(fatGoal);
-        goals.setCarbGoal(carbGoal);
-        // create the user
-        // return the user entity back from this call
-        int id = goalsDAO.createGoals(goals);
-        if(id != 0) {
-            goals.setId(id);
-            GenericEntity<UserGoals> myEntity = new GenericEntity<UserGoals>(goals) {};
-            return Response.status(200).entity(myEntity).build();
-        } else {
-            return Response.status(500).build();
-        }
-    }
-    */
 
     @POST
     @Path("/goals")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response createUserGoal(UserGoals goals) {
+    public Response createUserGoal(
+            UserGoals goals,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
+
+        goals.setUserid(token.getUserId());
         int id = goalsDAO.createGoals(goals);
+
         if(id != 0) {
             goals.setId(id);
             GenericEntity<UserGoals> myEntity = new GenericEntity<>(goals) {};
@@ -101,9 +68,8 @@ public class GoalService {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteGoals(@PathParam("id") int id) {
-        List<UserGoals> goals = goalsDAO.getGoalsByUserid(this.user.getId());
-        UserGoals goalsToDelete = goals.get(0);
-        goalsDAO.deleteGoal(goalsToDelete);
+        UserGoals goals = goalsDAO.getGoalsByUserid(this.user.getId());
+        goalsDAO.deleteGoal(goals);
         return Response.status(204).build();
     }
 
@@ -112,8 +78,7 @@ public class GoalService {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateUser(@PathParam("id") int id, UserGoals goalsData) {
-        List<UserGoals> goals = goalsDAO.getGoalsByUserid(this.user.getId());
-        UserGoals goalsToUpdate = goals.get(0);
+        UserGoals goalsToUpdate = goalsDAO.getGoalsByUserid(this.user.getId());
 
         if (goalsData.getCalorieGoal() > 0) {
             goalsToUpdate.setCalorieGoal(goalsData.getCalorieGoal());

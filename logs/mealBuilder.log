@@ -200,3 +200,48 @@
 [INFO ] 2021-04-28 12:11:33.107 [main] UsersDAOTest - USERID502
 [INFO ] 2021-04-28 12:11:33.191 [main] UsersDAOTest - USERID504
 [INFO ] 2021-04-28 12:11:33.234 [main] UsersDAOTest - USERID505
+[INFO ] 2021-04-28 17:55:24.131 [main] UsersDAOTest - USERID506
+[INFO ] 2021-04-28 17:55:24.227 [main] UsersDAOTest - USERID507
+[INFO ] 2021-04-28 17:55:24.263 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='507'}
+[INFO ] 2021-04-28 17:55:24.580 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='507'}]
+[INFO ] 2021-04-28 17:55:24.614 [main] UsersDAOTest - USERID508
+[INFO ] 2021-04-28 17:55:24.623 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='508'}]
+[INFO ] 2021-04-28 17:55:24.659 [main] UsersDAOTest - USERID509
+[INFO ] 2021-04-28 17:55:24.793 [main] UsersDAOTest - USERID511
+[INFO ] 2021-04-28 17:55:24.862 [main] UsersDAOTest - USERID512
+[INFO ] 2021-04-28 18:01:34.295 [main] UsersDAOTest - USERID513
+[INFO ] 2021-04-28 18:01:34.383 [main] UsersDAOTest - USERID514
+[INFO ] 2021-04-28 18:01:34.418 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='514'}
+[INFO ] 2021-04-28 18:01:34.688 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='514'}]
+[INFO ] 2021-04-28 18:01:34.716 [main] UsersDAOTest - USERID515
+[INFO ] 2021-04-28 18:01:34.724 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='515'}]
+[INFO ] 2021-04-28 18:01:34.753 [main] UsersDAOTest - USERID516
+[INFO ] 2021-04-28 18:01:34.852 [main] UsersDAOTest - USERID518
+[INFO ] 2021-04-28 18:01:34.903 [main] UsersDAOTest - USERID519
+[INFO ] 2021-04-28 18:19:56.866 [main] UsersDAOTest - USERID520
+[INFO ] 2021-04-28 18:19:56.972 [main] UsersDAOTest - USERID521
+[INFO ] 2021-04-28 18:19:56.999 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='521'}
+[INFO ] 2021-04-28 18:19:57.272 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='521'}]
+[INFO ] 2021-04-28 18:19:57.301 [main] UsersDAOTest - USERID522
+[INFO ] 2021-04-28 18:19:57.307 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='522'}]
+[INFO ] 2021-04-28 18:19:57.341 [main] UsersDAOTest - USERID523
+[INFO ] 2021-04-28 18:19:57.432 [main] UsersDAOTest - USERID525
+[INFO ] 2021-04-28 18:19:57.475 [main] UsersDAOTest - USERID526
+[INFO ] 2021-04-28 18:35:31.906 [main] UsersDAOTest - USERID527
+[INFO ] 2021-04-28 18:35:32.023 [main] UsersDAOTest - USERID528
+[INFO ] 2021-04-28 18:35:32.064 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='528'}
+[INFO ] 2021-04-28 18:35:32.377 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='528'}]
+[INFO ] 2021-04-28 18:35:32.411 [main] UsersDAOTest - USERID529
+[INFO ] 2021-04-28 18:35:32.419 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='529'}]
+[INFO ] 2021-04-28 18:35:32.455 [main] UsersDAOTest - USERID530
+[INFO ] 2021-04-28 18:35:32.548 [main] UsersDAOTest - USERID532
+[INFO ] 2021-04-28 18:35:32.590 [main] UsersDAOTest - USERID533
+[INFO ] 2021-04-28 18:39:14.046 [main] UsersDAOTest - USERID534
+[INFO ] 2021-04-28 18:39:14.140 [main] UsersDAOTest - USERID535
+[INFO ] 2021-04-28 18:39:14.170 [main] UsersDAO - Save/Update: Users{userName='The Big Lebowski', password='bananas', id='535'}
+[INFO ] 2021-04-28 18:39:14.404 [main] UsersDAOTest - Test updatedUser: [Users{userName='The Big Lebowski', password='bananas', id='535'}]
+[INFO ] 2021-04-28 18:39:14.432 [main] UsersDAOTest - USERID536
+[INFO ] 2021-04-28 18:39:14.440 [main] UsersDAOTest - username: [Users{userName='Manji', password='bananas', id='536'}]
+[INFO ] 2021-04-28 18:39:14.476 [main] UsersDAOTest - USERID537
+[INFO ] 2021-04-28 18:39:14.653 [main] UsersDAOTest - USERID539
+[INFO ] 2021-04-28 18:39:14.780 [main] UsersDAOTest - USERID540

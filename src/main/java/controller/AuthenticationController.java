@@ -52,7 +52,7 @@ public class AuthenticationController {
     @Produces(MediaType.APPLICATION_JSON)
     public Response delete(@PathParam("token") String token) {
         AuthenticationToken authToken = authenticationTokenDAO.getByToken(token);
-        if (authToken == null) { return Response.status(400).build(); }
+        if (authToken == null) { return Response.status(204).build(); }
 
         authenticationTokenDAO.delete(authToken);
         return Response.status(204).build();

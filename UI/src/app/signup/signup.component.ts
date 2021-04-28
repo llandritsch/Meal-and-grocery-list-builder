@@ -3,6 +3,8 @@ import {NgForm} from "@angular/forms";
 import { UserService, User } from '../services/user.service';
 import { UserGoalService, UserGoal } from '../services/usergoal.service';
 import { Observable } from "rxjs";
+import {AuthenticationService} from "../services/authentication.service";
+import {Router} from "@angular/router";
 
 type UserAndGoal = User & UserGoal;
 
@@ -15,7 +17,9 @@ export class SignupComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    private userGoalService: UserGoalService
+    private userGoalService: UserGoalService,
+    private authService: AuthenticationService,
+    private router: Router
   ) {
   }
 
@@ -38,17 +42,14 @@ export class SignupComponent implements OnInit {
       proteinGoal: userAndGoalData.proteinGoal
     };
 
-    console.log("Create this user: ", userData);
-    console.log("Create this user goal: ", userGoalData);
-
-
-    // Create user first. The API will return back the created user
-    // with its id property.
-    const user = await this.userService.createUser(userData).toPromise();
-    // Associate the goal to the user we just created...
-    userGoalData.userid = user.id;
+    // Create user first.
+    await this.userService.createUser(userData).toPromise();
+    // Log in as the user
+    await this.authService.login(userData.userName, userData.password);
     // Then create the goal for that user
     await this.userGoalService.createUserGoal(userGoalData).toPromise();
+    // Finally, redirect to the home page
+    await this.router.navigateByUrl('/');
   }
 
 }

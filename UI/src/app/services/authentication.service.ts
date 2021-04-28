@@ -13,7 +13,9 @@ export type AuthenticationToken = {
 })
 export class AuthenticationService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   private rootURL = '/api/auth';
   private key = "authToken";
@@ -43,8 +45,9 @@ export class AuthenticationService {
   }
 
   // Sign a user out by calling DELETE with the token string in the URL
-  logout(): Observable<Object> {
-    return this.http.delete(`${this.rootURL}/${this.getToken().token}`);
+  async logout(): Promise<void> {
+    await this.http.delete(`${this.rootURL}/${this.getToken().token}`).toPromise();
+    localStorage.removeItem(this.key);
   }
 }
 

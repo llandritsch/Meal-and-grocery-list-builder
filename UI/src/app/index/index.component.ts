@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService, User } from '../services/user.service';
-import {Observable} from "rxjs";
 import {UserGoal, UserGoalService} from '../services/usergoal.service';
 
 @Component({
@@ -14,11 +12,10 @@ export class IndexComponent implements OnInit {
     private goalSvc: UserGoalService
   ) { }
 
-  goal: Observable<UserGoal> = null;
+  goal: UserGoal = null;
 
-
-  ngOnInit(): void {
-    this.goal = this.goalSvc.getUserGoal();
+  async ngOnInit(): Promise<void> {
+    this.goal = await this.goalSvc.getUserGoal().toPromise();
   }
 
 }

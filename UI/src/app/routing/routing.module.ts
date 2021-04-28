@@ -9,6 +9,7 @@ import {GroceryListComponent} from "../grocery-list/grocery-list.component";
 import { AuthGuardService } from "../services/authguard.service";
 import { LoginComponent } from "../login/login.component";
 import {AddRecipeComponent} from "../add-recipe/add-recipe.component";
+import { LogoutComponent } from "../logout/logout.component";
 
 const routes: Routes = [
   // Routes that do not require authentication
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'browse', component: RecipesComponent, canActivate: [AuthGuardService] },
   { path: 'menu', component: MenuComponent, canActivate: [AuthGuardService] },
   { path: 'groceryList', component: GroceryListComponent, canActivate: [AuthGuardService] },
-  { path: 'add-recipe', component: AddRecipeComponent, canActivate: [AuthGuardService] }
+  { path: 'add-recipe', component: AddRecipeComponent, canActivate: [AuthGuardService] },
+  { path: 'logout', component: LogoutComponent, canActivate: [AuthGuardService] },
 ];
 
 @NgModule({
