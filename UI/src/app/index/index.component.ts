@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService, User } from '../services/user.service';
 import {Observable} from "rxjs";
+import {UserGoal, UserGoalService} from '../services/usergoal.service';
 
 @Component({
   selector: 'app-index',
@@ -9,12 +10,15 @@ import {Observable} from "rxjs";
 })
 export class IndexComponent implements OnInit {
 
-  constructor(private indexSvc: UserService) { }
+  constructor(
+    private goalSvc: UserGoalService
+  ) { }
 
-    user: Observable<User[]> = null;
+  goal: Observable<UserGoal> = null;
+
 
   ngOnInit(): void {
-    this.user = this.indexSvc.getUsers();
+    this.goal = this.goalSvc.getUserGoal();
   }
 
 }

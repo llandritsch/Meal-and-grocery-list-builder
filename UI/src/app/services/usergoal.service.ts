@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
 import { Observable } from "rxjs";
+import {ApiService} from "./api.service";
 
 export type UserGoal = {
   id?: number;
@@ -16,7 +17,7 @@ export type UserGoal = {
 })
 export class UserGoalService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: ApiService) { }
 
   rootURL = '/api/GoalService';
 
@@ -26,5 +27,9 @@ export class UserGoalService {
       payload[key] = parseInt(goal[key], 10);
     });
     return this.http.post<UserGoal>(this.rootURL + "/goals", payload);
+  }
+
+  getUserGoal(): Observable<UserGoal> {
+    return this.http.get<UserGoal>(this.rootURL + "/goals");
   }
 }

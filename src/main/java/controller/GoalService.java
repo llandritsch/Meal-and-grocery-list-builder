@@ -35,7 +35,7 @@ public class GoalService {
             return Response.status(401).build();
         }
         // If we get here, then the user must have a valid auth token.
-        List<UserGoals> goals = new UserGoalsDAO().getUserGoals();
+        List<UserGoals> goals = new UserGoalsDAO().getGoalsByUserid(token.getUserId());
         GenericEntity<List<UserGoals>> myEntity = new GenericEntity<List<UserGoals>>(goals) {};
         return Response.status(200).entity(myEntity).build();
     }

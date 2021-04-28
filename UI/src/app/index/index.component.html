@@ -1,11 +1,8 @@
+<div *ngIf="goal">
 <body>
   <div id="calorieBox">
     <h1>Daily Calorie Goal</h1>
-  </div>
-
-  <div id="testConection">
-    <h1>Data from backend: </h1>
-    <h2 *ngFor="let u of user | async">{{ u.userName }}</h2>
+    <!-- <h2>{{(goal | async).calorieGoal}}</h2> -->
   </div>
 
   <div id="macroBox">
@@ -24,4 +21,4 @@
     <button color="accent">Change Daily Goals</button>
   </div>
 </body>
-
+</div>
