@@ -10,14 +10,14 @@ export type Recipe = {
 
 export type RecipeIngredient = {
   id: number;
-  Ingredient_Name: string;
-  Recipes_recipe_id: number;
-  Ingredient_Quantity: number;
-  Quantity_Measurement_Type: string;
+  ingredientName: string;
+  recipesRecipeId: number;
+  ingredientQuantity: number;
+  measurementType: string;
   protein: number;
   carbs: number;
   fat: number;
-  grocery_section: string;
+  grocerySection: string;
 }
 
 @Injectable({
