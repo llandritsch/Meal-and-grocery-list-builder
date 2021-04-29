@@ -5,6 +5,7 @@
 .container {
   margin: 2em;
   padding: 1em;
+  display: flex;
 }
 
 .header {
@@ -13,9 +14,11 @@
 
 .formContainer {
   margin: 2em 1em;
+  width: 100%;
 }
 
-.col-md-3 {
-  display: flex;
+.col-md-6 {
+  display: inline-flex;
+  width: 50%;
 }
 
