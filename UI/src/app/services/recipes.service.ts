@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {ApiService} from "./api.service";
 
 export type Recipe = {
   recipe_id?: number;
@@ -25,7 +26,7 @@ export type RecipeIngredient = {
 })
 export class RecipesService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: ApiService) { }
 
   rootURL = '/api/RecipeService';
   // Local cache of ALL recipes.

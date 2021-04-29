@@ -2,7 +2,6 @@ package controller;
 
 import entity.AuthenticationToken;
 import entity.UserGoals;
-import entity.Users;
 import persistence.AuthenticationTokenDAO;
 import persistence.UserGoalsDAO;
 
@@ -14,7 +13,6 @@ import javax.ws.rs.core.Response;
 @Path("/GoalService")
 public class GoalService {
     UserGoalsDAO goalsDAO = new UserGoalsDAO();
-    Users user = new Users();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
 
     @GET
@@ -67,8 +65,15 @@ public class GoalService {
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deleteGoals(@PathParam("id") int id) {
-        UserGoals goals = goalsDAO.getGoalsByUserid(this.user.getId());
+    public Response deleteGoals(
+            @PathParam("id") int id,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
+        UserGoals goals = goalsDAO.getGoalsByUserid(token.getUserId());
         goalsDAO.deleteGoal(goals);
         return Response.status(204).build();
     }
@@ -77,8 +82,17 @@ public class GoalService {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response updateUser(@PathParam("id") int id, UserGoals goalsData) {
-        UserGoals goalsToUpdate = goalsDAO.getGoalsByUserid(this.user.getId());
+    public Response updateUser(
+            @PathParam("id") int id,
+            UserGoals goalsData,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
+
+        UserGoals goalsToUpdate = goalsDAO.getGoalsByUserid(token.getUserId());
 
         if (goalsData.getCalorieGoal() > 0) {
             goalsToUpdate.setCalorieGoal(goalsData.getCalorieGoal());

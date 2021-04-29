@@ -9,7 +9,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 @Path("/UserService")
 public class UsersService {
@@ -30,14 +29,13 @@ public class UsersService {
         if (token == null || token.isExpired()) {
             return Response.status(401).build();
         }
-        // get all users from database
-        List<Users> users = new UsersDAO().getAllUsers();
-        // build an entity response containing all users
-        GenericEntity<List<Users>> myEntity = new GenericEntity<List<Users>>(users) {};
-        // server the response as JSON back to the client
+
+        Users users = usersDAO.getUserById(token.getUserId());
+        GenericEntity<Users> myEntity = new GenericEntity<>(users) {};
         return Response.status(200).entity(myEntity).build();
     }
 
+    /*
     @GET
     @Path("/users/{userid}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -48,30 +46,7 @@ public class UsersService {
         GenericEntity<Users> myEntity = new GenericEntity<Users>(user) {};
         return Response.status(200).entity(myEntity).build();
     }
-/*
-    @POST
-    @Path("/users")
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response createUser(
-        @FormParam("userName") String userName,
-        @FormParam("password") String password
-    ) {
-        Users user = new Users();
-        user.setUserName(userName);
-        user.setPassword(password);
-        // create the user
-        // return the user entity back from this call
-        int id = usersDAO.createUser(user);
-        if(id != 0) {
-            user.setId(id);
-            GenericEntity<Users> myEntity = new GenericEntity<Users>(user) {};
-            return Response.status(200).entity(myEntity).build();
-        } else {
-            return Response.status(500).build();
-        }
-    }
-*/
+     */
 
     @POST
     @Path("/users")
@@ -88,6 +63,7 @@ public class UsersService {
         }
     }
 
+    /*
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -116,4 +92,6 @@ public class UsersService {
         GenericEntity<Users> myEntity = new GenericEntity<>(user) {};
         return Response.status(200).entity(myEntity).build();
     }
+
+     */
 }

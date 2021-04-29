@@ -1,7 +1,8 @@
 package controller;
 
-import entity.Ingredients;
+import entity.AuthenticationToken;
 import entity.Recipes;
+import persistence.AuthenticationTokenDAO;
 import persistence.IngredientsDAO;
 import persistence.RecipesDAO;
 
@@ -15,22 +16,20 @@ import java.util.List;
 public class RecipeService {
     RecipesDAO dao = new RecipesDAO();
     IngredientsDAO ingredientsDAO = new IngredientsDAO();
+    AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
 
     @GET
     @Path("/recipes")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getRecipes() {
-        List<Recipes> recipes = new RecipesDAO().getAllRecipes();
+    public Response getRecipes(
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
+        List<Recipes> recipes = dao.getAllRecipes();
         GenericEntity<List<Recipes>> myEntity = new GenericEntity<List<Recipes>>(recipes) {};
-        return Response.status(200).entity(myEntity).build();
-    }
-
-    @GET
-    @Path("/ingredients")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response getIngredients() {
-        List<Ingredients> ingredients = ingredientsDAO.getAllIngredients();
-        GenericEntity<List<Ingredients>> myEntity = new GenericEntity<>(ingredients) {};
         return Response.status(200).entity(myEntity).build();
     }
 
@@ -38,8 +37,13 @@ public class RecipeService {
     @Path("/recipes/{recipeid}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getRecipeById(
-            @PathParam("recipeid") int recipeid
+            @PathParam("recipeid") int recipeid,
+            @HeaderParam("userToken") String userToken
     ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
         Recipes recipes = new RecipesDAO().getRecipeById(recipeid);
         GenericEntity<Recipes> myEntity = new GenericEntity<Recipes>(recipes) {};
         return Response.status(200).entity(myEntity).build();
@@ -49,8 +53,13 @@ public class RecipeService {
     @Path("/recipes/{recipeName}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getRecipeByName(
-            @PathParam("recipeName") String recipeName
+            @PathParam("recipeName") String recipeName,
+            @HeaderParam("userToken") String userToken
     ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
         List<Recipes> recipes = new RecipesDAO().getRecipeByName(recipeName);
         GenericEntity<List<Recipes>> myEntity = new GenericEntity<List<Recipes>>(recipes) {};
         return Response.status(200).entity(myEntity).build();
@@ -60,7 +69,14 @@ public class RecipeService {
     @Path("/recipes")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response createRecipe(Recipes recipe) {
+    public Response createRecipe(
+            Recipes recipe,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
         int id = dao.createRecipe(recipe);
         if(id != 0) {
             recipe.setRecipe_id(id);
@@ -74,7 +90,14 @@ public class RecipeService {
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response deleteRecipe(@PathParam("id") int id) {
+    public Response deleteRecipe(
+            @PathParam("id") int id,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
         Recipes recipeToDelete = dao.getRecipeById(id);
         dao.deleteRecipe(recipeToDelete);
         return Response.status(204).build();
@@ -84,14 +107,23 @@ public class RecipeService {
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response updateRecipe(@PathParam("id") int id, Recipes recipeData) {
-         Recipes recipe = dao.getRecipeById(id);
+    public Response updateRecipe(
+            @PathParam("id") int id,
+            Recipes recipeData,
+            @HeaderParam("userToken") String userToken
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
 
-         if(recipeData.getRecipe_name() != null) {
-             recipe.setRecipe_name(recipeData.getRecipe_name());
-         }
-         dao.saveOrUpdate(recipe);
-         GenericEntity<Recipes> myEntity = new GenericEntity<Recipes>(recipe) {};
-         return Response.status(200).entity(myEntity).build();
+        Recipes recipe = dao.getRecipeById(id);
+
+        if(recipeData.getRecipe_name() != null) {
+            recipe.setRecipe_name(recipeData.getRecipe_name());
+        }
+        dao.saveOrUpdate(recipe);
+        GenericEntity<Recipes> myEntity = new GenericEntity<Recipes>(recipe) {};
+        return Response.status(200).entity(myEntity).build();
     }
 }
