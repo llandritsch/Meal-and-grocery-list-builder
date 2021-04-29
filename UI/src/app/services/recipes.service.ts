@@ -5,20 +5,20 @@ import {ApiService} from "./api.service";
 
 export type Recipe = {
   recipe_id?: number;
-  recipe_name: string;
-  ingredients: RecipeIngredient[];
+  recipe_name?: string;
+  ingredients?: RecipeIngredient[];
 }
 
 export type RecipeIngredient = {
-  id: number;
-  ingredientName: string;
-  recipesRecipeId: number;
-  ingredientQuantity: number;
-  measurementType: string;
-  protein: number;
-  carbs: number;
-  fat: number;
-  grocerySection: string;
+  id?: number;
+  ingredientName?: string;
+  recipesRecipeId?: number;
+  ingredientQuantity?: number;
+  measurementType?: string;
+  protein?: number;
+  carbs?: number;
+  fat?: number;
+  grocerySection?: string;
 }
 
 @Injectable({

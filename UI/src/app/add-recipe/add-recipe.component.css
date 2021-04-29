@@ -1,0 +1,21 @@
+.space {
+  margin-right: 1em;
+}
+
+.container {
+  margin: 2em;
+  padding: 1em;
+}
+
+.header {
+  align-content: center;
+}
+
+.formContainer {
+  margin: 2em 1em;
+}
+
+.col-md-3 {
+  display: flex;
+}
+
