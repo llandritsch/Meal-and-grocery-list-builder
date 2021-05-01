@@ -9,7 +9,6 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.List;
 
 @Path("/MenuService")
 public class MenuService {
@@ -22,20 +21,14 @@ public class MenuService {
     public Response getMenu(
             @HeaderParam("userToken") String userToken
     ) {
-//        AuthenticationToken token = authDAO.getByToken(userToken);
-//        if (token == null || token.isExpired()) {
-//            return Response.status(401).build();
-//        }
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
 
-        List<Menu> menus = dao.getAll();
-        GenericEntity<List<Menu>> myEntity = new GenericEntity<>(menus) {};
-        return Response.status(200).entity(myEntity).build();
-
-        /*
         Menu menu = dao.getByUserId(token.getUserId());
         GenericEntity<Menu> myEntity = new GenericEntity<>(menu) {};
         return Response.status(200).entity(myEntity).build();
-        */
     }
 
     @POST

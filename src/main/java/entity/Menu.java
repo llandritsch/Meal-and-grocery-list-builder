@@ -25,7 +25,7 @@ public class Menu {
     @Column(name = "userId")
     private int userId;
 
-    @ManyToMany(targetEntity = Recipes.class)
+    @ManyToMany(cascade = { CascadeType.ALL }, targetEntity = Recipes.class, fetch = FetchType.EAGER)
     @JoinTable(name = "menus_recipes",
             joinColumns = {@JoinColumn(name = "menuId")},
             inverseJoinColumns = {@JoinColumn(name = "recipeId")})
