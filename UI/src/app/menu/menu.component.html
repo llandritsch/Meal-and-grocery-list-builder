@@ -1,12 +1,16 @@
-<div class="menuContainer">
+<div class="menuContainer" *ngIf="!userHasMenu()">
+  <h2>You have no menu. Go add some recipes!</h2>
+</div>
+
+<div class="menuContainer" *ngIf="userHasMenu()">
   <h1>Your Meals</h1>
-  <div class="recipe" *ngFor="let r of menuService.getMenu()">
-    <h2>{{r.recipe_name}}</h2>
+  <div class="recipe" *ngFor="let recipe of menu.recipes">
+    <h2>{{recipe.recipe_name}}</h2>
 
     <button
       mat-raised-button
       color="warn"
-      (click)="menuService.removeFromMenu(r)"
+      (click)="menuService.removeFromMenu(recipe)"
     >
       Remove From Menu
     </button>

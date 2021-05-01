@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe, RecipeIngredient } from '../services/recipes.service';
-import { MenuService} from "../services/menu.service";
+import {Menu, MenuService} from "../services/menu.service";
 
 type GroceryListState = {
   [key: string]: RecipeIngredient[];
@@ -19,8 +19,9 @@ export class GroceryListComponent implements OnInit {
 
   groceriesBySection: GroceryListState = {};
 
-  ngOnInit(): void {
-    this.groupIngredientsBySection();
+  async ngOnInit(): Promise<void> {
+    const menu: Menu = await this.menuSvc.getMenu();
+    this.groupIngredientsBySection(menu);
   }
 
   getSectionNames(): string[] {
@@ -31,8 +32,8 @@ export class GroceryListComponent implements OnInit {
     return this.groceriesBySection[section];
   }
 
-  private groupIngredientsBySection(): void {
-    this.menuSvc.getMenu().forEach((recipe: Recipe) => {
+  private groupIngredientsBySection(menu: Menu): void {
+    menu.recipes.forEach((recipe: Recipe) => {
       recipe.ingredients.forEach((ingredient: RecipeIngredient) => {
         const { grocerySection } = ingredient;
         if (!this.groceriesBySection.hasOwnProperty(grocerySection)) {

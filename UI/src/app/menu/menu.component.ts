@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuService} from "../services/menu.service";
-import {Recipe, RecipesService} from "../services/recipes.service";
+import {Menu, MenuService} from "../services/menu.service";
 
 @Component({
   selector: 'app-menu',
@@ -9,11 +8,15 @@ import {Recipe, RecipesService} from "../services/recipes.service";
 })
 export class MenuComponent implements OnInit {
 
-  constructor(
-    public menuService: MenuService,
-  ) {}
+  constructor(public menuService: MenuService) {}
 
-  ngOnInit(): void {
+  menu: Menu;
+
+  async ngOnInit(): Promise<void> {
+    this.menu = await this.menuService.getMenu();
   }
 
+  userHasMenu(): boolean {
+    return this.menu && this.menu.recipes.length > 0;
+  }
 }
