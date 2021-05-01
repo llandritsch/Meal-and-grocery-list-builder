@@ -8,6 +8,10 @@ export type Menu = {
   recipes: Recipe[]
 }
 
+type RecipesById = {
+  [key: number]: Recipe
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,22 +20,36 @@ export class MenuService {
   constructor(private apiService: ApiService) {}
 
   private baseUrl = "/api/MenuService/menu"
+  private menu: Menu;
+  private recipesById: RecipesById = {};
 
   async getMenu(): Promise<Menu> {
-    return await this.apiService.get<Menu>(this.baseUrl).toPromise();
+    if (this.menu == null) {
+      await this.refreshMenu();
+    }
+    return this.menu;
   }
 
-  addToMenu(recipe: Recipe): void {
-    //this.recipes[recipe.recipe_id] = recipe;
+  async addToMenu(recipe: Recipe): Promise<void> {
+    await this.apiService.post(this.baseUrl + `/${recipe.recipe_id}`, null).toPromise();
+    await this.refreshMenu();
   }
 
-  removeFromMenu(recipe: Recipe): void {
-    //delete this.recipes[recipe.recipe_id];
+  async removeFromMenu(recipe: Recipe): Promise<void> {
+    await this.apiService.delete(this.baseUrl + `/${recipe.recipe_id}`).toPromise();
+    await this.refreshMenu();
   }
 
-  checkForRecipe(recipe): boolean {
-    return false;
-    //return recipe.recipe_id in this.recipes;
+  menuHasRecipe(recipe: Recipe): boolean {
+    return recipe.recipe_id in this.recipesById;
+  }
+
+  private async refreshMenu(): Promise<void> {
+    this.menu = await this.apiService.get<Menu>(this.baseUrl).toPromise();
+    this.recipesById = {};
+    this.menu.recipes.forEach((recipe: Recipe) => {
+      this.recipesById[recipe.recipe_id] = recipe;
+    })
   }
 
 }
