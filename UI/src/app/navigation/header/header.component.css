@@ -20,7 +20,10 @@ mat-toolbar{
 li {
   display: inline;
   float: left;
+  margin-right: 10px;
+  font-size: 12px;
 }
+
 
 @media(max-width: 959px){
   mat-toolbar{

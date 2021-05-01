@@ -8,9 +8,20 @@
       <a routerLink="/index">Meal and Grocery Builder</a>
     </div>
     <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-      <ul fxLayout class="navigation-items">
+      <ul fxLayout class="navigation-items" *ngIf="!isAuthenticated()">
+        <li>
+          <a routerLink="/login">Log in</a>
+        </li>
         <li>
           <a routerLink="/signup">Sign Up</a>
+        </li>
+      </ul>
+      <ul fxLayout class="navigation-items" *ngIf="isAuthenticated() && user != null">
+        <li>
+          Hi, {{ user.userName }}
+        </li>
+        <li>
+          (<a routerLink="/logout">Logout</a>)
         </li>
       </ul>
     </div>
