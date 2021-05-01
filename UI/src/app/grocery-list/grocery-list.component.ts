@@ -24,6 +24,10 @@ export class GroceryListComponent implements OnInit {
     this.groupIngredientsBySection(menu);
   }
 
+  hasGroceries(): boolean {
+    return this.getSectionNames().length > 0;
+  }
+
   getSectionNames(): string[] {
     return Object.keys(this.groceriesBySection);
   }

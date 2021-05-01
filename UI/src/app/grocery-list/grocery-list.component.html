@@ -1,5 +1,9 @@
 <h1>Grocery List</h1>
 
+<div *ngIf="!hasGroceries()">
+  <h3>Your grocery list is empty. Go add some recipes!</h3>
+</div>
+
 <div
   class="mat-card"
   *ngFor="let section of getSectionNames()"
