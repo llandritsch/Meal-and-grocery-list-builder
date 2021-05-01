@@ -1,5 +1,5 @@
+<h1>Add a new recipe</h1>
 <div class="container">
-  <h1>Add a new recipe</h1>
     <mat-card class="container col-md-6">
       <div class="mat-card-content formContainer">
         <form #form="ngForm" (ngSubmit)="saveRecipe(form)" novalidate>
@@ -66,11 +66,10 @@
       </div>
     </mat-card>
 
-  <div class="row">
-      <mat-card class="container col-md-6">
-        <div class="mat-card"
-             *ngIf="ingredients.length > 0"
-        >
+  <div class="row col-md-6"
+       *ngIf="ingredients.length > 0">
+      <mat-card class="container">
+        <div class="mat-card">
           <h2 class="mat-card-header">Added Ingredients</h2>
             <ul *ngFor="let i of ingredients">
               <li>

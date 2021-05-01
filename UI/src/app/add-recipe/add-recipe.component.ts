@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Recipe, RecipeIngredient} from "../services/recipes.service";
+import {Recipe, RecipeIngredient, RecipesService} from "../services/recipes.service";
 import {NgForm} from "@angular/forms";
 import {MatGridListModule} from '@angular/material/grid-list';
+import {UserService} from "../services/user.service";
 
 type RecipeData = Recipe;
 type IngredientData = RecipeIngredient
@@ -15,17 +16,20 @@ export class AddRecipeComponent implements OnInit {
   recipe: Recipe = {};
   ingredients: RecipeIngredient[] = [];
 
-  constructor() { }
+  constructor(
+    private recipeSvc: RecipesService,
+  ) { }
 
   ngOnInit(): void {
   }
 
-  saveRecipe(form: NgForm) {
+  async saveRecipe(form: NgForm) {
     const recipeData: RecipeData = form.value;
     const recipeToSave: Recipe = {
       recipe_name: recipeData.recipe_name,
     }
-    console.log("Saving Recipe" + recipeToSave);
+    //create recipe
+    await this.recipeSvc.create(recipeToSave).toPromise();
   }
 
   addIngredientToIngredientArray(form: NgForm) {

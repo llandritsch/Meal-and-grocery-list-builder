@@ -4,6 +4,7 @@ package persistence;
 import entity.Ingredients;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -22,5 +23,20 @@ public class IngredientsDAO {
         List<Ingredients> ingredients = session.createQuery(query).getResultList();
         session.close();
         return ingredients;
+    }
+
+    /**
+     * creates a new user
+     * @param ingredient
+     * @return id of new user
+     */
+    public int createRecipeIngredient(Ingredients ingredient) {
+        int id = 0;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        id = (int)session.save(ingredient);
+        transaction.commit();
+        session.close();
+        return id;
     }
 }
