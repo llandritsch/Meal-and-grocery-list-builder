@@ -27,6 +27,10 @@ public class MenuService {
         }
 
         Menu menu = dao.getByUserId(token.getUserId());
+        // The user has no menu. Return "No Content (204) response"
+        if (menu == null) {
+            return Response.status(204).build();
+        }
         GenericEntity<Menu> myEntity = new GenericEntity<>(menu) {};
         return Response.status(200).entity(myEntity).build();
     }

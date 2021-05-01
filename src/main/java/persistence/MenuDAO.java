@@ -18,17 +18,6 @@ public class MenuDAO {
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
-    // this is for testing...delete after everything works
-    public List<Menu> getAll() {
-        Session session = sessionFactory.openSession();
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<Menu> query = builder.createQuery(Menu.class);
-        Root<Menu> root = query.from(Menu.class);
-        List<Menu> menus = session.createQuery(query).getResultList();
-        session.close();
-        return menus;
-    }
-
     // Only allowing 1 menu per user...for now
     public Menu getByUserId(int userId) {
         Session session = sessionFactory.openSession();
@@ -39,6 +28,9 @@ public class MenuDAO {
         query.where(builder.equal(propertyPath,  userId));
         List<Menu> menus = session.createQuery(query).getResultList();
         session.close();
+        if (menus.size() == 0) {
+            return null;
+        }
         return menus.get(0);
     }
 
