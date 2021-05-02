@@ -1,6 +1,7 @@
 package controller;
 
 import entity.AuthenticationToken;
+import entity.Ingredients;
 import entity.Recipes;
 import persistence.AuthenticationTokenDAO;
 import persistence.IngredientsDAO;
@@ -11,6 +12,16 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
+
+class AddIngredientsRequest {
+    private Ingredients[] ingredients;
+    public AddIngredientsRequest() {}
+
+    public Ingredients[] getIngredients() { return this.ingredients; }
+    public void setIngredients(Ingredients[] ingredients) {
+        this.ingredients = ingredients;
+    }
+}
 
 @Path("/RecipeService")
 public class RecipeService {
@@ -77,6 +88,7 @@ public class RecipeService {
         if (token == null || token.isExpired()) {
             return Response.status(401).build();
         }
+        recipe.setUserId(token.getUserId());
         int id = dao.createRecipe(recipe);
         if(id != 0) {
             recipe.setRecipe_id(id);
@@ -124,6 +136,33 @@ public class RecipeService {
         }
         dao.saveOrUpdate(recipe);
         GenericEntity<Recipes> myEntity = new GenericEntity<Recipes>(recipe) {};
+        return Response.status(200).entity(myEntity).build();
+    }
+
+    @POST
+    @Path("/recipes/{recipeId}/ingredients")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response addIngredientsToRecipe(
+            @PathParam("recipeId") int recipeId,
+            @HeaderParam("userToken") String userToken,
+            AddIngredientsRequest ingredientsRequest
+    ) {
+        AuthenticationToken token = authDAO.getByToken(userToken);
+        if (token == null || token.isExpired()) {
+            return Response.status(401).build();
+        }
+        Recipes recipe = dao.getRecipeById(recipeId);
+        // Return a 404 (Not Found) if the recipe does not exist
+        if (recipe == null) {
+            return Response.status(404).build();
+        }
+        // Add ingredients to the recipe
+        Ingredients[] ingredients = ingredientsRequest.getIngredients();
+        ingredientsDAO.createRecipeIngredients(recipeId, ingredients);
+        // Re-render the recipe with its new ingredients
+        recipe = dao.getRecipeById(recipeId);
+        GenericEntity<Recipes> myEntity = new GenericEntity<>(recipe) {};
         return Response.status(200).entity(myEntity).build();
     }
 }

@@ -24,7 +24,7 @@
               <div class="col-md-3">
                 <mat-form-field appearance="fill" color="accent">
                   <mat-label>Quantity</mat-label>
-                  <input matInput name="ingredientQuantity" id="ingredientQuantity" ngModel>
+                  <input type="number" matInput name="ingredientQuantity" id="ingredientQuantity" ngModel>
                 </mat-form-field>
                 <span class="space"></span>
               </div>
@@ -47,17 +47,17 @@
           <h3>Macronutrient Information <small>(in grams)</small></h3>
           <mat-form-field appearance="fill" color="accent">
             <mat-label>Protein</mat-label>
-            <input matInput name="protein" id="protein" ngModel>
+            <input type="number" matInput name="protein" id="protein" ngModel>
           </mat-form-field>
           <br>
           <mat-form-field appearance="fill" color="accent">
             <mat-label matLabel>Carbohydrates</mat-label>
-            <input matInput name="carbs" id="carbs" ngModel>
+            <input type="number" matInput name="carbs" id="carbs" ngModel>
           </mat-form-field>
           <br>
           <mat-form-field appearance="fill" color="accent">
             <mat-label mat-label>Fat</mat-label>
-            <input matInput name="fat" id="fat" ngModel>
+            <input type="number" matInput name="fat" id="fat" ngModel>
           </mat-form-field>
           <br>
           <button mat-button type="submit" color="accent">Add Ingredient</button>

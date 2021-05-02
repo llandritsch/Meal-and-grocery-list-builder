@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {Recipe, RecipeIngredient, RecipesService} from "../services/recipes.service";
 import {NgForm} from "@angular/forms";
-import {MatGridListModule} from '@angular/material/grid-list';
-import {UserService} from "../services/user.service";
 
-type RecipeData = Recipe;
-type IngredientData = RecipeIngredient
+type RecipeFormData = {
+  recipeName: string;
+}
+
+type IngredientData = RecipeIngredient;
 
 @Component({
   selector: 'app-add-recipe',
@@ -17,19 +18,22 @@ export class AddRecipeComponent implements OnInit {
   ingredients: RecipeIngredient[] = [];
 
   constructor(
-    private recipeSvc: RecipesService,
-  ) { }
+    private recipeSvc: RecipesService
+  ) {}
+
 
   ngOnInit(): void {
   }
 
   async saveRecipe(form: NgForm) {
-    const recipeData: RecipeData = form.value;
+    const recipeData: RecipeFormData = form.value;
     const recipeToSave: Recipe = {
-      recipe_name: recipeData.recipe_name,
+      recipe_name: recipeData.recipeName,
     }
-    //create recipe
-    await this.recipeSvc.create(recipeToSave).toPromise();
+    // Create the recipe
+    const recipe = await this.recipeSvc.create(recipeToSave);
+    // Add ingredients to it
+    await this.recipeSvc.addIngredients(recipe, this.ingredients);
   }
 
   addIngredientToIngredientArray(form: NgForm) {
@@ -43,21 +47,7 @@ export class AddRecipeComponent implements OnInit {
       carbs: ingredientData.carbs,
       fat: ingredientData.fat
     }
-    console.log(ingredientData);
-    console.log(ingredientToAdd);
     this.ingredients.push(ingredientToAdd);
   }
-  // addIngredientToIngredientArray(
-  //   ingredientName: string,
-  //   ingredientQuantity: number,
-  //   measurementType: string,
-  //   grocerySection: string
-  // ) {
-  //   this.ingredients.push({
-  //     ingredientQuantity,
-  //     ingredientName,
-  //     measurementType,
-  //     grocerySection
-  //   });
-  // }
+
 }

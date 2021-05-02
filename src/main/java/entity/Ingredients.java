@@ -37,6 +37,9 @@ public class Ingredients {
     @Column(name = "Fat")
     private double fat;
 
+    @Column(name = "Recipes_recipe_id")
+    private int recipeId;
+
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "Recipes_recipe_id")
 //    @Transient
@@ -49,8 +52,7 @@ public class Ingredients {
 
     }
 
-    public Ingredients(/*Recipes recipe,*/ String ingredientName, int id, double ingredientQuantity, String measurementType, double protein, double carbs, double fat, String grocerySection) {
-//        this.recipe = recipe;
+    public Ingredients(int recipeId, String ingredientName, int id, double ingredientQuantity, String measurementType, double protein, double carbs, double fat, String grocerySection) {
         this.ingredientName = ingredientName;
         this.id = id;
         this.ingredientQuantity = ingredientQuantity;
@@ -59,6 +61,7 @@ public class Ingredients {
         this.protein = protein;
         this.carbs = carbs;
         this.fat = fat;
+        this.recipeId = recipeId;
     }
 
     /**
@@ -205,25 +208,13 @@ public class Ingredients {
         this.fat = fat;
     }
 
-    /**
-     * Gets recipe.
-     *
-     * @return the recipe
-     */
-//    public Recipes getRecipe() {
-//        return recipe;
-//    }
-
-
-//    public void setRecipe(Recipes recipe) {
-//        this.recipe = recipe;
-//    }
+    public int getRecipeId() { return this.recipeId; }
+    public void setRecipeId(int id) { this.recipeId = id; }
 
     @Override
     public String toString() {
         return "Ingredients{" +
-                "recipe_id=" + id +
-//                ", recipe_name='" + recipe.getRecipe_name() + ' ' +
+                "recipe_id=" + recipeId +
                 ", ingredient name=" + ingredientName + ' ' +
                 ", quantity" + ingredientQuantity + ' ' +
                 ", measurement type" + measurementType +

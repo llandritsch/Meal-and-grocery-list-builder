@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {ApiService} from "./api.service";
 
 export type Recipe = {
   recipe_id?: number;
   recipe_name?: string;
+  Users_id?: number;
   ingredients?: RecipeIngredient[];
 }
 
@@ -19,6 +19,7 @@ export type RecipeIngredient = {
   carbs?: number;
   fat?: number;
   grocerySection?: string;
+  instructions?: string;
 }
 
 @Injectable({
@@ -28,7 +29,7 @@ export class RecipesService {
 
   constructor(private http: ApiService) { }
 
-  rootURL = '/api/RecipeService';
+  rootURL = '/api/RecipeService/recipes';
   // Local cache of ALL recipes.
   private recipes: Recipe[] = [];
 
@@ -36,14 +37,19 @@ export class RecipesService {
     if (this.recipes.length) {
       return this.recipes;
     }
-    const recipes = await this.http.get<Recipe[]>(this.rootURL + "/recipes").toPromise();
+    const recipes = await this.http.get<Recipe[]>(this.rootURL).toPromise();
     this.recipes = recipes;
     return recipes;
   }
 
-  create(recipe: Recipe): Observable<Recipe> {
-    return this.http.post<Recipe>(this.rootURL + "/recipes", recipe);
+  create(recipe: Recipe): Promise<Recipe> {
+    return this.http.post<Recipe>(this.rootURL, recipe).toPromise();
   }
 
+  addIngredients(recipe: Recipe, ingredients: RecipeIngredient[]): Promise<Recipe> {
+    const id = recipe.recipe_id;
+    const payload = { ingredients };
+    return this.http.post<Recipe>(`${this.rootURL}/${id}/ingredients`, payload).toPromise();
+  }
 }
 

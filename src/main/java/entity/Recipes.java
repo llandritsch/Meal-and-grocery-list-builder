@@ -25,6 +25,9 @@ public class Recipes {
     @Column(name = "public_recipe")
     private int public_recipe;
 
+    @Column(name = "Users_id")
+    private int userId;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Users_id")
     @Transient
@@ -53,6 +56,14 @@ public class Recipes {
         this.recipe_name = recipe_name;
         this.public_recipe = public_recipe;
         this.ingredients = ingredients;
+    }
+
+    public void setUserId(int id) {
+        this.userId = id;
+    }
+
+    public int getUserId() {
+        return this.userId;
     }
 
     /**
