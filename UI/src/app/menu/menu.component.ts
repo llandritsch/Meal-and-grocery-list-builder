@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Menu, MenuService} from "../services/menu.service";
 import {Recipe} from "../services/recipes.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -9,7 +10,10 @@ import {Recipe} from "../services/recipes.service";
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public menuService: MenuService) {}
+  constructor(
+    public menuService: MenuService,
+    public router: Router
+  ) {}
 
   menu: Menu;
 
@@ -29,4 +33,10 @@ export class MenuComponent implements OnInit {
     await this.menuService.removeFromMenu(recipe);
     await this.loadMenu();
   }
+
+  viewRecipe(recipeId) {
+    this.router.navigate(["/view-recipe/"], { queryParams: {id: recipeId}
+    });
+  }
+
 }
