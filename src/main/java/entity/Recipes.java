@@ -28,6 +28,9 @@ public class Recipes {
     @Column(name = "Users_id")
     private int userId;
 
+    @Column(name = "instructions")
+    private String instructions;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "Users_id")
     @Transient
@@ -51,11 +54,12 @@ public class Recipes {
      * @param public_recipe the public recipe
      * @param user          the user
      */
-    public Recipes(String recipe_name, int public_recipe, Users user, Set<Ingredients> ingredients) {
+    public Recipes(String recipe_name, int public_recipe, Users user, Set<Ingredients> ingredients, String instructions) {
         this.user = user;
         this.recipe_name = recipe_name;
         this.public_recipe = public_recipe;
         this.ingredients = ingredients;
+        this.instructions = instructions;
     }
 
     public void setUserId(int id) {
@@ -101,6 +105,18 @@ public class Recipes {
     public void setRecipe_name(String recipe_name) {
         this.recipe_name = recipe_name;
     }
+
+    /**
+     *  gets instructions
+     * @return
+     */
+    public String getInstructions() {return instructions;}
+
+    /**
+     * sets instructions
+     * @param instructions
+     */
+    public void setInstructions(String instructions) {this.instructions = instructions;}
 
     /**
      * Gets public recipe.

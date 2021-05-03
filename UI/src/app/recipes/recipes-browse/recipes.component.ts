@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RecipesService, Recipe } from '../services/recipes.service';
+import { RecipesService, Recipe } from '../../services/recipes.service';
 import {Observable} from "rxjs";
-import {Menu, MenuService} from "../services/menu.service";
+import {Menu, MenuService} from "../../services/menu.service";
 
 
 @Component({

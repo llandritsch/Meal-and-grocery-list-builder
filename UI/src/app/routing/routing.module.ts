@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent} from "../index/index.component";
 import { SignupComponent } from "../signup/signup.component";
-import {RecipesComponent} from "../recipes/recipes.component";
+import {RecipesComponent} from "../recipes/recipes-browse/recipes.component";
 import {MenuComponent} from "../menu/menu.component";
 import {GroceryListComponent} from "../grocery-list/grocery-list.component";
 import { AuthGuardService } from "../services/authguard.service";
 import { LoginComponent } from "../login/login.component";
-import {AddRecipeComponent} from "../add-recipe/add-recipe.component";
+import {AddRecipeComponent} from "../recipes/add-recipe/add-recipe.component";
 import { LogoutComponent } from "../logout/logout.component";
 
 const routes: Routes = [

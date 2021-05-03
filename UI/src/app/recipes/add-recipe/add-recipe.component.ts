@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {Recipe, RecipeIngredient, RecipesService} from "../services/recipes.service";
+import {Recipe, RecipeIngredient, RecipesService} from "../../services/recipes.service";
 import {NgForm} from "@angular/forms";
+import {CdkTextareaAutosize} from '@angular/cdk/text-field';
+import {NgZone, ViewChild} from '@angular/core';
 
 type RecipeFormData = {
   recipeName: string;
+  instructions: string;
 }
 
 type IngredientData = RecipeIngredient;
@@ -18,7 +21,8 @@ export class AddRecipeComponent implements OnInit {
   ingredients: RecipeIngredient[] = [];
 
   constructor(
-    private recipeSvc: RecipesService
+    private recipeSvc: RecipesService,
+    private _ngZone: NgZone
   ) {}
 
 
@@ -29,6 +33,7 @@ export class AddRecipeComponent implements OnInit {
     const recipeData: RecipeFormData = form.value;
     const recipeToSave: Recipe = {
       recipe_name: recipeData.recipeName,
+      instructions: recipeData.instructions,
     }
     // Create the recipe
     const recipe = await this.recipeSvc.create(recipeToSave);
@@ -49,5 +54,8 @@ export class AddRecipeComponent implements OnInit {
     }
     this.ingredients.push(ingredientToAdd);
   }
+
+  @ViewChild('autosize') autosize: CdkTextareaAutosize;
+
 
 }

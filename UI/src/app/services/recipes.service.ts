@@ -6,6 +6,7 @@ export type Recipe = {
   recipe_id?: number;
   recipe_name?: string;
   Users_id?: number;
+  instructions?: string;
   ingredients?: RecipeIngredient[];
 }
 
@@ -19,7 +20,6 @@ export type RecipeIngredient = {
   carbs?: number;
   fat?: number;
   grocerySection?: string;
-  instructions?: string;
 }
 
 @Injectable({

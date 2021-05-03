@@ -23,12 +23,15 @@ import { SignupComponent } from './signup/signup.component';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
-import { RecipesComponent } from './recipes/recipes.component';
+import { RecipesComponent } from './recipes/recipes-browse/recipes.component';
 import { MenuComponent } from './menu/menu.component';
 import { GroceryListComponent } from './grocery-list/grocery-list.component';
 import { LoginComponent } from './login/login.component';
-import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { AddRecipeComponent } from './recipes/add-recipe/add-recipe.component';
 import { LogoutComponent } from './logout/logout.component';
+import {MatOptionModule} from "@angular/material/core";
+import {MatSelectModule} from "@angular/material/select";
+import { ViewRecipeComponent } from './recipes/view-recipe/view-recipe.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,8 @@ import { LogoutComponent } from './logout/logout.component';
     GroceryListComponent,
     LoginComponent,
     AddRecipeComponent,
-    LogoutComponent
+    LogoutComponent,
+    ViewRecipeComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +67,9 @@ import { LogoutComponent } from './logout/logout.component';
     HttpClientModule,
     MatFormFieldModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

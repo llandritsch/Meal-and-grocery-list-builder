@@ -7,6 +7,18 @@
             <mat-label>Recipe Name</mat-label>
             <input matInput name="recipeName" id="recipeName" ngModel>
           </mat-form-field>
+          <mat-form-field color="accent" appearance="fill">
+            <mat-label>Recipe Instructions</mat-label>
+            <textarea matInput
+                      cdkTextareaAutosize
+                      #autosize="cdkTextareaAutosize"
+                      cdkAutosizeMinRows="1"
+                      cdkAutosizeMaxRows="5"
+                      name="instructions"
+                      id="instructions"
+                      ngModel>
+                </textarea>
+          </mat-form-field>
           <button mat-button type="submit" color="accent">Save Recipe</button>
         </form>
         <br>
