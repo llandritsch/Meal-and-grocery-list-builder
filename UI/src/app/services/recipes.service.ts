@@ -30,16 +30,13 @@ export class RecipesService {
   constructor(private http: ApiService) { }
 
   rootURL = '/api/RecipeService/recipes';
-  // Local cache of ALL recipes.
-  private recipes: Recipe[] = [];
 
   async getRecipes(): Promise<Recipe[]> {
-    if (this.recipes.length) {
-      return this.recipes;
-    }
-    const recipes = await this.http.get<Recipe[]>(this.rootURL).toPromise();
-    this.recipes = recipes;
-    return recipes;
+    return await this.http.get<Recipe[]>(this.rootURL).toPromise();
+  }
+
+  async getRecipeById(id): Promise<Recipe> {
+    return await this.http.get(`${this.rootURL}/${id}`).toPromise();
   }
 
   create(recipe: Recipe): Promise<Recipe> {
@@ -50,6 +47,30 @@ export class RecipesService {
     const id = recipe.recipe_id;
     const payload = { ingredients };
     return this.http.post<Recipe>(`${this.rootURL}/${id}/ingredients`, payload).toPromise();
+  }
+
+  getTotalProtein(recipe: Recipe): number {
+    let protein = 0;
+    recipe.ingredients.forEach(ingredient => {
+      protein += ingredient.protein;
+    });
+    return protein;
+  }
+
+  getTotalCarbs(recipe: Recipe): number {
+    let carbs = 0;
+    recipe.ingredients.forEach(ingredient => {
+      carbs += ingredient.carbs;
+    });
+    return carbs;
+  }
+
+  getTotalFat(recipe: Recipe): number {
+    let fat = 0;
+    recipe.ingredients.forEach(ingredient => {
+      fat += ingredient.fat;
+    });
+    return fat;
   }
 }
 

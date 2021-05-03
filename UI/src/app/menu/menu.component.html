@@ -7,6 +7,10 @@
   <div class="recipe" *ngFor="let recipe of menu.recipes">
     <h2>{{recipe.recipe_name}}</h2>
 
+    <span>Total protein: {{ getTotalProtein(recipe)}}</span>
+    <span>Total carbs: {{getTotalCarbs(recipe)}}</span>
+    <span>fat: {{getTotalFat(recipe)}}</span>
+
     <button
       mat-raised-button
       color="warn"

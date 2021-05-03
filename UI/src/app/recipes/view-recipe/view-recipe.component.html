@@ -1,1 +1,19 @@
-<p>view-recipe works!</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{recipe.recipe_name}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <h2>Ingredients</h2>
+    <ul>
+      <li
+        *ngFor="let i of recipe.ingredients"
+      >{{i.ingredientName}} {{i.ingredientQuantity}} {{i.measurementType}}</li>
+    </ul>
+    <h2>Instructions</h2>
+    <p>{{recipe.instructions}}</p>
+  </mat-card-content>
+</mat-card>
+
+<div *ngIf="!recipe">
+  <p>Loading...</p>
+</div>

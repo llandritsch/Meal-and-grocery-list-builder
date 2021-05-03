@@ -51,27 +51,15 @@ export class RecipesComponent implements OnInit {
   }
 
   getTotalProtein(recipe: Recipe): number {
-    let protein = 0;
-    recipe.ingredients.forEach(ingredient => {
-      protein += ingredient.protein;
-    });
-    return protein;
+    return this.recipeSvc.getTotalProtein(recipe);
   }
 
   getTotalCarbs(recipe: Recipe): number {
-    let carbs = 0;
-    recipe.ingredients.forEach(ingredient => {
-      carbs += ingredient.carbs;
-    });
-    return carbs;
+    return this.recipeSvc.getTotalCarbs(recipe);
   }
 
   getTotalFat(recipe: Recipe): number {
-    let fat = 0;
-    recipe.ingredients.forEach(ingredient => {
-      fat += ingredient.fat;
-    });
-    return fat;
+    return this.recipeSvc.getTotalFat(recipe);
   }
 
 }

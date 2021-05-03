@@ -61,7 +61,7 @@ public class RecipeService {
     }
 
     @GET
-    @Path("/recipes/{recipeName}")
+    @Path("/recipes/name/{recipeName}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getRecipeByName(
             @PathParam("recipeName") String recipeName,

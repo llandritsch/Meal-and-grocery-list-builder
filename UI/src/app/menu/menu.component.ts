@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Menu, MenuService} from "../services/menu.service";
-import {Recipe} from "../services/recipes.service";
+import {Recipe, RecipesService} from "../services/recipes.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -11,8 +11,9 @@ import {Router} from "@angular/router";
 export class MenuComponent implements OnInit {
 
   constructor(
-    public menuService: MenuService,
-    public router: Router
+    private menuService: MenuService,
+    private recipeSvc: RecipesService,
+    private router: Router
   ) {}
 
   menu: Menu;
@@ -36,6 +37,18 @@ export class MenuComponent implements OnInit {
 
   async viewRecipe(recipeId) {
     await this.router.navigate(["/view-recipe/"], { queryParams: {id: recipeId} });
+  }
+
+  getTotalProtein(recipe: Recipe): number {
+    return this.recipeSvc.getTotalProtein(recipe);
+  }
+
+  getTotalCarbs(recipe: Recipe): number {
+    return this.recipeSvc.getTotalCarbs(recipe);
+  }
+
+  getTotalFat(recipe: Recipe): number {
+    return this.recipeSvc.getTotalFat(recipe);
   }
 
 }
