@@ -24,9 +24,7 @@ export class MenuService {
   private recipesById: RecipesById = {};
 
   async getMenu(): Promise<Menu> {
-    if (this.menu == null) {
-      await this.refreshMenu();
-    }
+    await this.refreshMenu();
     return this.menu;
   }
 
@@ -45,11 +43,12 @@ export class MenuService {
   }
 
   private async refreshMenu(): Promise<void> {
-    this.menu = await this.apiService.get<Menu>(this.baseUrl).toPromise();
+    const menu = await this.apiService.get<Menu>(this.baseUrl).toPromise();
     this.recipesById = {};
-    this.menu.recipes.forEach((recipe: Recipe) => {
+    menu.recipes.forEach((recipe: Recipe) => {
       this.recipesById[recipe.recipe_id] = recipe;
-    })
+    });
+    this.menu = menu;
   }
 
 }

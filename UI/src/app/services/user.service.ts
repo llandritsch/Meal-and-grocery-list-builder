@@ -21,16 +21,9 @@ export class UserService {
 
   rootURL = '/api/UserService/users';
 
-  private user: User;
-
   // Get the currently logged-in user
   async getUser(): Promise<User> {
-    if (this.user) {
-      return this.user;
-    }
-    const user = await this.apiService.get<User>(this.rootURL).toPromise();
-    this.user = user
-    return user;
+    return await this.apiService.get<User>(this.rootURL).toPromise();
   }
 
   // Register an unauthenticated user

@@ -34,9 +34,8 @@ export class MenuComponent implements OnInit {
     await this.loadMenu();
   }
 
-  viewRecipe(recipeId) {
-    this.router.navigate(["/view-recipe/"], { queryParams: {id: recipeId}
-    });
+  async viewRecipe(recipeId) {
+    await this.router.navigate(["/view-recipe/"], { queryParams: {id: recipeId} });
   }
 
 }
