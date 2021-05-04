@@ -21,12 +21,23 @@ export class ViewRecipeComponent implements OnInit {
   }
 
   recipe: Recipe;
+  fat: number;
+  carbs: number;
+  protein: number;
 
   async ngOnInit(): Promise<void> {
     await this.loadRecipe(this.id);
+    await this.loadMacros();
   }
 
   async loadRecipe(id): Promise<void> {
     this.recipe = await this.recipeSvc.getRecipeById(id);
   }
+
+  loadMacros() {
+    this.fat = this.recipeSvc.getTotalFat(this.recipe);
+    this.carbs = this.recipeSvc.getTotalCarbs(this.recipe);
+    this.protein = this.recipeSvc.getTotalProtein(this.recipe);
+  }
+
 }

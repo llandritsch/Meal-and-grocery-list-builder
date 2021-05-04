@@ -11,5 +11,35 @@ div {
 }
 
 h1 {
+  text-align: left;
   padding: 10px;
+  color: #25be88;
+}
+h2 {
+  color: #25be88;
+}
+
+table {
+  border: solid 3px #25be88;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+td {
+  width: 33%;
+  border: solid 2px rebeccapurple;
+  text-align: center;
+}
+
+.welcome {
+  width: 50%;
+  text-align: left;
+}
+
+.line {
+  border-bottom: 3px solid rebeccapurple;
+}
+
+#macroBox {
+  justify-content: center;
 }

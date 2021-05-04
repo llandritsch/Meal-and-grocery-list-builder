@@ -1,14 +1,16 @@
 <h1>Add a new recipe</h1>
 <div class="container">
-    <mat-card class="container col-md-6">
+  <!-- -------------------- Name and instructions --------------------- -->
+    <mat-card class="container col-md-3">
       <div class="mat-card-content formContainer">
         <form #form="ngForm" (ngSubmit)="saveRecipe(form)" novalidate>
           <mat-form-field appearance="fill" color="accent">
             <mat-label>Recipe Name</mat-label>
             <input matInput name="recipeName" id="recipeName" ngModel>
           </mat-form-field>
+          <div class="line"></div>
           <mat-form-field color="accent" appearance="fill">
-            <mat-label>Recipe Instructions</mat-label>
+            <mat-label>Recipe Instructions <br>Space will expand to fit!</mat-label>
             <textarea matInput
                       cdkTextareaAutosize
                       #autosize="cdkTextareaAutosize"
@@ -19,9 +21,14 @@
                       ngModel>
                 </textarea>
           </mat-form-field>
+          <br>
           <button mat-button type="submit" color="accent">Save Recipe</button>
         </form>
-        <br>
+      </div>
+    </mat-card>
+        <!-- ------------------------- ingredient and macros ----------------------- -->
+  <mat-card class="container col-md-3">
+    <div>
         <form #form2="ngForm" (ngSubmit)="addIngredientToIngredientArray(form2)" novalidate>
           <div class="ingredientContainer">
             <h3>Ingredients</h3>
@@ -78,7 +85,8 @@
       </div>
     </mat-card>
 
-  <div class="row col-md-6"
+
+  <div class="row col-md-3"
        *ngIf="ingredients.length > 0">
       <mat-card class="container">
         <div class="mat-card">

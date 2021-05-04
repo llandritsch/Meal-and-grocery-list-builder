@@ -5,7 +5,8 @@
     <span>Total protein: {{ getTotalProtein(r)}}</span>
     <span>Total carbs: {{getTotalCarbs(r)}}</span>
     <span>fat: {{getTotalFat(r)}}</span>
-
+  </p>
+  <div class="button-box">
     <button
       mat-raised-button
       color="{{ getButtonStyle(r) }}"
@@ -13,5 +14,11 @@
     >
       {{ getButtonText(r) }}
     </button>
-  </p>
+    <button
+      mat-raised-button
+      color="secondary"
+      (click)="viewRecipe(r.recipe_id)">
+      View Recipe
+    </button>
+    </div>
 </div>

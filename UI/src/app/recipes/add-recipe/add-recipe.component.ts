@@ -31,14 +31,20 @@ export class AddRecipeComponent implements OnInit {
 
   async saveRecipe(form: NgForm) {
     const recipeData: RecipeFormData = form.value;
-    const recipeToSave: Recipe = {
-      recipe_name: recipeData.recipeName,
-      instructions: recipeData.instructions,
+    if (recipeData.recipeName != null && recipeData.instructions != null && this.ingredients.length > 0) {
+      const recipeToSave: Recipe = {
+        recipe_name: recipeData.recipeName,
+        instructions: recipeData.instructions,
+      }
+      // Create the recipe
+      const recipe = await this.recipeSvc.create(recipeToSave);
+      // Add ingredients to it
+      await this.recipeSvc.addIngredients(recipe, this.ingredients);
+      // Reset Form
+      form.resetForm();
+    } else {
+      alert("Please add Recipe name, instructions, and at least one ingredient before saving recipe");
     }
-    // Create the recipe
-    const recipe = await this.recipeSvc.create(recipeToSave);
-    // Add ingredients to it
-    await this.recipeSvc.addIngredients(recipe, this.ingredients);
   }
 
   addIngredientToIngredientArray(form: NgForm) {
@@ -53,6 +59,7 @@ export class AddRecipeComponent implements OnInit {
       fat: ingredientData.fat
     }
     this.ingredients.push(ingredientToAdd);
+    form.resetForm();
   }
 
   @ViewChild('autosize') autosize: CdkTextareaAutosize;

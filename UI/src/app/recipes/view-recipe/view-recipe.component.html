@@ -1,3 +1,4 @@
+<div class="container">
 <mat-card>
   <mat-card-header>
     <mat-card-title>{{recipe.recipe_name}}</mat-card-title>
@@ -11,9 +12,17 @@
     </ul>
     <h2>Instructions</h2>
     <p>{{recipe.instructions}}</p>
+    <hr>
+    <h2>Macronutrients</h2>
+    <table>
+      <thead><th>Protein</th><th>Carbs</th><th>Fat</th></thead>
+      <tr><td>{{protein}}</td><td>{{carbs}}</td><td>{{fat}}</td></tr>
+    </table>
+
   </mat-card-content>
 </mat-card>
 
 <div *ngIf="!recipe">
   <p>Loading...</p>
+</div>
 </div>

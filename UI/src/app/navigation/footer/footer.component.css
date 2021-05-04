@@ -7,3 +7,32 @@ div {
   display: flex;
   float: left;
 }
+.author {
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+}
+#contact {
+  text-align: center;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1em;
+}
+th {
+  border-bottom: solid 2px #25be88;
+}
+td {
+  width: 33%;
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+  justify-content: space-between;
+}

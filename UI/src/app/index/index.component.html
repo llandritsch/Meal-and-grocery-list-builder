@@ -1,12 +1,19 @@
 <div *ngIf="goal">
-
+  <div class="header"><h1>Meal and Grocery List Builder</h1></div>
+<div class="welcome">
+  <h3>Welcome to your meal plan and grocery builder! Browse recipes to add to your menu.
+  Adding recipes to your menu will automatically build your grocery list. Feel free to add
+  your own recipes too! All macros are calculated for the entire meal so you can figure out
+  your macros based on your own serving size.</h3>
+  <div class="line"></div>
+</div>
   <div id="calorieBox">
-    <h1>Daily Calorie Goal</h1>
+    <h2>Daily Calorie Goal</h2>
     <h2>{{goal.calorieGoal}}</h2>
   </div>
 
   <div id="macroBox">
-    <h1>Macronutrient Goal</h1>
+    <h2>Macronutrient Goal</h2>
     <table>
       <tr>
         <th>Carbs</th>

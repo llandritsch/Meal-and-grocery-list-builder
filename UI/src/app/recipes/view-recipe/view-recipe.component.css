@@ -1,0 +1,29 @@
+table {
+  border: solid 3px #25be88;
+  width: 100%;
+}
+td {
+  width: 33%;
+  border: solid 2px rebeccapurple;
+  text-align: center;
+}
+.container {
+  padding: 2em;
+}
+mat-card {
+  margin: 1em 2em;
+  padding: 1em 2em;
+}
+mat-card-header {
+  border-bottom: solid 3px #25be88;
+  padding: 1em 2em;
+  justify-content: center;
+}
+ul {
+  border-bottom: solid 3px #25be88;
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+}
+

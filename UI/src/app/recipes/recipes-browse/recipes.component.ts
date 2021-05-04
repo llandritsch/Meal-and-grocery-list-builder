@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RecipesService, Recipe } from '../../services/recipes.service';
 import {Observable} from "rxjs";
 import {Menu, MenuService} from "../../services/menu.service";
+import {Router} from "@angular/router";
 
 
 @Component({
@@ -13,7 +14,8 @@ export class RecipesComponent implements OnInit {
 
   constructor(
     private recipeSvc: RecipesService,
-    private menusService: MenuService
+    private menusService: MenuService,
+    private router: Router
   ) { }
 
   recipes: Recipe[] = [];
@@ -60,6 +62,10 @@ export class RecipesComponent implements OnInit {
 
   getTotalFat(recipe: Recipe): number {
     return this.recipeSvc.getTotalFat(recipe);
+  }
+
+  async viewRecipe(recipeId) {
+    await this.router.navigate(["/view-recipe/"], { queryParams: {id: recipeId} });
   }
 
 }
