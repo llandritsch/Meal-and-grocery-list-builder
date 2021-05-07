@@ -2,6 +2,9 @@ table {
   border: solid 3px #25be88;
   width: 100%;
 }
+h2 {
+  margin-left: 2em;
+}
 td {
   width: 33%;
   border: solid 2px rebeccapurple;
@@ -11,7 +14,9 @@ td {
   padding: 2em;
 }
 mat-card {
-  margin: 1em 2em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1em 2em;
 }
 mat-card-header {

@@ -3,6 +3,7 @@ import {Recipe, RecipeIngredient, RecipesService} from "../../services/recipes.s
 import {NgForm} from "@angular/forms";
 import {CdkTextareaAutosize} from '@angular/cdk/text-field';
 import {NgZone, ViewChild} from '@angular/core';
+import {Router} from "@angular/router";
 
 type RecipeFormData = {
   recipeName: string;
@@ -22,7 +23,8 @@ export class AddRecipeComponent implements OnInit {
 
   constructor(
     private recipeSvc: RecipesService,
-    private _ngZone: NgZone
+    private _ngZone: NgZone,
+    private router: Router
   ) {}
 
 
@@ -41,7 +43,7 @@ export class AddRecipeComponent implements OnInit {
       // Add ingredients to it
       await this.recipeSvc.addIngredients(recipe, this.ingredients);
       // Reset Form
-      form.resetForm();
+      await this.router.navigate(["/view-recipe/"], { queryParams: {id: recipe.recipe_id} });
     } else {
       alert("Please add Recipe name, instructions, and at least one ingredient before saving recipe");
     }
@@ -49,17 +51,27 @@ export class AddRecipeComponent implements OnInit {
 
   addIngredientToIngredientArray(form: NgForm) {
     const ingredientData: IngredientData = form.value;
-    const ingredientToAdd: RecipeIngredient = {
-      ingredientName: ingredientData.ingredientName,
-      ingredientQuantity: ingredientData.ingredientQuantity,
-      measurementType: ingredientData.measurementType,
-      grocerySection: ingredientData.grocerySection,
-      protein: ingredientData.protein,
-      carbs: ingredientData.carbs,
-      fat: ingredientData.fat
+    if(ingredientData.measurementType != null
+        && ingredientData.ingredientQuantity != null
+        && ingredientData.ingredientName != null
+        && ingredientData.fat != null
+        && ingredientData.grocerySection != null
+        && ingredientData.protein != null
+        && ingredientData.carbs != null) {
+      const ingredientToAdd: RecipeIngredient = {
+        ingredientName: ingredientData.ingredientName,
+        ingredientQuantity: ingredientData.ingredientQuantity,
+        measurementType: ingredientData.measurementType,
+        grocerySection: ingredientData.grocerySection,
+        protein: ingredientData.protein,
+        carbs: ingredientData.carbs,
+        fat: ingredientData.fat
+      }
+      this.ingredients.push(ingredientToAdd);
+      form.resetForm();
+    } else {
+      alert("Please fill out all ingredient fields")
     }
-    this.ingredients.push(ingredientToAdd);
-    form.resetForm();
   }
 
   @ViewChild('autosize') autosize: CdkTextareaAutosize;
