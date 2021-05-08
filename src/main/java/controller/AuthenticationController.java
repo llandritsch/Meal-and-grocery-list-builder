@@ -27,7 +27,7 @@ class AuthenticationRequest {
     public void setPassword(String password) { this.password = password; }
 }
 
-@Path("/auth")
+@Path("/api/auth")
 public class AuthenticationController {
     AuthenticationTokenDAO authenticationTokenDAO = new AuthenticationTokenDAO();
     UsersDAO usersDAO = new UsersDAO();

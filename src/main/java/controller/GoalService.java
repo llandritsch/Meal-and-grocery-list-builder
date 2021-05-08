@@ -10,7 +10,7 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/GoalService")
+@Path("/api/GoalService")
 public class GoalService {
     UserGoalsDAO goalsDAO = new UserGoalsDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();

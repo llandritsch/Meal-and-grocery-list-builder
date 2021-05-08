@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Observable} from "rxjs";
 import {ApiService} from "./api.service";
+import {PlatformLocation} from "@angular/common";
 
 export type Recipe = {
   recipe_id?: number;
@@ -27,9 +27,14 @@ export type RecipeIngredient = {
 })
 export class RecipesService {
 
-  constructor(private http: ApiService) { }
+  constructor(
+    private http: ApiService,
+    private platformLocation: PlatformLocation
+  ) {
+    this.rootURL = platformLocation.getBaseHrefFromDOM() + "api/RecipeService/recipes";
+  }
 
-  rootURL = '/api/RecipeService/recipes';
+  private readonly rootURL;
 
   async getRecipes(): Promise<Recipe[]> {
     return await this.http.get<Recipe[]>(this.rootURL).toPromise();

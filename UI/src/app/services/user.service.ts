@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from "rxjs";
 import {ApiService} from "./api.service";
 import {HttpClient} from "@angular/common/http";
+import {PlatformLocation} from "@angular/common";
 
 export type User = {
   id?: number;
@@ -16,10 +17,13 @@ export class UserService {
 
   constructor(
     private apiService: ApiService,
-    private http: HttpClient
-  ) { }
+    private http: HttpClient,
+    private platformLocation: PlatformLocation
+  ) {
+    this.rootURL = platformLocation.getBaseHrefFromDOM() + "api/UserService/users";
+  }
 
-  rootURL = '/api/UserService/users';
+  private readonly rootURL;
 
   // Get the currently logged-in user
   async getUser(): Promise<User> {

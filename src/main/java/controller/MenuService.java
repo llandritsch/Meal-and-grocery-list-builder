@@ -12,7 +12,7 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/MenuService")
+@Path("/api/MenuService")
 public class MenuService {
     MenuDAO dao = new MenuDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();

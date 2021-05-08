@@ -5,12 +5,13 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-@ApplicationPath("/api")
+@ApplicationPath("/")
 public class ApplicationController extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
+        h.add(StaticFileService.class);
         h.add(SearchUser.class);
         h.add(UsersService.class);
         h.add(GoalService.class);
@@ -20,3 +21,4 @@ public class ApplicationController extends Application {
         return h;
     }
 }
+

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Recipe } from "./recipes.service";
 import {ApiService} from "./api.service";
+import {PlatformLocation} from "@angular/common";
 
 export type Menu = {
   id: number;
@@ -17,9 +18,14 @@ type RecipesById = {
 })
 export class MenuService {
 
-  constructor(private apiService: ApiService) {}
+  constructor(
+    private apiService: ApiService,
+    private platformLocation: PlatformLocation
+  ) {
+    this.baseUrl = platformLocation.getBaseHrefFromDOM() + "api/MenuService/menu"
+  }
 
-  private baseUrl = "/api/MenuService/menu"
+  private readonly baseUrl: string;
   private menu: Menu;
   private recipesById: RecipesById = {};
 

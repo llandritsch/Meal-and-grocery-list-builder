@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from "rxjs";
 import {ApiService} from "./api.service";
+import {PlatformLocation} from "@angular/common";
 
 export type UserGoal = {
   id?: number;
@@ -16,9 +17,14 @@ export type UserGoal = {
 })
 export class UserGoalService {
 
-  constructor(private http: ApiService) { }
+  constructor(
+    private http: ApiService,
+    private platformLocation: PlatformLocation
+  ) {
+    this.rootURL = platformLocation.getBaseHrefFromDOM() + "api/GoalService";
+  }
 
-  rootURL = '/api/GoalService';
+  private readonly rootURL;
 
   createUserGoal(goal: UserGoal): Observable<UserGoal> {
     const payload = {};

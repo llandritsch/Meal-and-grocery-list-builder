@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {PlatformLocation} from "@angular/common";
 
 export type AuthenticationToken = {
   userId: number;
@@ -14,10 +15,13 @@ export type AuthenticationToken = {
 export class AuthenticationService {
 
   constructor(
-    private http: HttpClient
-  ) { }
+    private http: HttpClient,
+    private platformLocation: PlatformLocation
+  ) {
+    this.rootURL = platformLocation.getBaseHrefFromDOM() + "api/auth";
+  }
 
-  private rootURL = '/api/auth';
+  private readonly rootURL;
   private key = "authToken";
 
   getToken(): AuthenticationToken {

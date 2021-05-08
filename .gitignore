@@ -50,3 +50,10 @@ fabric.properties
 
 #node stuff
 node_modules/
+
+*.log
+src/main/webapp/*.txt
+src/main/webapp/*.css
+src/main/webapp/*.js
+src/main/webapp/*.ico
+src/main/webapp/index.html

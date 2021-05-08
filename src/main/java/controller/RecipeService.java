@@ -23,7 +23,7 @@ class AddIngredientsRequest {
     }
 }
 
-@Path("/RecipeService")
+@Path("/api/RecipeService")
 public class RecipeService {
     RecipesDAO dao = new RecipesDAO();
     IngredientsDAO ingredientsDAO = new IngredientsDAO();

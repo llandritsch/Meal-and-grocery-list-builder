@@ -10,7 +10,7 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-@Path("/UserService")
+@Path("/api/UserService")
 public class UsersService {
     UsersDAO usersDAO = new UsersDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
