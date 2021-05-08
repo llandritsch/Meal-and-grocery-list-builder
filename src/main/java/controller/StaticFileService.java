@@ -18,8 +18,8 @@ public class StaticFileService {
     @GET
     @Path("{path: .*}")
     public Response Get(@PathParam("path") String path) {
-        InputStream resource = context.getResourceAsStream(String.format("%s", path));
-        InputStream indexHtml = context.getResourceAsStream("index.html");
+        InputStream resource = context.getResourceAsStream(String.format("static/%s", path));
+        InputStream indexHtml = context.getResourceAsStream("static/index.html");
 
         return Objects.isNull(resource)
                 // If the resource does not exist, then respond with the index.html page. This should
