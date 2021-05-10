@@ -100,24 +100,44 @@ public class Users {
         this.id = id;
     }
 
+    /**
+     * gets set of recipes
+     * @return recipes
+     */
     public Set<Recipes> getRecipes() {
         return recipes;
     }
 
+    /**
+     * sets set of recipes
+     * @param recipes
+     */
     public void setRecipes(Set<Recipes> recipes) {
         this.recipes = recipes;
     }
 
+    /**
+     * adds a recipe
+     * @param recipe
+     */
     public void addRecipe(Recipes recipe) {
         recipes.add(recipe);
         recipe.setUser(this);
     }
 
+    /**
+     * removes a recipe
+     * @param recipe
+     */
     public void removeRecipe(Recipes recipe) {
         recipes.remove(recipe);
         recipe.setUser(null);
     }
 
+    /**
+     * toString for users
+     * @return
+     */
     @Override
     public String toString() {
         return "Users{" +

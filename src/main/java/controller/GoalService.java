@@ -10,11 +10,19 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/**
+ * Goal Service is responsible for anything related to user goals.
+ */
 @Path("/api/GoalService")
 public class GoalService {
     UserGoalsDAO goalsDAO = new UserGoalsDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
 
+    /**
+     * Checks if user is authenicated and gets the goal from the userid associated with that token
+     * @param userToken
+     * @return
+     */
     @GET
     @Path("/goals")
     @Produces(MediaType.APPLICATION_JSON)
@@ -37,6 +45,12 @@ public class GoalService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Checks for auth and creates a new goal for the user
+     * @param goals
+     * @param userToken
+     * @return response status
+     */
     @POST
     @Path("/goals")
     @Produces(MediaType.APPLICATION_JSON)
@@ -62,6 +76,12 @@ public class GoalService {
         }
     }
 
+    /**
+     * Checks for authentication and deletes the goal associated with the id of that token
+     * @param id
+     * @param userToken
+     * @return response status
+     */
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -78,6 +98,13 @@ public class GoalService {
         return Response.status(204).build();
     }
 
+    /**
+     * updates goal of authenticated user
+     * @param id
+     * @param goalsData
+     * @param userToken
+     * @return repsonse status
+     */
     @PUT
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)

@@ -13,6 +13,10 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * DAO for MenuRecipe, which is the associative class to represent the many to many for Menus and Recipes
+ * @author lisaandritsch
+ */
 public class MenuRecipeDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -36,6 +40,12 @@ public class MenuRecipeDAO {
         return menuRecipe;
     }
 
+    /**
+     * Gets a menu and Recipe id
+     * @param menuId
+     * @param recipeId
+     * @return menuRecipes
+     */
     public MenuRecipe getByMenuAndRecipeId(int menuId, int recipeId) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

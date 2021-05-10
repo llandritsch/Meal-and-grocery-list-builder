@@ -13,6 +13,10 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * DAO for UserGoals
+ * @author lisaandritsch
+ */
 public class UserGoalsDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());

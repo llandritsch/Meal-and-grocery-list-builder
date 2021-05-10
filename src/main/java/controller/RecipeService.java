@@ -13,6 +13,10 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
+/**
+ * This class represents the ingredients array on the recipes object to support pulling the ingredients associated with
+ * a specific recipe from the DB along with the recipe.
+ */
 class AddIngredientsRequest {
     private Ingredients[] ingredients;
     public AddIngredientsRequest() {}
@@ -23,12 +27,20 @@ class AddIngredientsRequest {
     }
 }
 
+/**
+ * This Class is responsible for all recipe data and requests including linking the recipes to the ingredients
+ */
 @Path("/api/RecipeService")
 public class RecipeService {
     RecipesDAO dao = new RecipesDAO();
     IngredientsDAO ingredientsDAO = new IngredientsDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
 
+    /**
+     * Checks for user auth and gets all recipes from the DB
+     * @param userToken
+     * @return response status
+     */
     @GET
     @Path("/recipes")
     @Produces(MediaType.APPLICATION_JSON)
@@ -44,6 +56,12 @@ public class RecipeService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Gets a single recipe from a recipe id from an authenticated user
+     * @param recipeid
+     * @param userToken
+     * @return response status
+     */
     @GET
     @Path("/recipes/{recipeid}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -60,6 +78,12 @@ public class RecipeService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Gets a recipe by recipe name
+     * @param recipeName
+     * @param userToken
+     * @return response status
+     */
     @GET
     @Path("/recipes/name/{recipeName}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -76,6 +100,12 @@ public class RecipeService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Creates a recipe from an authenticated user
+     * @param recipe
+     * @param userToken
+     * @return response status
+     */
     @POST
     @Path("/recipes")
     @Produces(MediaType.APPLICATION_JSON)
@@ -99,6 +129,12 @@ public class RecipeService {
         }
     }
 
+    /**
+     * Deletes a recipe by id if the user is authenticated
+     * @param id
+     * @param userToken
+     * @return response status
+     */
     @DELETE
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -115,6 +151,13 @@ public class RecipeService {
         return Response.status(204).build();
     }
 
+    /**
+     * updates a recipe by id if the user is authenticated
+     * @param id
+     * @param recipeData
+     * @param userToken
+     * @return response status
+     */
     @PUT
     @Path("{id}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -139,6 +182,13 @@ public class RecipeService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Creates ingredients for this particular recipe if the user is authenticated
+     * @param recipeId
+     * @param userToken
+     * @param ingredientsRequest
+     * @return
+     */
     @POST
     @Path("/recipes/{recipeId}/ingredients")
     @Consumes(MediaType.APPLICATION_JSON)

@@ -14,11 +14,20 @@ import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * DAO for authentication Token
+ * @author lisaandritsch
+ */
 public class AuthenticationTokenDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
+    /**
+     * gets a token if there is one in the DB
+     * @param token
+     * @return token
+     */
     public AuthenticationToken getByToken(String token) {
         if (token == null) {
             return null;
@@ -29,6 +38,11 @@ public class AuthenticationTokenDAO {
         return authToken;
     }
 
+    /**
+     * Creates a token
+     * @param userId
+     * @return token
+     */
     public AuthenticationToken create(int userId) {
         // Create a date that represents 30 minutes from now
         LocalDateTime dateTime = LocalDateTime.now().plus(Duration.of(30, ChronoUnit.MINUTES));
@@ -50,6 +64,10 @@ public class AuthenticationTokenDAO {
         return token;
     }
 
+    /**
+     * Deletes a token
+     * @param authToken
+     */
     public void delete(AuthenticationToken authToken) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();

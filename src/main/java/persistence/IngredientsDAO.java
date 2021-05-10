@@ -6,6 +6,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+/**
+ * Ingredients DAO
+ * @author lisaandritsch
+ */
 public class IngredientsDAO {
 
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
@@ -27,6 +31,11 @@ public class IngredientsDAO {
         return id;
     }
 
+    /**
+     * creates ingredients for a recipe
+     * @param recipeId
+     * @param ingredients
+     */
     public void createRecipeIngredients(int recipeId, Ingredients[] ingredients) {
         for (Ingredients ingredient : ingredients) {
             this.createRecipeIngredient(recipeId, ingredient);

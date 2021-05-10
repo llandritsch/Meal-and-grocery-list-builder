@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+/**
+ * This class is not utilized in my indie project, however, I decided to keep in here as part of the example of auth with tomcat
+ */
 
 /**
  * A simple servlet to welcome the user.

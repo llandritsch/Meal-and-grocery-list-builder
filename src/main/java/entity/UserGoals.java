@@ -137,10 +137,18 @@ public class UserGoals {
         return calorieGoal;
     }
 
+    /**
+     * set calorie goal
+     * @param calorieGoal
+     */
     public void setCalorieGoal(int calorieGoal) {
         this.calorieGoal = calorieGoal;
     }
 
+    /**
+     * toString for userGoals
+     * @return
+     */
     @Override
     public String toString() {
         return "User Goals{" +

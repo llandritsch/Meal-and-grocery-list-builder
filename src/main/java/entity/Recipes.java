@@ -6,9 +6,9 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
- * The type Recipes.
+ * Represents Recipes
+ * @author lisaandritsch
  */
-
 @Entity(name = "Recipes")
 @Table(name = "Recipes")
 public class Recipes {
@@ -62,10 +62,18 @@ public class Recipes {
         this.instructions = instructions;
     }
 
+    /**
+     * sets userId
+     * @param id
+     */
     public void setUserId(int id) {
         this.userId = id;
     }
 
+    /**
+     * gets UserId
+     * @return userId
+     */
     public int getUserId() {
         return this.userId;
     }
@@ -154,12 +162,24 @@ public class Recipes {
         this.user = user;
     }
 
+    /**
+     * gets list of ingredients
+     * @return
+     */
     public Set<Ingredients> getIngredients() {return ingredients;}
 
+    /**
+     * sets a list of ingredients
+     * @param ingredients
+     */
     public void setIngredients(Set<Ingredients> ingredients) {
         this.ingredients = ingredients;
     }
 
+    /**
+     * To string for Recipes
+     * @return
+     */
     @Override
     public String toString() {
         return "Recipes{" +

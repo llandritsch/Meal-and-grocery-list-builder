@@ -5,7 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 /**
- * The type Ingredients.
+ * Represents Ingredients
+ * @author lisaandritsch
  */
 @Entity(name = "Ingredients")
 @Table(name = "Recipe_Ingredients")
@@ -40,11 +41,6 @@ public class Ingredients {
     @Column(name = "Recipes_recipe_id")
     private int recipeId;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "Recipes_recipe_id")
-//    @Transient
-//    private Recipes recipe;
-
     /**
      * Instantiates a new Ingredients
      */
@@ -52,6 +48,18 @@ public class Ingredients {
 
     }
 
+    /**
+     * constructor with params
+     * @param recipeId
+     * @param ingredientName
+     * @param id
+     * @param ingredientQuantity
+     * @param measurementType
+     * @param protein
+     * @param carbs
+     * @param fat
+     * @param grocerySection
+     */
     public Ingredients(int recipeId, String ingredientName, int id, double ingredientQuantity, String measurementType, double protein, double carbs, double fat, String grocerySection) {
         this.ingredientName = ingredientName;
         this.id = id;
@@ -208,9 +216,22 @@ public class Ingredients {
         this.fat = fat;
     }
 
+    /**
+     * gets recipeId
+     * @return recipeId
+     */
     public int getRecipeId() { return this.recipeId; }
+
+    /**
+     * sets recipeId
+     * @param id
+     */
     public void setRecipeId(int id) { this.recipeId = id; }
 
+    /**
+     * To string for ingredient object
+     * @return
+     */
     @Override
     public String toString() {
         return "Ingredients{" +

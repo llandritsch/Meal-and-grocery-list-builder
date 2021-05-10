@@ -12,12 +12,20 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/**
+ * This API path is repsonsible for all menu data and requests
+ */
 @Path("/api/MenuService")
 public class MenuService {
     MenuDAO dao = new MenuDAO();
     AuthenticationTokenDAO authDAO = new AuthenticationTokenDAO();
     MenuRecipeDAO menuRecipeDAO = new MenuRecipeDAO();
 
+    /**
+     * Checks for auth and gets the menu by the userid on the token
+     * @param userToken
+     * @return response status
+     */
     @GET
     @Path("/menu")
     @Produces(MediaType.APPLICATION_JSON)
@@ -38,6 +46,12 @@ public class MenuService {
         return Response.status(200).entity(myEntity).build();
     }
 
+    /**
+     * Checks for auth and adds a recipe to the menu assicaited with the user's token
+     * @param userToken
+     * @param recipeId
+     * @return response status
+     */
     @POST
     @Path("/menu/{recipeId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -65,6 +79,12 @@ public class MenuService {
         return Response.status(201).entity(myEntity).build();
     }
 
+    /**
+     * Deletes a recipe from the user's menu associated with the token
+     * @param userToken
+     * @param recipeId
+     * @return response status
+     */
     @DELETE
     @Path("/menu/{recipeId}")
     @Produces(MediaType.APPLICATION_JSON)

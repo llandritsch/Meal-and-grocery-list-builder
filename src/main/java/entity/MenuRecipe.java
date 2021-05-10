@@ -27,25 +27,66 @@ public class MenuRecipe {
     @Column(name = "recipeId")
     private int recipeId;
 
+    /**
+     * instantiates menuRecipe
+     */
     public MenuRecipe() {}
 
+    /**
+     * constructor with params
+     * @param menuId
+     * @param recipeId
+     */
     public MenuRecipe(int menuId, int recipeId) {
         this.menuId = menuId;
         this.recipeId = recipeId;
     }
 
+    /**
+     * constructor with Id
+     * @param id
+     * @param menuId
+     * @param recipeId
+     */
     public MenuRecipe(int id, int menuId, int recipeId) {
         this.id = id;
         this.menuId = menuId;
         this.recipeId = recipeId;
     }
 
+    /**
+     * gets Id
+     * @return Id
+     */
     public int getId() { return this.id; }
+
+    /**
+     * sets Id
+     * @param id
+     */
     public void setId(int id) { this.id = id; }
 
+    /**
+     * gets menuId
+     * @return
+     */
     public int getMenuId() { return this.menuId; }
+
+    /**
+     * sets menuId
+     * @param id
+     */
     public void setMenuId(int id) { this.menuId = id; }
 
+    /**
+     * gets RecipeId
+     * @return
+     */
     public int getRecipeId() { return this.recipeId; }
+
+    /**
+     * sets recipeId
+     * @param id
+     */
     public void setRecipeId(int id) { this.recipeId = id; }
 }

@@ -9,12 +9,21 @@ import javax.ws.rs.core.Response;
 import java.io.InputStream;
 import java.util.Objects;
 
+/**
+ * This class is a catchall for the backend to send the user to the front end for routing. When the application launches
+ * is it is sent to the backend first but must be forced into the frontend code to be rendered.
+ */
 @Path("")
 public class StaticFileService {
 
     @Context
     ServletContext context;
 
+    /**
+     * This class routes the user to the index page if something goes wrong
+     * @param path
+     * @return
+     */
     @GET
     @Path("{path: .*}")
     public Response Get(@PathParam("path") String path) {

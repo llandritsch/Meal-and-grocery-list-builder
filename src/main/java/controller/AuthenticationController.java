@@ -10,28 +10,66 @@ import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+/**
+ * this class is for communication with the angular front end authentication.
+ */
 class AuthenticationRequest {
     private String username;
     private String password;
 
+    /**
+     * Authentication constructor
+     */
     public AuthenticationRequest() { }
+
+    /**
+     * authentication constructor with params
+     * @param username
+     * @param password
+     */
     public AuthenticationRequest(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
+    /**
+     * gets userName
+     * @return username
+     */
     public String getUsername() { return this.username; }
+
+    /**
+     * sets userName
+     * @param username
+     */
     public void setUsername(String username) { this.username = username; }
 
+    /**
+     * gets Password
+     * @return
+     */
     public String getPassword() { return this.password; }
+
+    /**
+     * sets Password
+     * @param password
+     */
     public void setPassword(String password) { this.password = password; }
 }
 
+/**
+ * Base Pass for authentication
+ */
 @Path("/api/auth")
 public class AuthenticationController {
     AuthenticationTokenDAO authenticationTokenDAO = new AuthenticationTokenDAO();
     UsersDAO usersDAO = new UsersDAO();
 
+    /**
+     * Generates a new authentication token
+     * @param authRequest
+     * @return response status
+     */
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
@@ -46,6 +84,11 @@ public class AuthenticationController {
         return Response.status(201).entity(myEntity).build();
     }
 
+    /**
+     * Deletes/destroys authentication token to sign user out
+     * @param token
+     * @return
+     */
     @DELETE
     @Path("{token}")
     @Produces(MediaType.APPLICATION_JSON)

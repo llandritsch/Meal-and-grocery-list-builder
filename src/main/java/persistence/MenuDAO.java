@@ -13,12 +13,22 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * DAO for Menu
+ * @author lisaandritsch
+ */
 public class MenuDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
     SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
 
     // Only allowing 1 menu per user...for now
+
+    /**
+     * gets a menu by UserId
+     * @param userId
+     * @return menu
+     */
     public Menu getByUserId(int userId) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();

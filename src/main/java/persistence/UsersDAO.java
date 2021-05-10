@@ -13,6 +13,10 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * DAO for Users
+ * @author lisaandritsch
+ */
 public class UsersDAO {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -48,12 +52,17 @@ public class UsersDAO {
         return users;
     }
 
+    /**
+     * Gets user by username and password
+     * @param username
+     * @param password
+     * @return
+     */
     public Users getUserByUsernameAndPassword(String username, String password) {
         Session session = sessionFactory.openSession();
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<Users> query = builder.createQuery(Users.class);
         Root<Users> root = query.from(Users.class);
-        // TODO: The password should be case-sensitive
         query.where(builder.equal(root.get("username"), username), builder.equal(root.get("password"), password));
         List<Users> users = session.createQuery(query).getResultList();
         session.close();
