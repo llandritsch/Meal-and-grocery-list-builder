@@ -19,16 +19,6 @@ export class HeaderComponent implements OnInit {
 
   user: User;
 
-  /* TODO: BUG: Username not updating after changing users.
-    Steps:
-      1. Sign in as user A
-      2. Sign out
-      3. Sign in as user B
-
-    Expected: User B's name should be display
-    Actual: User A's name is still displayed
-   */
-
   ngOnInit(): void {
     this.loadUser();
   }
